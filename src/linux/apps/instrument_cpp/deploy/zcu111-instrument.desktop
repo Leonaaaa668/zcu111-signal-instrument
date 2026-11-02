@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=ZCU111 Instrument
+Comment=Standalone RFSoC instrument, native C++ Qt
+Exec=/usr/bin/zcu111-instrument-launch --fullscreen
+Terminal=false
+Categories=Science;Education;

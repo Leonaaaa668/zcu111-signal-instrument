@@ -1,0 +1,30 @@
+{
+  "model_kind": "affine",
+  "status": "PASS",
+  "training_point_ids": [
+    "p01",
+    "p03",
+    "p05"
+  ],
+  "excluded_reference_points": {
+    "p02": "Reference repeat span exceeds 0.1dB"
+  },
+  "holdout_point_ids": [
+    "p07"
+  ],
+  "gain_db_per_db": 1.0126796954964605,
+  "offset_db": 12.730710617556895,
+  "training_errors_db": [
+    -0.031548876841824836,
+    0.016084022291941835,
+    0.015464854549851026
+  ],
+  "holdout_errors_db": [
+    -0.06434975494111228
+  ],
+  "screening_limit_db": 0.1,
+  "observed_reference_span_db": 19.949792345860732,
+  "absolute_accuracy_claimed_db": null,
+  "holdout_used_for_fit": false,
+  "note": "Engineering amplitude-scale calibration; preserves measured gain error. No nonlinear curve, no power-range extrapolation."
+}

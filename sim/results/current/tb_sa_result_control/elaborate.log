@@ -1,0 +1,26 @@
+Vivado Simulator v2025.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: D:/Vivado/2025.2/Vivado/bin/unwrapped/win64.o/xelab.exe -mt 4 -L xpm tb_sa_result_control work.glbl -s test_snapshot 
+Using 4 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xpm.xpm_cdc_async_rst(DEST_SYNC_FF=3...
+Compiling module xpm.xpm_cdc_single(INIT_SYNC_FF=1,SR...
+Compiling module xpm.xpm_cdc_handshake(DEST_EXT_HSK=0...
+Compiling module xpm.xpm_cdc_handshake(DEST_EXT_HSK=0...
+Compiling module xpm.xpm_cdc_single(INIT_SYNC_FF=1)
+Compiling module xpm.xpm_cdc_array_single(INIT_SYNC_F...
+Compiling module work.sa_result_control
+Compiling module xpm.xpm_memory_base(MEMORY_TYPE=1,ME...
+Compiling module xpm.xpm_memory_sdpram(MEMORY_SIZE=81...
+Compiling module work.sa_snapshot_ram(LOG_DEPTH=7)
+Compiling module work.sa_snapshot(MAX_LOG_N=7)
+Compiling module work.sa_result_bd(MAX_LOG_N=7)
+Compiling module work.tb_sa_result_control
+Compiling module work.glbl
+Built simulation snapshot test_snapshot

@@ -1,0 +1,13 @@
+/generated/
+__pycache__/
+*.pyc
+.Xil/
+xsim.dir/
+*.jou
+*.wdb
+*.dcp
+*.bit
+*.xsa
+*.elf
+*.ko
+*.lic

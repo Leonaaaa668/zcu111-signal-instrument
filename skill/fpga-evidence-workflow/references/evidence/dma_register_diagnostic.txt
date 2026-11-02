@@ -1,0 +1,9 @@
+2026-10-30 client date; board kernel timestamps are uptime.
+User-supplied physical serial evidence:
+[1072.514426] bootstrap: GPIO responsive, status=0x87
+[1072.524477] PS DMA buffers: stage=0x66800000 back=0x66c00000 descriptors=0x02402000
+[1072.537486] TX ABI1 ready; default muted, no waveform loaded
+[1112.475906] diagnostic: before CDMA status read (0xb0080004), no reset
+[1133.492371] rcu: INFO: rcu_sched detected stalls on CPUs/tasks
+CPU 1 no progress; CDMA read never returned. No reset, upload or play was issued in this diagnostic.
+Cause remains unresolved. Stop DMA MMIO retries pending clean boot clock-lifetime investigation.

@@ -1,0 +1,29 @@
+#!/bin/sh
+# Collect evidence only: no clock writes, RF output, DMA start or service changes.
+set -u
+echo 'ZCU111 REPORT_ONLY_NOT_ACCEPTANCE'
+echo '== OS / identity =='
+uname -a
+id
+echo '== Local storage =='
+df -h /tmp "$HOME" 2>/dev/null
+echo '== Qt libraries / platform plugins =='
+find /usr/lib /usr/lib64 -maxdepth 5 \( -name 'libQt5Core.so*' -o -name 'libQt6Core.so*' -o -name 'libqwayland*.so' \) -print 2>/dev/null
+echo '== Services (read only) =='
+for unit in weston.service zcu111-weston-account-init.service zcu111-instrument.service; do
+    printf '%s: ' "$unit"
+    systemctl is-active "$unit" 2>/dev/null || true
+done
+echo '== Wayland sockets for current user =='
+ls -l "${XDG_RUNTIME_DIR:-/run/user/$(id -u)}"/wayland-* 2>/dev/null || true
+echo '== Receiver device =='
+ls -l /dev/zcu111_spectrum 2>/dev/null || true
+if [ -c /dev/zcu111_spectrum ]; then
+    if [ -r /dev/zcu111_spectrum ]; then echo 'RX_NODE=READABLE; RFDC/DMA acceptance still required'; else echo 'RX_NODE=NO_READ_PERMISSION'; fi
+else
+    echo 'RX_NODE=ABSENT'
+fi
+echo '== I2C topology (no device transactions) =='
+if command -v zcu111-clock >/dev/null 2>&1; then zcu111-clock --list-adapters; fi
+echo '== Completed read-only report; this is not a hardware readiness assertion =='
+exit 0

@@ -1,0 +1,54 @@
+{
+  "format_version": 1,
+  "kind": "CW_ONLY",
+  "status": "MEASURED_PROJECT_SCREENING_PASS",
+  "context": {
+    "confirmed": true,
+    "connection_confirmed": true,
+    "reference_plane": "analyzer_input_including_current_cable",
+    "analyzer_model": "FSVA3030",
+    "analyzer_serial": "1330.5000K31/101148",
+    "analyzer_idn": "Rohde&Schwarz,FSVA3030,1330.5000K31/101148,2.40SP3",
+    "setup_id": "zcu111_j7_fsva3030_101148_cable_20261026",
+    "analyzer_settings_evidence": "C:\\Users\\25812\\Documents\\Codex\\2026-09-23\\ni\\work\\zcu111_adc3_2400\\reports\\tx\\power_cal\\fsva_20261026\\range_01\\scpi.ndjson",
+    "bit_sha256": "f078554663c7d22f9cdf3ed6703cb3cac0c8d5fd905dcffacc949711014824c6",
+    "elf_sha256": "95ca3e6aa3b65edb1f9babb3ada5a29146e464353da7211416e3cb6a3facfb97",
+    "calibration_date": "2026-10-26",
+    "instrument_calibration_status": "certificate/warmup duration not independently confirmed",
+    "measurement_method": "CW RMS detector, fixed20dB attenuation, 1kHz RBW, 50kHz span",
+    "absolute_accuracy_below_0p1_db": "NOT_CLAIMED"
+  },
+  "models": [
+    {
+      "frequency_hz": 1790000000.0,
+      "db_per_db": 1.000293139719282,
+      "dbm_at_2048_rms": -33.43762976117503,
+      "fit_max_error_db": 0.021719914976227273,
+      "holdout_max_error_db": 0.08969611996949212,
+      "repeat_span_db": 0.06589889530000193,
+      "min_rms_counts": 255.94061811287398,
+      "max_rms_counts": 32700.064489233046
+    }
+  ],
+  "extrapolation": "FORBIDDEN",
+  "source_csv_sha256": "db39f6b2cfb5c45415cf162a1978efe013a7e78385305be1f69c1e80a2647d8a",
+  "campaign_sha256": "fe545dfa487aaa97a513e9026111214034440de48b4ce1ef2364651195e348e4",
+  "thresholds": {
+    "max_slope_error": 0.02,
+    "max_fit_residual_db": 0.1,
+    "max_holdout_residual_db": 0.1,
+    "max_repeat_span_db": 0.1,
+    "max_frequency_error_hz": 50000
+  },
+  "max_amplitude_counts": 32700,
+  "hardware_actions": "NONE",
+  "limitations": [
+    "Not traceable absolute accuracy certification",
+    "Valid only at measured frequencies, reference plane and setup",
+    "Not a wideband QAM/LFM/pulse total-power calibration",
+    "An analyzer amplitude bias is not removed by fitting its readings"
+  ],
+  "independent_physical_validation": "PENDING_NEW_DATA",
+  "range_selection": "Contiguous upper amplitude range selected using exploration data",
+  "source_session_sha256": "af510321ec7578d278a37f982432d631cd621206caf42b2c396c14e56a2eea0e"
+}

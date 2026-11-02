@@ -1,0 +1,55 @@
+{
+  "status": "NOT_COMPARABLE",
+  "reasons": [
+    "condition.feature_set differs",
+    "condition.constraints_id unknown",
+    "claim is not equivalent_function"
+  ],
+  "before": {
+    "source_sha256": "fc29b4a1c9b2dd173588e5ae580449f8eaa64d2c6531fe9e1956137b3f642ce0",
+    "tool": "Vivado v.2025.2 (win64) Build 6299465 Fri Nov 14 19:35:11 GMT 2025",
+    "device": "xczu28dr-ffvg1517-2-e",
+    "stage": "Routed",
+    "design": "adc3_capture_wrapper",
+    "resources": {
+      "lut": 92932,
+      "registers": 134766,
+      "bram_tiles": 602.5,
+      "dsp": 555
+    }
+  },
+  "after": {
+    "source_sha256": "6a1a36ecdde0b389561449436d657cc20df40e9ea8a28108ef55730f905064e4",
+    "tool": "Vivado v.2025.2 (win64) Build 6299465 Fri Nov 14 19:35:11 GMT 2025",
+    "device": "xczu28dr-ffvg1517-2-e",
+    "stage": "Routed",
+    "design": "adc3_capture_wrapper",
+    "resources": {
+      "lut": 72273,
+      "registers": 113196,
+      "bram_tiles": 602.5,
+      "dsp": 183
+    }
+  },
+  "metadata_is_user_declared": true,
+  "scope": "Report/context comparison only; verify declared conditions against source/config.",
+  "before_timing": {
+    "wns_ns": -0.109,
+    "whs_ns": 0.01,
+    "wpws_ns": 0.039,
+    "setup_failing_endpoints": 105,
+    "hold_failing_endpoints": 0,
+    "pulse_failing_endpoints": 0,
+    "met": false
+  },
+  "after_timing": {
+    "wns_ns": 0.14,
+    "whs_ns": 0.01,
+    "wpws_ns": 0.014,
+    "setup_failing_endpoints": 0,
+    "hold_failing_endpoints": 0,
+    "pulse_failing_endpoints": 0,
+    "met": true
+  },
+  "resource_change": null
+}

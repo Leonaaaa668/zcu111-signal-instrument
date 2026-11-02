@@ -1,0 +1,6 @@
+{
+  "status": "PASS",
+  "validator": "skill-creator quick_validate.py",
+  "output": "Skill is valid!",
+  "scope": "Frontmatter/name validation; behavior separately tested"
+}

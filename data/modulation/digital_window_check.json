@@ -1,0 +1,13 @@
+{
+  "kind": "INDEPENDENT_DIGITAL_WINDOW_CHECK_NOT_RF_MEASUREMENT",
+  "input_complex_samples": 262144,
+  "examined_symbols": 1069,
+  "sample_rate_hz": 1200000000.0,
+  "symbol_rate_hz": 5000000.0,
+  "offset_hz": 10000000.0,
+  "rrc_rolloff": 0.35,
+  "unique_decisions": 16,
+  "matched_filter_evm_rms_percent": 0.11991118286873965,
+  "passed": true,
+  "scope": "First 1MiB only; no reference transmitted bits; not RF EVM or BER"
+}

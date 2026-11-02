@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "target_dbm": -25,
+  "mean_dbm": -25.006666666666668,
+  "mean_error_db": -0.006666666666666667,
+  "repeat_peak_to_peak_db": 0.01,
+  "readings": 3,
+  "tolerance_db": 0.1,
+  "scope": "One holdout-point agreement with supplied reference readings only",
+  "absolute_accuracy_certified": false,
+  "reference_uncertainty_db": null,
+  "holdout_independence_is_declared": true
+}

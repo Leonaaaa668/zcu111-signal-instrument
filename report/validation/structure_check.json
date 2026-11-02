@@ -1,0 +1,11 @@
+{
+  "status": "V16_SUBMISSION_STRUCTURE_AND_SOURCE_IDENTITY_PASS",
+  "source_files_exact": 223,
+  "self_written_verilog_files": 18,
+  "collected_evidence_hashes": 53,
+  "required_entries": 16,
+  "path_format": "ASCII_NO_SPACES",
+  "fixed_name_exceptions": 40,
+  "exceptions_documented": "report/path_exceptions.csv",
+  "new_synthesis_or_board_measurement": false
+}

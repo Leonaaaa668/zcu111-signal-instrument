@@ -1,0 +1,15 @@
+{
+  "date": "2026-10-31",
+  "status": "KNOWN_1300MHZ_NARROWBAND_PASS",
+  "source_set_hz": 1300000000,
+  "source_set_dbm": -40,
+  "rx_center_hz": 1310000000,
+  "user_tone_hz": 1300000047,
+  "native_tone_hz": 1300000046.6104405,
+  "native_peak_dbfs": -53.50106111986825,
+  "mouse": "USER_CONFIRMED_NORMAL",
+  "source_state": "RF_ON_PER_TEST_CONFIRMATION",
+  "calibrated_dbm_applied": false,
+  "packet_sha256_checked": 1,
+  "remote_capture": "/tmp/zcu111_measurements_petalinux/capture_20250529_194121_e6603d91-aef7-4e30-a4ef-a65251be3330"
+}

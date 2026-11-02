@@ -1,0 +1,13 @@
+{
+  "status": "FAIL",
+  "samples": 128,
+  "mode": "exact",
+  "domain": "rtl_simulation",
+  "max_absolute_error": 1,
+  "mismatch_count": 1,
+  "first_mismatch_indices": [
+    0
+  ],
+  "rf_evm_or_ber_certified": false,
+  "scope": "Aligned supplied samples only; scale/bin order/latency must be established separately."
+}

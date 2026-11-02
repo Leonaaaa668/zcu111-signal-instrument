@@ -1,0 +1,9 @@
+point_id,phase,frequency_hz,source_set_dbm,ref_frequency_hz,ref_dbm_1,ref_dbm_2,ref_dbm_3,dut_packet_directory,dut_cw_signal_dbfs,offset_db,status
+p01,initial,1790000000,-40,1790001000,-40.86,-40.86,-40.84,signal_p01_a;signal_p01_b;signal_p01_c,-52.944265424918,12.090942330527,single_point_measured_not_range_validated
+p02,train,1790000000,-60,,-60.71,-60.76,-60.86,,,,reference_excluded_repeat_span_gt_0_1_db
+p03,train,1790000000,-50,,-50.62,-50.7,-50.72,signal_p03_a;signal_p03_b;signal_p03_c,-62.600654034805,11.920869364224,single_point_measured_not_range_validated
+p04,train,1790000000,-40,,,,,,,,pending
+p05,train,1790000000,-30,,-30.74,-30.73,-30.72,signal_p05_a;signal_p05_b;signal_p05_c,-42.901263134764,12.171270810045,single_point_measured_not_range_validated
+p06,holdout,1790000000,-55,,,,,,,,pending
+p07,holdout,1790000000,-45,,-45.69,-45.72,-45.71,signal_p07_a;signal_p07_b;signal_p07_c,-57.769213092559,12.062564341414,single_point_measured_not_range_validated
+p08,holdout,1790000000,-35,,,,,,,,pending

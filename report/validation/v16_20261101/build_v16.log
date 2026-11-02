@@ -1,0 +1,43 @@
+-- The CXX compiler identification is GNU 13.4.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /home/raden/petalinux-sdk/sysroots/x86_64-petalinux-linux/usr/bin/aarch64-amd-linux/aarch64-amd-linux-g++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE  
+-- Configuring done (0.7s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/raden/zcu111_cpp_sdk_20261029_231339/build-v16
+[  7%] Building CXX object CMakeFiles/instrument_core.dir/src/waveform.cpp.o
+[ 23%] Building CXX object CMakeFiles/instrument_core.dir/src/clock.cpp.o
+[ 23%] Building CXX object CMakeFiles/instrument_core.dir/src/storage.cpp.o
+[ 30%] Building CXX object CMakeFiles/instrument_core.dir/src/core.cpp.o
+[ 38%] Building CXX object CMakeFiles/instrument_core.dir/src/tx.cpp.o
+[ 46%] Building CXX object CMakeFiles/instrument_core.dir/src/rx_power.cpp.o
+[ 53%] Building CXX object CMakeFiles/instrument_core.dir/src/tuning.cpp.o
+[ 61%] Building CXX object CMakeFiles/instrument_core.dir/src/sweep.cpp.o
+[ 69%] Building CXX object CMakeFiles/instrument_core.dir/src/tx_power.cpp.o
+[ 76%] Building CXX object CMakeFiles/instrument_core.dir/src/spectrum_tools.cpp.o
+[ 84%] Linking CXX static library libinstrument_core.a
+[ 84%] Built target instrument_core
+[ 92%] Building CXX object CMakeFiles/zcu111-instrument.dir/src/gui.cpp.o
+[100%] Linking CXX executable zcu111-instrument
+[100%] Built target zcu111-instrument
+INSTRUMENT_CURSOR=BUILTIN_PIXMAP
+INSTRUMENT_INTERFACE=SA3000_NATIVE_MAIN_MARKERS_16
+INSTRUMENT_EVENT RX CW calibration loaded: zcu111_j1_cw1790_4025g_manual_20261030_v02; 1790MHz only, engineering reference
+This plugin does not support propagateSizeHints()
+INSTRUMENT_CURSOR=BUILTIN_PIXMAP
+INSTRUMENT_INTERFACE=SA3000_NATIVE_MAIN_MARKERS_16
+INSTRUMENT_EVENT RX CW calibration loaded: zcu111_j1_cw1790_4025g_manual_20261030_v02; 1790MHz only, engineering reference
+This plugin does not support propagateSizeHints()
+INSTRUMENT_CURSOR=BUILTIN_PIXMAP
+INSTRUMENT_INTERFACE=SA3000_NATIVE_MAIN_MARKERS_16
+INSTRUMENT_EVENT RX CW calibration loaded: zcu111_j1_cw1790_4025g_manual_20261030_v02; 1790MHz only, engineering reference
+This plugin does not support propagateSizeHints()
+INSTRUMENT_EVENT MAIN_MARKER_CARDS_REFRESH_SELECT_DELTA_PASS
+This plugin does not support raise()
+INSTRUMENT_EVENT MARKER_PENDING_EDIT_PRESERVED_PASS
+V16_BUILD_GUI_SMOKE_PASS

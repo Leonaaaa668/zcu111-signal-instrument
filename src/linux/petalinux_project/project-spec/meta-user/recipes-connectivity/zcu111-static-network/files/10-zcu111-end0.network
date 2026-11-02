@@ -1,0 +1,11 @@
+[Match]
+Name=end0
+
+[Network]
+DHCP=no
+LinkLocalAddressing=ipv6
+IPv6AcceptRA=no
+
+[Address]
+Address=192.168.21.136/24
+DuplicateAddressDetection=ipv4

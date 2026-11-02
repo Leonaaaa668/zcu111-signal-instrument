@@ -1,0 +1,171 @@
+-- The CXX compiler identification is GNU 13.4.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /home/raden/petalinux-sdk/sysroots/x86_64-petalinux-linux/usr/bin/aarch64-amd-linux/aarch64-amd-linux-g++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE  
+-- Configuring done (0.2s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/raden/zcu111_v16_submission_check/output/app
+[  2%] Building CXX object CMakeFiles/instrument_core.dir/src/core.cpp.o
+[  4%] Building CXX object CMakeFiles/instrument_core.dir/src/waveform.cpp.o
+[  6%] Building CXX object CMakeFiles/instrument_core.dir/src/clock.cpp.o
+[  8%] Building CXX object CMakeFiles/instrument_core.dir/src/storage.cpp.o
+[ 10%] Building CXX object CMakeFiles/instrument_core.dir/src/tx.cpp.o
+[ 12%] Building CXX object CMakeFiles/instrument_core.dir/src/rx_power.cpp.o
+[ 14%] Building CXX object CMakeFiles/instrument_core.dir/src/tuning.cpp.o
+[ 16%] Building CXX object CMakeFiles/instrument_core.dir/src/sweep.cpp.o
+[ 18%] Building CXX object CMakeFiles/instrument_core.dir/src/tx_power.cpp.o
+[ 20%] Building CXX object CMakeFiles/instrument_core.dir/src/spectrum_tools.cpp.o
+[ 22%] Linking CXX static library libinstrument_core.a
+[ 22%] Built target instrument_core
+[ 24%] Building CXX object CMakeFiles/zcu111-measure.dir/src/cli.cpp.o
+[ 26%] Building CXX object CMakeFiles/zcu111-stream.dir/src/stream_cli.cpp.o
+[ 28%] Building CXX object CMakeFiles/zcu111-wavegen.dir/src/wave_cli.cpp.o
+[ 30%] Building CXX object CMakeFiles/zcu111-sweep.dir/src/sweep_cli.cpp.o
+[ 32%] Linking CXX executable zcu111-wavegen
+[ 32%] Built target zcu111-wavegen
+[ 34%] Linking CXX executable zcu111-sweep
+[ 36%] Building CXX object CMakeFiles/zcu111-clock.dir/src/clock_cli.cpp.o
+[ 38%] Linking CXX executable zcu111-stream
+[ 38%] Built target zcu111-sweep
+[ 40%] Linking CXX executable zcu111-measure
+[ 42%] Building CXX object CMakeFiles/zcu111-tx.dir/src/tx_cli.cpp.o
+[ 42%] Built target zcu111-stream
+[ 44%] Building CXX object CMakeFiles/zcu111-instrument.dir/src/gui.cpp.o
+[ 44%] Built target zcu111-measure
+[ 46%] Building CXX object CMakeFiles/instrument-spectrum-tools-tests.dir/tests/spectrum_tools_tests.cpp.o
+[ 48%] Linking CXX executable instrument-spectrum-tools-tests
+[ 51%] Linking CXX executable zcu111-clock
+[ 51%] Built target instrument-spectrum-tools-tests
+[ 53%] Building CXX object CMakeFiles/instrument-tuning-sweep-tests.dir/tests/tuning_sweep_tests.cpp.o
+[ 53%] Built target zcu111-clock
+[ 55%] Linking CXX executable zcu111-tx
+[ 57%] Building CXX object CMakeFiles/instrument-cw-context-tests.dir/tests/cw_context_tests.cpp.o
+[ 57%] Built target zcu111-tx
+[ 59%] Building CXX object CMakeFiles/instrument-physical-tests.dir/tests/physical_tests.cpp.o
+[ 61%] Linking CXX executable instrument-tuning-sweep-tests
+[ 61%] Built target instrument-tuning-sweep-tests
+[ 63%] Building CXX object CMakeFiles/instrument-rx-profile-tests.dir/tests/rx_profile_tests.cpp.o
+[ 65%] Linking CXX executable instrument-cw-context-tests
+[ 65%] Built target instrument-cw-context-tests
+[ 67%] Building CXX object CMakeFiles/instrument-rx-calibration-replay.dir/tests/rx_calibration_replay.cpp.o
+[ 69%] Linking CXX executable instrument-physical-tests
+[ 69%] Built target instrument-physical-tests
+[ 71%] Building CXX object CMakeFiles/instrument-rx-power-tests.dir/tests/rx_power_tests.cpp.o
+[ 73%] Linking CXX executable instrument-rx-profile-tests
+[ 73%] Built target instrument-rx-profile-tests
+[ 75%] Building CXX object CMakeFiles/instrument-core-tests.dir/tests/core_tests.cpp.o
+[ 77%] Linking CXX executable instrument-rx-power-tests
+[ 77%] Built target instrument-rx-power-tests
+[ 79%] Building CXX object CMakeFiles/instrument-waveform-tests.dir/tests/waveform_tests.cpp.o
+[ 81%] Linking CXX executable instrument-waveform-tests
+[ 81%] Built target instrument-waveform-tests
+[ 83%] Building CXX object CMakeFiles/instrument-control-tests.dir/tests/control_clock_tests.cpp.o
+[ 85%] Linking CXX executable instrument-rx-calibration-replay
+[ 85%] Built target instrument-rx-calibration-replay
+[ 87%] Building CXX object CMakeFiles/instrument-stream-tests.dir/tests/stream_transport_tests.cpp.o
+[ 89%] Linking CXX executable instrument-core-tests
+[ 89%] Built target instrument-core-tests
+[ 91%] Building CXX object CMakeFiles/instrument-tx-transport-tests.dir/tests/tx_transport_tests.cpp.o
+[ 93%] Linking CXX executable instrument-tx-transport-tests
+[ 95%] Linking CXX executable instrument-control-tests
+[ 97%] Linking CXX executable instrument-stream-tests
+[ 97%] Built target instrument-tx-transport-tests
+[ 97%] Built target instrument-control-tests
+[ 97%] Built target instrument-stream-tests
+[100%] Linking CXX executable zcu111-instrument
+[100%] Built target zcu111-instrument
+Internal ctest changing into directory: /home/raden/zcu111_v16_submission_check/output/app
+Test project /home/raden/zcu111_v16_submission_check/output/app
+      Start  1: spectrum-tools
+ 1/11 Test  #1: spectrum-tools ...................   Passed    0.03 sec
+      Start  2: tuning-sweep-contract
+ 2/11 Test  #2: tuning-sweep-contract ............   Passed    0.05 sec
+      Start  3: cw-context-validation
+ 3/11 Test  #3: cw-context-validation ............   Passed   20.42 sec
+      Start  4: physical-controls
+ 4/11 Test  #4: physical-controls ................   Passed   23.42 sec
+      Start  5: rx-profile-validation
+ 5/11 Test  #5: rx-profile-validation ............   Passed    0.11 sec
+      Start  6: rx-power-calibration
+ 6/11 Test  #6: rx-power-calibration .............   Passed    0.02 sec
+      Start  7: core-contract
+ 7/11 Test  #7: core-contract ....................   Passed   13.61 sec
+      Start  8: waveform-contract
+ 8/11 Test  #8: waveform-contract ................   Passed   40.43 sec
+      Start  9: control-clock-storage
+ 9/11 Test  #9: control-clock-storage ............   Passed    0.09 sec
+      Start 10: stream-lifecycle-mailbox
+10/11 Test #10: stream-lifecycle-mailbox .........   Passed    0.09 sec
+      Start 11: tx-userspace-transaction
+11/11 Test #11: tx-userspace-transaction .........   Passed    0.03 sec
+
+100% tests passed, 0 tests failed out of 11
+
+Total Test time (real) =  98.31 sec
+-- Install configuration: "Release"
+-- Installing: /home/raden/zcu111_v16_submission_check/output/zcu111_instrument_qt5_20261101_16/usr/bin/zcu111-measure
+-- Installing: /home/raden/zcu111_v16_submission_check/output/zcu111_instrument_qt5_20261101_16/usr/bin/zcu111-stream
+-- Installing: /home/raden/zcu111_v16_submission_check/output/zcu111_instrument_qt5_20261101_16/usr/bin/zcu111-sweep
+-- Installing: /home/raden/zcu111_v16_submission_check/output/zcu111_instrument_qt5_20261101_16/usr/bin/zcu111-wavegen
+-- Installing: /home/raden/zcu111_v16_submission_check/output/zcu111_instrument_qt5_20261101_16/usr/bin/zcu111-clock
+-- Installing: /home/raden/zcu111_v16_submission_check/output/zcu111_instrument_qt5_20261101_16/usr/bin/zcu111-tx
+-- Installing: /home/raden/zcu111_v16_submission_check/output/zcu111_instrument_qt5_20261101_16/usr/bin/zcu111-instrument-check
+-- Installing: /home/raden/zcu111_v16_submission_check/output/zcu111_instrument_qt5_20261101_16/usr/bin/zcu111-instrument
+-- Installing: /home/raden/zcu111_v16_submission_check/output/zcu111_instrument_qt5_20261101_16/usr/share/zcu111-instrument
+-- Installing: /home/raden/zcu111_v16_submission_check/output/zcu111_instrument_qt5_20261101_16/usr/share/zcu111-instrument/tx_cw_verification.json
+-- Installing: /home/raden/zcu111_v16_submission_check/output/zcu111_instrument_qt5_20261101_16/usr/share/zcu111-instrument/hann_q17.mem
+-- Installing: /home/raden/zcu111_v16_submission_check/output/zcu111_instrument_qt5_20261101_16/usr/share/zcu111-instrument/tx_cw_4025g_context.json
+-- Installing: /home/raden/zcu111_v16_submission_check/output/zcu111_instrument_qt5_20261101_16/usr/share/zcu111-instrument/window_metrics.tsv
+-- Installing: /home/raden/zcu111_v16_submission_check/output/zcu111_instrument_qt5_20261101_16/usr/share/zcu111-instrument/DejaVuSans.ttf
+-- Installing: /home/raden/zcu111_v16_submission_check/output/zcu111_instrument_qt5_20261101_16/usr/share/zcu111-instrument/tx_catalog.json
+-- Installing: /home/raden/zcu111_v16_submission_check/output/zcu111_instrument_qt5_20261101_16/usr/share/zcu111-instrument/LICENSE_DEJAVU
+-- Installing: /home/raden/zcu111_v16_submission_check/output/zcu111_instrument_qt5_20261101_16/usr/share/zcu111-instrument/tx_cw_calibration.json
+-- Installing: /home/raden/zcu111_v16_submission_check/output/zcu111_instrument_qt5_20261101_16/usr/share/zcu111-instrument/clock
+-- Installing: /home/raden/zcu111_v16_submission_check/output/zcu111_instrument_qt5_20261101_16/usr/share/zcu111-instrument/clock/clock_tables.h
+-- Installing: /home/raden/zcu111_v16_submission_check/output/zcu111_instrument_qt5_20261101_16/usr/share/zcu111-instrument/clock/README.md
+-- Installing: /home/raden/zcu111_v16_submission_check/output/zcu111_instrument_qt5_20261101_16/usr/share/zcu111-instrument/clock/plan_reference.tsv
+-- Installing: /home/raden/zcu111_v16_submission_check/output/zcu111_instrument_qt5_20261101_16/usr/share/zcu111-instrument/clock/vendor
+-- Installing: /home/raden/zcu111_v16_submission_check/output/zcu111_instrument_qt5_20261101_16/usr/share/zcu111-instrument/clock/vendor/LICENSE
+-- Installing: /home/raden/zcu111_v16_submission_check/output/zcu111_instrument_qt5_20261101_16/usr/share/zcu111-instrument/fixtures
+-- Installing: /home/raden/zcu111_v16_submission_check/output/zcu111_instrument_qt5_20261101_16/usr/share/zcu111-instrument/fixtures/lower
+-- Installing: /home/raden/zcu111_v16_submission_check/output/zcu111_instrument_qt5_20261101_16/usr/share/zcu111-instrument/fixtures/lower/spectrum.bin
+-- Installing: /home/raden/zcu111_v16_submission_check/output/zcu111_instrument_qt5_20261101_16/usr/share/zcu111-instrument/fixtures/lower/spectrum.bin.receipt.json
+-- Installing: /home/raden/zcu111_v16_submission_check/output/zcu111_instrument_qt5_20261101_16/usr/share/zcu111-instrument/fixtures/n65536_half
+-- Installing: /home/raden/zcu111_v16_submission_check/output/zcu111_instrument_qt5_20261101_16/usr/share/zcu111-instrument/fixtures/n65536_half/spectrum.bin
+-- Installing: /home/raden/zcu111_v16_submission_check/output/zcu111_instrument_qt5_20261101_16/usr/share/zcu111-instrument/fixtures/n65536_half/spectrum.bin.receipt.json
+-- Installing: /home/raden/zcu111_v16_submission_check/output/zcu111_instrument_qt5_20261101_16/usr/share/zcu111-instrument/fixtures/n65536
+-- Installing: /home/raden/zcu111_v16_submission_check/output/zcu111_instrument_qt5_20261101_16/usr/share/zcu111-instrument/fixtures/n65536/spectrum.bin
+-- Installing: /home/raden/zcu111_v16_submission_check/output/zcu111_instrument_qt5_20261101_16/usr/share/zcu111-instrument/fixtures/n65536/spectrum.bin.receipt.json
+-- Installing: /home/raden/zcu111_v16_submission_check/output/zcu111_instrument_qt5_20261101_16/usr/share/zcu111-instrument/fixtures/n8192
+-- Installing: /home/raden/zcu111_v16_submission_check/output/zcu111_instrument_qt5_20261101_16/usr/share/zcu111-instrument/fixtures/n8192/spectrum.bin
+-- Installing: /home/raden/zcu111_v16_submission_check/output/zcu111_instrument_qt5_20261101_16/usr/share/zcu111-instrument/fixtures/n8192/spectrum.bin.receipt.json
+-- Installing: /home/raden/zcu111_v16_submission_check/output/zcu111_instrument_qt5_20261101_16/usr/share/zcu111-instrument/fixtures/upper
+-- Installing: /home/raden/zcu111_v16_submission_check/output/zcu111_instrument_qt5_20261101_16/usr/share/zcu111-instrument/fixtures/upper/spectrum.bin
+-- Installing: /home/raden/zcu111_v16_submission_check/output/zcu111_instrument_qt5_20261101_16/usr/share/zcu111-instrument/fixtures/upper/spectrum.bin.receipt.json
+-- Installing: /home/raden/zcu111_v16_submission_check/output/zcu111_instrument_qt5_20261101_16/usr/share/zcu111-instrument/tx_cw_4025g_verification.json
+-- Installing: /home/raden/zcu111_v16_submission_check/output/zcu111_instrument_qt5_20261101_16/usr/share/zcu111-instrument/rx_cw_calibration.json
+-- Installing: /home/raden/zcu111_v16_submission_check/output/zcu111_instrument_qt5_20261101_16/usr/bin/zcu111-instrument-launch
+-- Installing: /home/raden/zcu111_v16_submission_check/output/zcu111_instrument_qt5_20261101_16/usr/share/applications/zcu111-instrument.desktop
+-- Installing: /home/raden/zcu111_v16_submission_check/output/zcu111_instrument_qt5_20261101_16/usr/lib/systemd/system/zcu111-instrument.service
+-- Installing: /home/raden/zcu111_v16_submission_check/output/zcu111_instrument_qt5_20261101_16/usr/lib/udev/rules.d/90-zcu111-spectrum.rules
+make: Entering directory '/home/raden/fpga_linux_work/zcu111_sa_20261029/build/tmp/work/xlnx_zynqmp_zcu111_reva-amd-linux/linux-xlnx/6.12.40+git+v2025.2/linux-xlnx_zynqmp_zcu111_reva-standard-build'
+  CC [M]  /home/raden/zcu111_v16_submission_check/output/kernel/tx_20261030/kernel/zcu111_tx.o
+  MODPOST /home/raden/zcu111_v16_submission_check/output/kernel/tx_20261030/kernel/Module.symvers
+  CC [M]  /home/raden/zcu111_v16_submission_check/output/kernel/tx_20261030/kernel/zcu111_tx.mod.o
+  CC [M]  /home/raden/zcu111_v16_submission_check/output/kernel/tx_20261030/kernel/.module-common.o
+  LD [M]  /home/raden/zcu111_v16_submission_check/output/kernel/tx_20261030/kernel/zcu111_tx.ko
+make: Leaving directory '/home/raden/fpga_linux_work/zcu111_sa_20261029/build/tmp/work/xlnx_zynqmp_zcu111_reva-amd-linux/linux-xlnx/6.12.40+git+v2025.2/linux-xlnx_zynqmp_zcu111_reva-standard-build'
+make: Entering directory '/home/raden/fpga_linux_work/zcu111_sa_20261029/build/tmp/work/xlnx_zynqmp_zcu111_reva-amd-linux/linux-xlnx/6.12.40+git+v2025.2/linux-xlnx_zynqmp_zcu111_reva-standard-build'
+  CC [M]  /home/raden/zcu111_v16_submission_check/output/kernel/rx_20261030/kernel/zcu111_sa.o
+  MODPOST /home/raden/zcu111_v16_submission_check/output/kernel/rx_20261030/kernel/Module.symvers
+  CC [M]  /home/raden/zcu111_v16_submission_check/output/kernel/rx_20261030/kernel/zcu111_sa.mod.o
+  CC [M]  /home/raden/zcu111_v16_submission_check/output/kernel/rx_20261030/kernel/.module-common.o
+  LD [M]  /home/raden/zcu111_v16_submission_check/output/kernel/rx_20261030/kernel/zcu111_sa.ko
+make: Leaving directory '/home/raden/fpga_linux_work/zcu111_sa_20261029/build/tmp/work/xlnx_zynqmp_zcu111_reva-amd-linux/linux-xlnx/6.12.40+git+v2025.2/linux-xlnx_zynqmp_zcu111_reva-standard-build'
+V16_LINUX_SOURCES_REBUILD_PASS: /home/raden/zcu111_v16_submission_check/output/zcu111_instrument_qt5_20261101_16; no hardware/RF actions
+Next: build/make_sd_runtime.py with this runtime and your actual BOOT.BIN.

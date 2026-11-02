@@ -1,0 +1,57 @@
+{
+  "status": "PASS",
+  "reference_used_on_development_pc_only": true,
+  "checks": [
+    {
+      "fixture": "lower",
+      "differences": {
+        "fft_n": 0,
+        "frames": 0,
+        "bin_spacing_hz": 0.0,
+        "window_enbw_bins": 0.0,
+        "window_enbw_hz": 0.0,
+        "peak_bin": 0,
+        "peak_bin_rf_hz": 0.0,
+        "interpolated_tone_rf_hz": 0.0,
+        "peak_coherent_bin_dbfs": 0.0,
+        "mainlobe_five_bin_dbfs": 0.0,
+        "total_window_corrected_dbfs": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "fixture": "n8192",
+      "differences": {
+        "fft_n": 0,
+        "frames": 0,
+        "bin_spacing_hz": 0.0,
+        "window_enbw_bins": 0.0,
+        "window_enbw_hz": 0.0,
+        "peak_bin": 0,
+        "peak_bin_rf_hz": 0.0,
+        "interpolated_tone_rf_hz": 0.0,
+        "peak_coherent_bin_dbfs": 0.0,
+        "mainlobe_five_bin_dbfs": 0.0,
+        "total_window_corrected_dbfs": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "fixture": "n65536",
+      "differences": {
+        "fft_n": 0,
+        "frames": 0,
+        "bin_spacing_hz": 0.0,
+        "window_enbw_bins": 0.0,
+        "window_enbw_hz": 4.547473508864641e-13,
+        "peak_bin": 0,
+        "peak_bin_rf_hz": 0.0,
+        "interpolated_tone_rf_hz": 0.0,
+        "peak_coherent_bin_dbfs": 0.0,
+        "mainlobe_five_bin_dbfs": 0.0,
+        "total_window_corrected_dbfs": 0.0
+      },
+      "status": "PASS"
+    }
+  ]
+}

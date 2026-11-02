@@ -1,0 +1,330 @@
+{
+  "date": "2026-11-02",
+  "base_archive_sha256": "0717c2753ef6fc191d64d26fbacfa64a9270abd11f532ed19884738c145578f3",
+  "hardware_baseline": "narrow09",
+  "matching_routed_bit_sha256": "0283237eb5775333f657a091d242731221423a375b972d96c0e8e2cfe355925c",
+  "matching_bit_present_in_package": false,
+  "observed_synthesis_report_count": 31,
+  "new_board_actions": "NONE",
+  "source_files_changed": 0,
+  "added_raw_evidence": [
+    {
+      "file": "build/reports/fpga/synthesis/adc3_capture_control_axi_imp_xbar_0_synth_1/adc3_capture_control_axi_imp_xbar_0_utilization_synth.rpt",
+      "original_local": "C:\\Users\\25812\\Documents\\Codex\\zcu111_adc3_2400_hw\\zcu111_adc3_2400_hw.runs\\adc3_capture_control_axi_imp_xbar_0_synth_1\\adc3_capture_control_axi_imp_xbar_0_utilization_synth.rpt",
+      "sha256": "94ab5ec0ea58b3e157d59b2b75c490d017d00c64eb958b27852922c0afe0ea36",
+      "bytes": 9789
+    },
+    {
+      "file": "build/reports/fpga/synthesis/adc3_capture_control_reset_0_synth_1/adc3_capture_control_reset_0_utilization_synth.rpt",
+      "original_local": "C:\\Users\\25812\\Documents\\Codex\\zcu111_adc3_2400_hw\\zcu111_adc3_2400_hw.runs\\adc3_capture_control_reset_0_synth_1\\adc3_capture_control_reset_0_utilization_synth.rpt",
+      "sha256": "9385e370a81a1aeb0c18d3ae39f588fe103cc15794de40facf39a9a9d61e001c",
+      "bytes": 9740
+    },
+    {
+      "file": "build/reports/fpga/synthesis/adc3_capture_dac_sample_clock_0_synth_1/adc3_capture_dac_sample_clock_0_utilization_synth.rpt",
+      "original_local": "C:\\Users\\25812\\Documents\\Codex\\zcu111_adc3_2400_hw\\zcu111_adc3_2400_hw.runs\\adc3_capture_dac_sample_clock_0_synth_1\\adc3_capture_dac_sample_clock_0_utilization_synth.rpt",
+      "sha256": "39825e0c4f46e4c5a1a079942e8d9587100a293b83293313a885e997977d9e94",
+      "bytes": 9356
+    },
+    {
+      "file": "build/reports/fpga/synthesis/adc3_capture_dac_sample_reset_0_synth_1/adc3_capture_dac_sample_reset_0_utilization_synth.rpt",
+      "original_local": "C:\\Users\\25812\\Documents\\Codex\\zcu111_adc3_2400_hw\\zcu111_adc3_2400_hw.runs\\adc3_capture_dac_sample_reset_0_synth_1\\adc3_capture_dac_sample_reset_0_utilization_synth.rpt",
+      "sha256": "0bbcc1ba5c5745e83113cc13876031c8e1076a0e02519a63f10aa1f341e07f93",
+      "bytes": 9761
+    },
+    {
+      "file": "build/reports/fpga/synthesis/adc3_capture_ddr4_0_0_synth_1/adc3_capture_ddr4_0_0_utilization_synth.rpt",
+      "original_local": "C:\\Users\\25812\\Documents\\Codex\\zcu111_adc3_2400_hw\\zcu111_adc3_2400_hw.runs\\adc3_capture_ddr4_0_0_synth_1\\adc3_capture_ddr4_0_0_utilization_synth.rpt",
+      "sha256": "bc5fae9fe0d14db7dfc1a0b86436d41ba14ed72fbb45259d98edf23021ea95a8",
+      "bytes": 11452
+    },
+    {
+      "file": "build/reports/fpga/synthesis/adc3_capture_ila_iq_0_synth_1/adc3_capture_ila_iq_0_utilization_synth.rpt",
+      "original_local": "C:\\Users\\25812\\Documents\\Codex\\zcu111_adc3_2400_hw\\zcu111_adc3_2400_hw.runs\\adc3_capture_ila_iq_0_synth_1\\adc3_capture_ila_iq_0_utilization_synth.rpt",
+      "sha256": "0a40e009e23e0b0a604b31086f66d23ffa9fddfb5c3ed785979a19e8dc938907",
+      "bytes": 10011
+    },
+    {
+      "file": "build/reports/fpga/synthesis/adc3_capture_ila_sa_0_synth_1/adc3_capture_ila_sa_0_utilization_synth.rpt",
+      "original_local": "C:\\Users\\25812\\Documents\\Codex\\zcu111_adc3_2400_hw\\zcu111_adc3_2400_hw.runs\\adc3_capture_ila_sa_0_synth_1\\adc3_capture_ila_sa_0_utilization_synth.rpt",
+      "sha256": "290be1418cd785d7e127a8d8f1d29eaed4bc1192a25e477fafbca9da90ecd06e",
+      "bytes": 10053
+    },
+    {
+      "file": "build/reports/fpga/synthesis/adc3_capture_ila_tx_0_synth_1/adc3_capture_ila_tx_0_utilization_synth.rpt",
+      "original_local": "C:\\Users\\25812\\Documents\\Codex\\zcu111_adc3_2400_hw\\zcu111_adc3_2400_hw.runs\\adc3_capture_ila_tx_0_synth_1\\adc3_capture_ila_tx_0_utilization_synth.rpt",
+      "sha256": "0a621e1ed7633248ec60bcaf46c918ac60249d9200932d97e978479d234096bf",
+      "bytes": 10123
+    },
+    {
+      "file": "build/reports/fpga/synthesis/adc3_capture_iq_lanes_0_synth_1/adc3_capture_iq_lanes_0_utilization_synth.rpt",
+      "original_local": "C:\\Users\\25812\\Documents\\Codex\\zcu111_adc3_2400_hw\\zcu111_adc3_2400_hw.runs\\adc3_capture_iq_lanes_0_synth_1\\adc3_capture_iq_lanes_0_utilization_synth.rpt",
+      "sha256": "36371d827f2fc794947003a279fe4f30816ac94412a9c1f6123685247faf29cb",
+      "bytes": 9090
+    },
+    {
+      "file": "build/reports/fpga/synthesis/adc3_capture_memory_reset_0_synth_1/adc3_capture_memory_reset_0_utilization_synth.rpt",
+      "original_local": "C:\\Users\\25812\\Documents\\Codex\\zcu111_adc3_2400_hw\\zcu111_adc3_2400_hw.runs\\adc3_capture_memory_reset_0_synth_1\\adc3_capture_memory_reset_0_utilization_synth.rpt",
+      "sha256": "36845492b629e3c3d226588e5021cec845a1d61d9532f40f2ac41b3df7d1b6e0",
+      "bytes": 9733
+    },
+    {
+      "file": "build/reports/fpga/synthesis/adc3_capture_rfdc_0_synth_1/adc3_capture_rfdc_0_utilization_synth.rpt",
+      "original_local": "C:\\Users\\25812\\Documents\\Codex\\zcu111_adc3_2400_hw\\zcu111_adc3_2400_hw.runs\\adc3_capture_rfdc_0_synth_1\\adc3_capture_rfdc_0_utilization_synth.rpt",
+      "sha256": "77dedca4d6ac9e5b117211be7d076cb0eef1cbfeba1dd1c71e934ac770c203e5",
+      "bytes": 9796
+    },
+    {
+      "file": "build/reports/fpga/synthesis/adc3_capture_rx_dma_0_synth_1/adc3_capture_rx_dma_0_utilization_synth.rpt",
+      "original_local": "C:\\Users\\25812\\Documents\\Codex\\zcu111_adc3_2400_hw\\zcu111_adc3_2400_hw.runs\\adc3_capture_rx_dma_0_synth_1\\adc3_capture_rx_dma_0_utilization_synth.rpt",
+      "sha256": "23a58d8d2f587c411ad2cdfba20e43dca062dfbd07638844abaa723de5b8f1c9",
+      "bytes": 10081
+    },
+    {
+      "file": "build/reports/fpga/synthesis/adc3_capture_rx_result_fifo_0_synth_1/adc3_capture_rx_result_fifo_0_utilization_synth.rpt",
+      "original_local": "C:\\Users\\25812\\Documents\\Codex\\zcu111_adc3_2400_hw\\zcu111_adc3_2400_hw.runs\\adc3_capture_rx_result_fifo_0_synth_1\\adc3_capture_rx_result_fifo_0_utilization_synth.rpt",
+      "sha256": "6f0312e50f8e0bcb8739396755e36fdd9af3451042e9c548f7464188ca25084c",
+      "bytes": 9792
+    },
+    {
+      "file": "build/reports/fpga/synthesis/adc3_capture_sa_control_0_synth_1/adc3_capture_sa_control_0_utilization_synth.rpt",
+      "original_local": "C:\\Users\\25812\\Documents\\Codex\\zcu111_adc3_2400_hw\\zcu111_adc3_2400_hw.runs\\adc3_capture_sa_control_0_synth_1\\adc3_capture_sa_control_0_utilization_synth.rpt",
+      "sha256": "f2086f8d72e1eeb960ce06444bd65d268e03cefe054a708a4f7ed3543ece3316",
+      "bytes": 9474
+    },
+    {
+      "file": "build/reports/fpga/synthesis/adc3_capture_sa_control_cdc_0_synth_1/adc3_capture_sa_control_cdc_0_utilization_synth.rpt",
+      "original_local": "C:\\Users\\25812\\Documents\\Codex\\zcu111_adc3_2400_hw\\zcu111_adc3_2400_hw.runs\\adc3_capture_sa_control_cdc_0_synth_1\\adc3_capture_sa_control_cdc_0_utilization_synth.rpt",
+      "sha256": "883b0d0c52d6f8f87340668f3d47330e0e04139c839f0328d13eebaa8122b3b8",
+      "bytes": 9502
+    },
+    {
+      "file": "build/reports/fpga/synthesis/adc3_capture_sa_dsp_0_synth_1/adc3_capture_sa_dsp_0_utilization_synth.rpt",
+      "original_local": "C:\\Users\\25812\\Documents\\Codex\\zcu111_adc3_2400_hw\\zcu111_adc3_2400_hw.runs\\adc3_capture_sa_dsp_0_synth_1\\adc3_capture_sa_dsp_0_utilization_synth.rpt",
+      "sha256": "b2781b769093199364bad7f479b3b1cf8176b6763bee58ab8b561947e6b062c5",
+      "bytes": 10061
+    },
+    {
+      "file": "build/reports/fpga/synthesis/adc3_capture_sa_fft_0_synth_1/adc3_capture_sa_fft_0_utilization_synth.rpt",
+      "original_local": "C:\\Users\\25812\\Documents\\Codex\\zcu111_adc3_2400_hw\\zcu111_adc3_2400_hw.runs\\adc3_capture_sa_fft_0_synth_1\\adc3_capture_sa_fft_0_utilization_synth.rpt",
+      "sha256": "511cac5e352b884dae9a35242c997898c2b6ed075ff41837b28f1a16dd2cb0f6",
+      "bytes": 10347
+    },
+    {
+      "file": "build/reports/fpga/synthesis/adc3_capture_sa_result_0_synth_1/adc3_capture_sa_result_0_utilization_synth.rpt",
+      "original_local": "C:\\Users\\25812\\Documents\\Codex\\zcu111_adc3_2400_hw\\zcu111_adc3_2400_hw.runs\\adc3_capture_sa_result_0_synth_1\\adc3_capture_sa_result_0_utilization_synth.rpt",
+      "sha256": "e495dec661859a57a05b45903dda1c43cd204b5775b9cf34cb1f8c0f08076e17",
+      "bytes": 9887
+    },
+    {
+      "file": "build/reports/fpga/synthesis/adc3_capture_sample_clock_0_synth_1/adc3_capture_sample_clock_0_utilization_synth.rpt",
+      "original_local": "C:\\Users\\25812\\Documents\\Codex\\zcu111_adc3_2400_hw\\zcu111_adc3_2400_hw.runs\\adc3_capture_sample_clock_0_synth_1\\adc3_capture_sample_clock_0_utilization_synth.rpt",
+      "sha256": "f8df88c620e2056ba850d8d2394518967ebb3cab57aa601ee54e9459ed33506d",
+      "bytes": 9328
+    },
+    {
+      "file": "build/reports/fpga/synthesis/adc3_capture_sample_reset_0_synth_1/adc3_capture_sample_reset_0_utilization_synth.rpt",
+      "original_local": "C:\\Users\\25812\\Documents\\Codex\\zcu111_adc3_2400_hw\\zcu111_adc3_2400_hw.runs\\adc3_capture_sample_reset_0_synth_1\\adc3_capture_sample_reset_0_utilization_synth.rpt",
+      "sha256": "33f75e73b09e8ff13ddddcf9f7f620078429bad11901108e6caa68950ca9161b",
+      "bytes": 9733
+    },
+    {
+      "file": "build/reports/fpga/synthesis/adc3_capture_tx_control_0_synth_1/adc3_capture_tx_control_0_utilization_synth.rpt",
+      "original_local": "C:\\Users\\25812\\Documents\\Codex\\zcu111_adc3_2400_hw\\zcu111_adc3_2400_hw.runs\\adc3_capture_tx_control_0_synth_1\\adc3_capture_tx_control_0_utilization_synth.rpt",
+      "sha256": "81060bbabd1ad7f65c079f62947e5afde2ec0f53e8ee95288fce2905078c91ed",
+      "bytes": 9474
+    },
+    {
+      "file": "build/reports/fpga/synthesis/adc3_capture_tx_dma_0_synth_1/adc3_capture_tx_dma_0_utilization_synth.rpt",
+      "original_local": "C:\\Users\\25812\\Documents\\Codex\\zcu111_adc3_2400_hw\\zcu111_adc3_2400_hw.runs\\adc3_capture_tx_dma_0_synth_1\\adc3_capture_tx_dma_0_utilization_synth.rpt",
+      "sha256": "04ea570381d61b6a9584aa732c6c1d7a0ac343707f50221f77ebfa5498b3edac",
+      "bytes": 10081
+    },
+    {
+      "file": "build/reports/fpga/synthesis/adc3_capture_tx_fifo_reset_0_synth_1/adc3_capture_tx_fifo_reset_0_utilization_synth.rpt",
+      "original_local": "C:\\Users\\25812\\Documents\\Codex\\zcu111_adc3_2400_hw\\zcu111_adc3_2400_hw.runs\\adc3_capture_tx_fifo_reset_0_synth_1\\adc3_capture_tx_fifo_reset_0_utilization_synth.rpt",
+      "sha256": "1f52380be98148524656c4217fd1857553e38f1c5e53522e5814bedc05d99b66",
+      "bytes": 9243
+    },
+    {
+      "file": "build/reports/fpga/synthesis/adc3_capture_tx_guard_0_synth_1/adc3_capture_tx_guard_0_utilization_synth.rpt",
+      "original_local": "C:\\Users\\25812\\Documents\\Codex\\zcu111_adc3_2400_hw\\zcu111_adc3_2400_hw.runs\\adc3_capture_tx_guard_0_synth_1\\adc3_capture_tx_guard_0_utilization_synth.rpt",
+      "sha256": "b4ff7aac8e689bd6f82a792bd9daa4b59e9fa07ad18b3621a533dbe6f3e3f22f",
+      "bytes": 9468
+    },
+    {
+      "file": "build/reports/fpga/synthesis/adc3_capture_tx_prefill_fifo_0_synth_1/adc3_capture_tx_prefill_fifo_0_utilization_synth.rpt",
+      "original_local": "C:\\Users\\25812\\Documents\\Codex\\zcu111_adc3_2400_hw\\zcu111_adc3_2400_hw.runs\\adc3_capture_tx_prefill_fifo_0_synth_1\\adc3_capture_tx_prefill_fifo_0_utilization_synth.rpt",
+      "sha256": "33a606e8aa302dc09c6b92f5b5bf4b1f3e0a5d1975a72eb4a0cb472aa0872744",
+      "bytes": 9799
+    },
+    {
+      "file": "build/reports/fpga/synthesis/adc3_capture_tx_reset_invert_0_synth_1/adc3_capture_tx_reset_invert_0_utilization_synth.rpt",
+      "original_local": "C:\\Users\\25812\\Documents\\Codex\\zcu111_adc3_2400_hw\\zcu111_adc3_2400_hw.runs\\adc3_capture_tx_reset_invert_0_synth_1\\adc3_capture_tx_reset_invert_0_utilization_synth.rpt",
+      "sha256": "844e5b36e97866439408a0c08d348d73741b2df3de45b190405d7e294fc1ac67",
+      "bytes": 9215
+    },
+    {
+      "file": "build/reports/fpga/synthesis/adc3_capture_tx_unpack_4iq_0_synth_1/adc3_capture_tx_unpack_4iq_0_utilization_synth.rpt",
+      "original_local": "C:\\Users\\25812\\Documents\\Codex\\zcu111_adc3_2400_hw\\zcu111_adc3_2400_hw.runs\\adc3_capture_tx_unpack_4iq_0_synth_1\\adc3_capture_tx_unpack_4iq_0_utilization_synth.rpt",
+      "sha256": "582c580056a5011b312a082980a5e464b6035c8a4c7a35ab0372a3748b167f56",
+      "bytes": 9453
+    },
+    {
+      "file": "build/reports/fpga/synthesis/adc3_capture_tx_unpack_reset_0_synth_1/adc3_capture_tx_unpack_reset_0_utilization_synth.rpt",
+      "original_local": "C:\\Users\\25812\\Documents\\Codex\\zcu111_adc3_2400_hw\\zcu111_adc3_2400_hw.runs\\adc3_capture_tx_unpack_reset_0_synth_1\\adc3_capture_tx_unpack_reset_0_utilization_synth.rpt",
+      "sha256": "215a685f5990322dbda7dbf88020fd24bd9fbcd4f8461dd0e8db1e7e7031d2c6",
+      "bytes": 9257
+    },
+    {
+      "file": "build/reports/fpga/synthesis/adc3_capture_wave_upload_dma_0_synth_1/adc3_capture_wave_upload_dma_0_utilization_synth.rpt",
+      "original_local": "C:\\Users\\25812\\Documents\\Codex\\zcu111_adc3_2400_hw\\zcu111_adc3_2400_hw.runs\\adc3_capture_wave_upload_dma_0_synth_1\\adc3_capture_wave_upload_dma_0_utilization_synth.rpt",
+      "sha256": "ce10596c7c2f96ed2d06c7ee9bc1b44d6f3ab2e2cb96f40e50933706b0494079",
+      "bytes": 9796
+    },
+    {
+      "file": "build/reports/fpga/synthesis/adc3_capture_zynq_ultra_ps_e_0_0_synth_1/adc3_capture_zynq_ultra_ps_e_0_0_utilization_synth.rpt",
+      "original_local": "C:\\Users\\25812\\Documents\\Codex\\zcu111_adc3_2400_hw\\zcu111_adc3_2400_hw.runs\\adc3_capture_zynq_ultra_ps_e_0_0_synth_1\\adc3_capture_zynq_ultra_ps_e_0_0_utilization_synth.rpt",
+      "sha256": "678c291efdbad1e7d18c0db6b5c3e4a67fba7244af2f348edb46dd4c77b8964a",
+      "bytes": 9329
+    },
+    {
+      "file": "build/reports/fpga/synthesis/synth_1/adc3_capture_wrapper_utilization_synth.rpt",
+      "original_local": "C:\\Users\\25812\\Documents\\Codex\\zcu111_adc3_2400_hw\\zcu111_adc3_2400_hw.runs\\synth_1\\adc3_capture_wrapper_utilization_synth.rpt",
+      "sha256": "65a7931083a24ca008177779d18bfa2765c2fa390972a854f384493f3a046be7",
+      "bytes": 11671
+    },
+    {
+      "file": "build/reports/fpga/synthesis/top_synthesis.log",
+      "original_local": "C:\\Users\\25812\\Documents\\Codex\\zcu111_adc3_2400_hw\\zcu111_adc3_2400_hw.runs\\synth_1\\runme.log",
+      "sha256": "24a1baaf4c132809d67094bfbf30104d0c54a69177e20ea65bfcdc709b3ae63d",
+      "bytes": 124230
+    },
+    {
+      "file": "build/reports/fpga/implementation_run.log",
+      "original_local": "C:\\Users\\25812\\Documents\\Codex\\zcu111_adc3_2400_hw\\zcu111_adc3_2400_hw.runs\\impl_1\\runme.log",
+      "sha256": "cbdf26efaccdeaf6cd64ef76640cb00099c6dee06a49e84ac6f52a75df33763f",
+      "bytes": 257717
+    },
+    {
+      "file": "build/reports/fpga/clocks.rpt",
+      "original_local": "C:\\Users\\25812\\Documents\\Codex\\2026-09-23\\ni\\work\\zcu111_adc3_2400\\reports\\rx_dma_20261027_01\\clocks.rpt",
+      "sha256": "9ad646299c8e3e6d905e973ed2dfec39f4c3262cd0ed462b7e3bb43851e23429",
+      "bytes": 33982
+    },
+    {
+      "file": "build/reports/fpga/io.rpt",
+      "original_local": "C:\\Users\\25812\\Documents\\Codex\\2026-09-23\\ni\\work\\zcu111_adc3_2400\\reports\\rx_dma_20261027_01\\io.rpt",
+      "sha256": "d2826e3598ed7459fa72b8fd0070bf23611d4256dda17af3a48c84b487939699",
+      "bytes": 547547
+    },
+    {
+      "file": "build/reports/fpga/source_freeze_narrow09_swfix01.json",
+      "original_local": "C:\\Users\\25812\\Documents\\Codex\\2026-09-23\\ni\\work\\zcu111_adc3_2400\\reports\\rx_dma_20261027_01\\source_freeze_narrow09_swfix01.json",
+      "sha256": "2640f5e57ef78e22a1763dc0ca360bb9aadc3ee616f0fc055b8b3326af9ce20f",
+      "bytes": 4103
+    },
+    {
+      "file": "sim/results/fft/narrow09_8192_65536_numeric.json",
+      "original_local": "C:\\Users\\25812\\Documents\\Codex\\2026-09-23\\ni\\work\\zcu111_adc3_2400\\reports\\sa_integration\\narrow09_large_20261029\\numeric_verification.json",
+      "sha256": "d2f3fdab79736eae1e417f57c2125250f23cef22c50895a181684b9fe74e66d5",
+      "bytes": 1127
+    },
+    {
+      "file": "sim/results/fft/narrow09_1024_numeric.json",
+      "original_local": "C:\\Users\\25812\\Documents\\Codex\\2026-09-23\\ni\\work\\zcu111_adc3_2400\\reports\\sa_integration\\narrow09_fft1024\\numeric_verification.json",
+      "sha256": "d94a261278fb04f8cc17a96486eefe0e7915cac6cf792a6212f64c67eb2c7e9b",
+      "bytes": 630
+    },
+    {
+      "file": "sim/results/fft/large_fft_validation.log",
+      "original_local": "C:\\Users\\25812\\Documents\\Codex\\2026-09-23\\ni\\work\\zcu111_adc3_2400\\reports\\rx_dma_20261027_01\\large_fft_validation_20261029.log",
+      "sha256": "4bc378b906924dd0a1c2bdf2652cd546608919ade2bb8eb5e4907fbe7351d6b0",
+      "bytes": 76009
+    },
+    {
+      "file": "board/results/large_fft_20261029/summary.json",
+      "original_local": "C:\\Users\\25812\\Documents\\Codex\\2026-09-23\\ni\\work\\zcu111_adc3_2400\\reports\\rx_dma_20261027_01\\large_board_20261029_01\\summary.json",
+      "sha256": "c179a2fd462c4fffa9d8a5b5f814e669fa2e4c30db4a9cd1bc155d4454960bec",
+      "bytes": 3999
+    },
+    {
+      "file": "board/results/large_fft_20261029/board_test.log",
+      "original_local": "C:\\Users\\25812\\Documents\\Codex\\2026-09-23\\ni\\work\\zcu111_adc3_2400\\reports\\rx_dma_20261027_01\\large_board_20261029_01_console.log",
+      "sha256": "03dcb151e6a5547b7a382604f7421c044c2a9d8da4f2e1068676da6e53706c01",
+      "bytes": 7029
+    },
+    {
+      "file": "board/results/tuning_20261031/known_endpoints_acceptance.json",
+      "original_local": "C:\\Users\\25812\\Documents\\Codex\\2026-09-23\\ni\\work\\zcu111_adc3_2400\\reports\\tuning_20261031_11\\known_endpoints_acceptance.json",
+      "sha256": "e38f77a69760a86571ef1e1ddc4809135d7c6dbc1c55c2f5ee153baeddba74ad",
+      "bytes": 941
+    },
+    {
+      "file": "data/tuning/tone1300/acceptance.json",
+      "original_local": "C:\\Users\\25812\\Documents\\Codex\\2026-09-23\\ni\\work\\zcu111_adc3_2400\\reports\\tuning_20261031_11\\known_tone1300\\acceptance.json",
+      "sha256": "72d1f7a1c4ab4453de4642997d5d3e94dd6d949704c7d3310a731d10e6243eea",
+      "bytes": 554
+    },
+    {
+      "file": "data/tuning/tone1300/frame_0000.bin",
+      "original_local": "C:\\Users\\25812\\Documents\\Codex\\2026-09-23\\ni\\work\\zcu111_adc3_2400\\reports\\tuning_20261031_11\\known_tone1300\\frame_0000.bin",
+      "sha256": "5d527cd76d1c888c249d2c64c2da82e5c02502ba09e3090bac931b7762f01ba4",
+      "bytes": 524544
+    },
+    {
+      "file": "data/tuning/tone1300/frame_0000.bin.receipt.json",
+      "original_local": "C:\\Users\\25812\\Documents\\Codex\\2026-09-23\\ni\\work\\zcu111_adc3_2400\\reports\\tuning_20261031_11\\known_tone1300\\frame_0000.bin.receipt.json",
+      "sha256": "32a4f47ccaf10a9bcd392712b2d1108b6dd9693322d104de634b61eb49f4a1fc",
+      "bytes": 145
+    },
+    {
+      "file": "data/tuning/tone1300/measurement/measurement.json",
+      "original_local": "C:\\Users\\25812\\Documents\\Codex\\2026-09-23\\ni\\work\\zcu111_adc3_2400\\reports\\tuning_20261031_11\\known_tone1300\\measurement\\measurement.json",
+      "sha256": "2b293841a9d239c474ab4a32593748de8ab0c0f5f470355b1e4ecb6480ffcc4e",
+      "bytes": 721
+    },
+    {
+      "file": "data/calibration/rx_live/calibration.json",
+      "original_local": "C:\\Users\\25812\\Documents\\Codex\\2026-09-23\\ni\\work\\zcu111_adc3_2400\\calibration\\rx\\cw_1790_4025g_20261030_v02\\calibration.json",
+      "sha256": "e5265c40ad6b256deff008bec7bc6fb314eb7fe0db62ca86e48d4fdf60789a9b",
+      "bytes": 1847
+    },
+    {
+      "file": "data/calibration/rx_live/live_acceptance.json",
+      "original_local": "C:\\Users\\25812\\Documents\\Codex\\2026-09-23\\ni\\work\\zcu111_adc3_2400\\calibration\\rx\\cw_1790_4025g_20261030_v02\\live_acceptance.json",
+      "sha256": "84b134460a03902540905e56f35b368805a2c28767a77187d0a472daadf57d67",
+      "bytes": 1132
+    },
+    {
+      "file": "data/calibration/tx_current/tx_cw_4025g_context.json",
+      "original_local": "C:\\Users\\25812\\Documents\\Codex\\2026-09-23\\ni\\work\\zcu111_adc3_2400\\delivery\\zcu111_v16_materials_20261102\\src\\linux\\apps\\instrument_cpp\\resources\\tx_cw_4025g_context.json",
+      "sha256": "faf0051ca39eac0f53d6fa1031bf5f81d81e9a4f120dd369ce3ec4f24a05c470",
+      "bytes": 744
+    },
+    {
+      "file": "data/calibration/tx_current/tx_cw_4025g_verification.json",
+      "original_local": "C:\\Users\\25812\\Documents\\Codex\\2026-09-23\\ni\\work\\zcu111_adc3_2400\\delivery\\zcu111_v16_materials_20261102\\src\\linux\\apps\\instrument_cpp\\resources\\tx_cw_4025g_verification.json",
+      "sha256": "051fe9ab47fb0289fa2d77c2d6ab400b55d2e10320a4a44187af953c95149397",
+      "bytes": 5943
+    },
+    {
+      "file": "build/reports/comparison/resetreg08_utilization.rpt",
+      "original_local": "C:\\Users\\25812\\Documents\\Codex\\2026-09-23\\ni\\work\\zcu111_adc3_2400\\reports\\resource_comparison_20261101\\resetreg08_utilization.rpt",
+      "sha256": "fc29b4a1c9b2dd173588e5ae580449f8eaa64d2c6531fe9e1956137b3f642ce0",
+      "bytes": 17900
+    },
+    {
+      "file": "build/reports/comparison/resetreg08_timing_summary.rpt",
+      "original_local": "C:\\Users\\25812\\Documents\\Codex\\2026-09-23\\ni\\work\\zcu111_adc3_2400\\reports\\resource_comparison_20261101\\resetreg08_timing_summary.rpt",
+      "sha256": "e885278b5f2b590cb4eb2b7c05042418548898ef6434d049cf074bcb197f5560",
+      "bytes": 429709
+    },
+    {
+      "file": "build/reports/comparison/checkpoint_provenance.json",
+      "original_local": "C:\\Users\\25812\\Documents\\Codex\\2026-09-23\\ni\\work\\zcu111_adc3_2400\\reports\\resource_comparison_20261101\\checkpoint_provenance.json",
+      "sha256": "6497b62253e028dc2b0e897c65d040aa593f8439bfccfc87a45c530a8a89b5ff",
+      "bytes": 315
+    }
+  ]
+}

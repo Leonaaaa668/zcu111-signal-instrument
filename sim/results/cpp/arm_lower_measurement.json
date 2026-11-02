@@ -1,0 +1,3 @@
+{
+"status":"VALIDATED_SPECTRUM_MEASUREMENTS",
+"fft_n":1024,"frames":1,"fs_complex_hz":150000000,"center_hz":1800000000,"bin_spacing_hz":146484.375,"window_enbw_bins":1.5000001307109905,"window_enbw_hz":219726.58164711774,"peak_bin":956,"peak_bin_rf_hz":1790039062.5,"interpolated_tone_rf_hz":1789998088.5350716,"peak_coherent_bin_dbfs":-50.86000149248143,"mainlobe_five_bin_dbfs":-50.465289830744496,"total_window_corrected_dbfs":-50.419660940938932,"receiver_dbm_calibrated":false,"receiver_dbm":null,"packet_sha256":["b7506637d2215df34d1182ca4f555620d0d94225127401c6d039aba7d3fe695b"],"frequency_estimator":"Three-bin log parabola; not certified accuracy","averaging":"Linear-power mean before logarithm"}

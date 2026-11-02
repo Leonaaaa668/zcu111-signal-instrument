@@ -1,0 +1,7 @@
+CALCULATED_CLOCK_PLAN_PASS
+Reference = 122880000 Hz
+N = 78 + 1/8; channel divider = 4
+VCO = 9600000000 Hz
+OUTA = OUTB = 2400000000 Hz (nominal, reference accuracy applies)
+Vendor LMX template SHA256 = f26bf9099a96fc51d28dacab0ca3851eb4a6966b8eaee29b35e39ebc64d51526
+Physical PLL lock, amplitude and jitter: NOT TESTED

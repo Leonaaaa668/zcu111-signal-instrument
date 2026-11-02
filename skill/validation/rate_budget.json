@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "stage_sample_rates_hz": [
+    1200000000,
+    150000000
+  ],
+  "raw_iq_bytes_per_second": 600000000,
+  "spectrum_packet_bytes": 524544,
+  "display_payload_bytes_per_second": 5245440,
+  "scope": "Arithmetic estimate only; not a DMA/DDR benchmark or gapless-capture claim"
+}

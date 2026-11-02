@@ -1,0 +1,32 @@
+#-----------------------------------------------------------
+# xsim v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Sun Nov  1 17:46:25 2026
+# Process ID         : 4648
+# Current directory  : C:/fpga/v16_rtl_check_20261101_02/tb_sa_snapshot
+# Command line       : xsim.exe -log simulation.log -mode tcl -source {xsim.dir/test_snapshot/xsim_script.tcl}
+# Log file           : C:/fpga/v16_rtl_check_20261101_02/tb_sa_snapshot/simulation.log
+# Journal file       : C:/fpga/v16_rtl_check_20261101_02/tb_sa_snapshot\xsim.jou
+# Running On         : LXC
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : AMD Ryzen 7 8845H w/ Radeon 780M Graphics
+# CPU Frequency      : 3793 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 16422 MB
+# Swap memory        : 23622 MB
+# Total Virtual      : 40045 MB
+# Available Virtual  : 8974 MB
+#-----------------------------------------------------------
+source xsim.dir/test_snapshot/xsim_script.tcl
+# xsim {test_snapshot} -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+SA_SNAPSHOT_SIM_PASS packets=6; run independent packet decoder/payload check
+$finish called at time : 4360210 ns : File "C:/Users/25812/Documents/Codex/2026-09-23/ni/work/zcu111_adc3_2400/delivery/zcu111_v16_source/sim/rtl/tb_sa_snapshot.v" Line 123
+run: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 223.176 ; gain = 0.000
+exit
+INFO: [Common 17-206] Exiting xsim at Sun Nov  1 17:46:33 2026...

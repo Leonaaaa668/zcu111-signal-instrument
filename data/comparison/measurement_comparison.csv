@@ -1,0 +1,6 @@
+test,reference,measured,difference,unit,source
+loopback_cw_n65536,1790000000,1789999986.616339,-13.383661031723022,Hz,data/rx_loop65536/measurement/measurement.json
+tuned_cw1300,1300000000,1300000046.6104405,46.610440492630005,Hz,data/tuning/tone1300/acceptance.json
+rx_cw1790_gui_saved,-45.70664875114443,-45.73527678168449,-0.028628030540062355,dB,data/calibration/rx_live/live_acceptance.json
+tx_cw1790_holdout_corrected,-25,-25.00666666666667,-0.0066666666666712615,dB,data/calibration/tx_current/tx_cw_4025g_verification.json
+loopback_half_amplitude,-6.023630358581538,-5.91934266710568,0.10428769147585726,dB,board/results/large_fft_20261029/summary.json

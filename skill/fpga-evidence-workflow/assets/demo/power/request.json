@@ -1,0 +1,9 @@
+{
+  "waveform": "CW",
+  "frequency_hz": 1790000000,
+  "reference_plane": "j7_same_cable_end_to_4025g",
+  "setup_id": "manual_4025g_20261031_same_cable",
+  "unit": "dBm",
+  "target_dbm": -25,
+  "tolerance_db": 0.1
+}

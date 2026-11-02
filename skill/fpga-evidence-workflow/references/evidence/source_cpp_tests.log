@@ -1,0 +1,181 @@
+Start testing: Nov 01 09:38 UTC
+----------------------------------------------------------
+1/11 Testing: spectrum-tools
+1/11 Test: spectrum-tools
+Command: "[sdk-home]/petalinux-sdk/sysroots/x86_64-petalinux-linux/usr/bin/qemu-aarch64" "-L" "[sdk-home]/petalinux-sdk/sysroots/cortexa72-cortexa53-amd-linux" "[sdk-home]/zcu111_v16_submission_check/output/app/instrument-spectrum-tools-tests"
+Directory: [sdk-home]/zcu111_v16_submission_check/output/app
+"spectrum-tools" start time: Nov 01 09:38 UTC
+Output:
+----------------------------------------------------------
+SPECTRUM_TOOLS_PASS video-equivalence workload/range,4markers,visible peak,fixed-position refresh,signed delta,disabled/outside reference,stitched RF grid
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"spectrum-tools" end time: Nov 01 09:38 UTC
+"spectrum-tools" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/11 Testing: tuning-sweep-contract
+2/11 Test: tuning-sweep-contract
+Command: "[sdk-home]/petalinux-sdk/sysroots/x86_64-petalinux-linux/usr/bin/qemu-aarch64" "-L" "[sdk-home]/petalinux-sdk/sysroots/cortexa72-cortexa53-amd-linux" "[sdk-home]/zcu111_v16_submission_check/output/app/instrument-tuning-sweep-tests" "[sdk-home]/zcu111_v16_submission_check/src/linux/apps/instrument_cpp/resources"
+Directory: [sdk-home]/zcu111_v16_submission_check/output/app
+"tuning-sweep-contract" start time: Nov 01 09:38 UTC
+Output:
+----------------------------------------------------------
+TUNING_SWEEP_TEST_PASS canonical/zone2 NCO, endpoint coverage, no seam duplicates, real RF grid, wrong-center and mixed-generation rejection
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"tuning-sweep-contract" end time: Nov 01 09:38 UTC
+"tuning-sweep-contract" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/11 Testing: cw-context-validation
+3/11 Test: cw-context-validation
+Command: "[sdk-home]/petalinux-sdk/sysroots/x86_64-petalinux-linux/usr/bin/qemu-aarch64" "-L" "[sdk-home]/petalinux-sdk/sysroots/cortexa72-cortexa53-amd-linux" "[sdk-home]/zcu111_v16_submission_check/output/app/instrument-cw-context-tests" "[sdk-home]/zcu111_v16_submission_check/src/linux/apps/instrument_cpp/resources" "[sdk-home]/zcu111_v16_submission_check/output/app/cw-context-evidence"
+Directory: [sdk-home]/zcu111_v16_submission_check/output/app
+"cw-context-validation" start time: Nov 01 09:38 UTC
+Output:
+----------------------------------------------------------
+CW_CONTEXT_PASS range/dBW, original reference preserved, failed evidence rejected, 10ms48MB SHA identical to physical4025G-tested waveform; NO RF ACTION
+<end of output>
+Test time =  20.42 sec
+----------------------------------------------------------
+Test Passed.
+"cw-context-validation" end time: Nov 01 09:38 UTC
+"cw-context-validation" time elapsed: 00:00:20
+----------------------------------------------------------
+
+4/11 Testing: physical-controls
+4/11 Test: physical-controls
+Command: "[sdk-home]/petalinux-sdk/sysroots/x86_64-petalinux-linux/usr/bin/qemu-aarch64" "-L" "[sdk-home]/petalinux-sdk/sysroots/cortexa72-cortexa53-amd-linux" "[sdk-home]/zcu111_v16_submission_check/output/app/instrument-physical-tests" "[sdk-home]/zcu111_v16_submission_check/src/linux/apps/instrument_cpp/resources" "[sdk-home]/zcu111_v16_submission_check/output/app/physical-test-evidence"
+Directory: [sdk-home]/zcu111_v16_submission_check/output/app
+"physical-controls" start time: Nov 01 09:38 UTC
+Output:
+----------------------------------------------------------
+PHYSICAL_CONTROLS_PASS frozen independent TX table, dBm/dBW, quantized 10ms IQ energy/hash, dwell timing and weighted linear power, stale/mixed NCO rejection; NO RF ACTION
+<end of output>
+Test time =  23.42 sec
+----------------------------------------------------------
+Test Passed.
+"physical-controls" end time: Nov 01 09:39 UTC
+"physical-controls" time elapsed: 00:00:23
+----------------------------------------------------------
+
+5/11 Testing: rx-profile-validation
+5/11 Test: rx-profile-validation
+Command: "[sdk-home]/petalinux-sdk/sysroots/x86_64-petalinux-linux/usr/bin/qemu-aarch64" "-L" "[sdk-home]/petalinux-sdk/sysroots/cortexa72-cortexa53-amd-linux" "[sdk-home]/zcu111_v16_submission_check/output/app/instrument-rx-profile-tests" "[sdk-home]/zcu111_v16_submission_check/src/linux/apps/instrument_cpp/resources"
+Directory: [sdk-home]/zcu111_v16_submission_check/output/app
+"rx-profile-validation" start time: Nov 01 09:39 UTC
+Output:
+----------------------------------------------------------
+RX_PROFILE_TESTS_PASS context, fingerprint, independent validation, missing fields, numeric types and malformed JSON
+<end of output>
+Test time =   0.11 sec
+----------------------------------------------------------
+Test Passed.
+"rx-profile-validation" end time: Nov 01 09:39 UTC
+"rx-profile-validation" time elapsed: 00:00:00
+----------------------------------------------------------
+
+6/11 Testing: rx-power-calibration
+6/11 Test: rx-power-calibration
+Command: "[sdk-home]/petalinux-sdk/sysroots/x86_64-petalinux-linux/usr/bin/qemu-aarch64" "-L" "[sdk-home]/petalinux-sdk/sysroots/cortexa72-cortexa53-amd-linux" "[sdk-home]/zcu111_v16_submission_check/output/app/instrument-rx-power-tests"
+Directory: [sdk-home]/zcu111_v16_submission_check/output/app
+"rx-power-calibration" start time: Nov 01 09:39 UTC
+Output:
+----------------------------------------------------------
+RX_POWER_TESTS_PASS energy scale, noise subtraction, scope guards, holdout guard and CW concentration
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"rx-power-calibration" end time: Nov 01 09:39 UTC
+"rx-power-calibration" time elapsed: 00:00:00
+----------------------------------------------------------
+
+7/11 Testing: core-contract
+7/11 Test: core-contract
+Command: "[sdk-home]/petalinux-sdk/sysroots/x86_64-petalinux-linux/usr/bin/qemu-aarch64" "-L" "[sdk-home]/petalinux-sdk/sysroots/cortexa72-cortexa53-amd-linux" "[sdk-home]/zcu111_v16_submission_check/output/app/instrument-core-tests" "[sdk-home]/zcu111_v16_submission_check/src/linux/apps/instrument_cpp/resources" "[sdk-home]/zcu111_v16_submission_check/output/app/test-evidence"
+Directory: [sdk-home]/zcu111_v16_submission_check/output/app
+"core-contract" start time: Nov 01 09:39 UTC
+Output:
+----------------------------------------------------------
+CORE_TESTS_PASS checks=19 no hardware access
+<end of output>
+Test time =  13.61 sec
+----------------------------------------------------------
+Test Passed.
+"core-contract" end time: Nov 01 09:39 UTC
+"core-contract" time elapsed: 00:00:13
+----------------------------------------------------------
+
+8/11 Testing: waveform-contract
+8/11 Test: waveform-contract
+Command: "[sdk-home]/petalinux-sdk/sysroots/x86_64-petalinux-linux/usr/bin/qemu-aarch64" "-L" "[sdk-home]/petalinux-sdk/sysroots/cortexa72-cortexa53-amd-linux" "[sdk-home]/zcu111_v16_submission_check/output/app/instrument-waveform-tests" "[sdk-home]/zcu111_v16_submission_check/output/app/waveform-test-evidence"
+Directory: [sdk-home]/zcu111_v16_submission_check/output/app
+"waveform-contract" start time: Nov 01 09:39 UTC
+Output:
+----------------------------------------------------------
+PSK DIGITAL_FILE_MATCHED_FILTER_EVM=0.0012036 (not RF EVM)
+QAM DIGITAL_FILE_MATCHED_FILTER_EVM=0.00120645 (not RF EVM)
+WAVEFORM_CONTRACT_PASS C++_ONLY NO_RF_ACTION
+<end of output>
+Test time =  40.43 sec
+----------------------------------------------------------
+Test Passed.
+"waveform-contract" end time: Nov 01 09:40 UTC
+"waveform-contract" time elapsed: 00:00:40
+----------------------------------------------------------
+
+9/11 Testing: control-clock-storage
+9/11 Test: control-clock-storage
+Command: "[sdk-home]/petalinux-sdk/sysroots/x86_64-petalinux-linux/usr/bin/qemu-aarch64" "-L" "[sdk-home]/petalinux-sdk/sysroots/cortexa72-cortexa53-amd-linux" "[sdk-home]/zcu111_v16_submission_check/output/app/instrument-control-tests" "[sdk-home]/zcu111_v16_submission_check/src/linux/apps/instrument_cpp/resources" "[sdk-home]/zcu111_v16_submission_check/output/app/control-test-evidence"
+Directory: [sdk-home]/zcu111_v16_submission_check/output/app
+"control-clock-storage" start time: Nov 01 09:40 UTC
+Output:
+----------------------------------------------------------
+CONTROL_CLOCK_STORAGE_PASS checks=12 NO_HARDWARE_WRITES evidence=[sdk-home]/zcu111_v16_submission_check/output/app/control-test-evidence/run_26502187016636
+<end of output>
+Test time =   0.09 sec
+----------------------------------------------------------
+Test Passed.
+"control-clock-storage" end time: Nov 01 09:40 UTC
+"control-clock-storage" time elapsed: 00:00:00
+----------------------------------------------------------
+
+10/11 Testing: stream-lifecycle-mailbox
+10/11 Test: stream-lifecycle-mailbox
+Command: "[sdk-home]/petalinux-sdk/sysroots/x86_64-petalinux-linux/usr/bin/qemu-aarch64" "-L" "[sdk-home]/petalinux-sdk/sysroots/cortexa72-cortexa53-amd-linux" "[sdk-home]/zcu111_v16_submission_check/output/app/instrument-stream-tests" "[sdk-home]/zcu111_v16_submission_check/src/linux/apps/instrument_cpp/resources"
+Directory: [sdk-home]/zcu111_v16_submission_check/output/app
+"stream-lifecycle-mailbox" start time: Nov 01 09:40 UTC
+Output:
+----------------------------------------------------------
+STREAM_CONTRACT_PASS persistent FD, partial reads, cancellation, stale rejection, bounded mailbox
+<end of output>
+Test time =   0.09 sec
+----------------------------------------------------------
+Test Passed.
+"stream-lifecycle-mailbox" end time: Nov 01 09:40 UTC
+"stream-lifecycle-mailbox" time elapsed: 00:00:00
+----------------------------------------------------------
+
+11/11 Testing: tx-userspace-transaction
+11/11 Test: tx-userspace-transaction
+Command: "[sdk-home]/petalinux-sdk/sysroots/x86_64-petalinux-linux/usr/bin/qemu-aarch64" "-L" "[sdk-home]/petalinux-sdk/sysroots/cortexa72-cortexa53-amd-linux" "[sdk-home]/zcu111_v16_submission_check/output/app/instrument-tx-transport-tests" "[sdk-home]/zcu111_v16_submission_check/output/app/tx-transport-test-evidence"
+Directory: [sdk-home]/zcu111_v16_submission_check/output/app
+"tx-userspace-transaction" start time: Nov 01 09:40 UTC
+Output:
+----------------------------------------------------------
+TX_USERSPACE_TRANSACTION_PASS checks=8 SIMULATED_DEVICE_NO_MMIO_NO_RF
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"tx-userspace-transaction" end time: Nov 01 09:40 UTC
+"tx-userspace-transaction" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Nov 01 09:40 UTC

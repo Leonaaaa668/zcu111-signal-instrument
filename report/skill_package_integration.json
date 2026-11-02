@@ -1,0 +1,15 @@
+{
+  "source_archive": "zcu111_v16_source_20261101.zip",
+  "source_archive_sha256": "a50b388a6be4119555289d0411119b9b7b029c4fd5430f1e4757ae5b77747183",
+  "skill_archive": {
+    "file": "zcu111_v16_skill_20261101.zip",
+    "sha256": "bdf18573729c97dbe47e26fd99b23d94747b06bc79009376141fdc458a478fd6",
+    "bytes": 181909,
+    "files": 70,
+    "zip_crc": "PASS",
+    "all_manifest_entries": "PASS"
+  },
+  "production_source_bytes_changed": 0,
+  "runtime_or_hardware_changed": false,
+  "note": "Only skill tree, root README, integration receipt and manifest added/replaced."
+}

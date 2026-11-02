@@ -1,0 +1,156 @@
+[
+  {
+    "file": "dma_register_diagnostic.txt",
+    "original_path": "linux/tx_20261030/validation/dma_register_diagnostic.txt",
+    "original_sha256": "e9ca3ec0fec4ed846ed4813803bf62914bf02bfb8255dd999455779576b2b9ed",
+    "shared_sha256": "e9ca3ec0fec4ed846ed4813803bf62914bf02bfb8255dd999455779576b2b9ed",
+    "redactions": "private paths/IPs and line endings only"
+  },
+  {
+    "file": "dma_after_reset.txt",
+    "original_path": "linux/tx_20261030/validation/emio_reset_dma_status.txt",
+    "original_sha256": "b829bf7b95731682d1015f0cfa8a1b1584d61688e7fb516b294bd88d2b6756b5",
+    "shared_sha256": "8b8081fa4af931d25db1aaed327d13c5c48ddc594c302f797d7fc379cf21b558",
+    "redactions": "private paths/IPs and line endings only"
+  },
+  {
+    "file": "dma_native_upload.txt",
+    "original_path": "linux/tx_20261030/validation/native_cw_upload.txt",
+    "original_sha256": "8b14146a3ef5cc97e04bff832d2f8ca8025bb608a1790763694e32f416caa804",
+    "shared_sha256": "59f23634884db615afc8dda89a57c0e8e4e49f3753808a90879c46a140844f0b",
+    "redactions": "private paths/IPs and line endings only"
+  },
+  {
+    "file": "dma_native_play_stop.txt",
+    "original_path": "linux/tx_20261030/validation/native_cw_play_stop.txt",
+    "original_sha256": "9a5a9d154047ab5999988bfb3887bfa60b2d9d114cdc3a8c4c5df0256cbe78cf",
+    "shared_sha256": "faa80aaa5d80c056860ca6811bbfd04cea0e01e4b859bb3df3bc374e7105c2b1",
+    "redactions": "private paths/IPs and line endings only"
+  },
+  {
+    "file": "rrc_correction.md",
+    "original_path": "linux/apps/instrument_cpp/validation/RRC_CORRECTION.md",
+    "original_sha256": "f264cdb182d66c9ebde93c01aeb51a5b5f400adf236bbd822c287d578fbc81b6",
+    "shared_sha256": "f264cdb182d66c9ebde93c01aeb51a5b5f400adf236bbd822c287d578fbc81b6",
+    "redactions": "private paths/IPs and line endings only"
+  },
+  {
+    "file": "rrc_digital_numeric.json",
+    "original_path": "linux/apps/instrument_cpp/validation/arm_waveform_numeric.json",
+    "original_sha256": "90e14caee7f0edffb6e1fd8be7eed87f3fd613f0cc19892c039530df96891da6",
+    "shared_sha256": "8e40a2d8ba861f9f277fc689ac41fc7ff3276396b9f1426313d06785ff6ff6b7",
+    "redactions": "private paths/IPs and line endings only"
+  },
+  {
+    "file": "rrc_arm_native_contract.json",
+    "original_path": "linux/apps/instrument_cpp/validation/arm_native_waveform_contract.json",
+    "original_sha256": "56b0131a66b881ca331caaeb4cda5f56aad751f6f8d2e1f291dc752c4f6d7be4",
+    "shared_sha256": "a95ba2c0dcfa85c2e00379c817959f83828145130d81a6b84341afd420d17d1c",
+    "redactions": "private paths/IPs and line endings only"
+  },
+  {
+    "file": "cursor_result.json",
+    "original_path": "linux/apps/instrument_cpp/validation/cursor_20261030_04/RESULT.json",
+    "original_sha256": "4a6adecb31d3ecb636e1b0b3ec36035e9d3c313894a2d2c1b10f4eadc37de500",
+    "shared_sha256": "4a6adecb31d3ecb636e1b0b3ec36035e9d3c313894a2d2c1b10f4eadc37de500",
+    "redactions": "private paths/IPs and line endings only"
+  },
+  {
+    "file": "known_endpoints.json",
+    "original_path": "reports/tuning_20261031_11/known_endpoints_acceptance.json",
+    "original_sha256": "e38f77a69760a86571ef1e1ddc4809135d7c6dbc1c55c2f5ee153baeddba74ad",
+    "shared_sha256": "821a4340a269d2896c312bc1deb471c016fa354de23ea26e3f2ad27e34664de7",
+    "redactions": "private paths/IPs and line endings only"
+  },
+  {
+    "file": "v16_board_test.log",
+    "original_path": "reports/v16_20261101/board_test.log",
+    "original_sha256": "6771527228533358c348a1e8ab2d1dbb72ba400ea87833302a74114e2a5f7a1e",
+    "shared_sha256": "6771527228533358c348a1e8ab2d1dbb72ba400ea87833302a74114e2a5f7a1e",
+    "redactions": "private paths/IPs and line endings only"
+  },
+  {
+    "file": "source_recreation.json",
+    "original_path": "delivery/zcu111_v16_source/report/package_validation.json",
+    "original_sha256": "86425055c276d50cc058735ad49195faff6967427e70cc557bb6671c9aae8064",
+    "shared_sha256": "0b4a03731d9e2ea62f428eb127d56e8d3f4ab0d634dafa77ca40331c9aa70aac",
+    "redactions": "private paths/IPs and line endings only"
+  },
+  {
+    "file": "v16_frozen.json",
+    "original_path": "delivery/zcu111_instrument_20261101_16_frozen.json",
+    "original_sha256": "12207871b6d01bd157e4c5b8094912d1092efd4cdc11364033d14b5de4968843",
+    "shared_sha256": "12207871b6d01bd157e4c5b8094912d1092efd4cdc11364033d14b5de4968843",
+    "redactions": "private paths/IPs and line endings only"
+  },
+  {
+    "file": "snapshot_packet_verification.json",
+    "original_path": "delivery/zcu111_v16_source/sim/results/current/snapshot_packet_verification.json",
+    "original_sha256": "921f8eca55580498f4e144ae83760f2bfaa2c87aca654dd2c725d0e2b540804e",
+    "shared_sha256": "c4477576d5ba23f771acdfccb0f4aeba9bc0e7660ed54645878af8e6ee5632fe",
+    "redactions": "private paths/IPs and line endings only"
+  },
+  {
+    "file": "../../assets/demo/reports/before_utilization.rpt",
+    "original_path": "reports/resource_comparison_20261101/resetreg08_utilization.rpt",
+    "original_sha256": "fc29b4a1c9b2dd173588e5ae580449f8eaa64d2c6531fe9e1956137b3f642ce0",
+    "shared_sha256": "fc29b4a1c9b2dd173588e5ae580449f8eaa64d2c6531fe9e1956137b3f642ce0",
+    "redactions": "none"
+  },
+  {
+    "file": "../../assets/demo/reports/after_utilization.rpt",
+    "original_path": "reports/rx_dma_20261027_01/utilization.rpt",
+    "original_sha256": "6a1a36ecdde0b389561449436d657cc20df40e9ea8a28108ef55730f905064e4",
+    "shared_sha256": "6a1a36ecdde0b389561449436d657cc20df40e9ea8a28108ef55730f905064e4",
+    "redactions": "none"
+  },
+  {
+    "file": "../../assets/demo/reports/before_timing.rpt",
+    "original_path": "reports/resource_comparison_20261101/resetreg08_timing_summary.rpt",
+    "original_sha256": "e885278b5f2b590cb4eb2b7c05042418548898ef6434d049cf074bcb197f5560",
+    "shared_sha256": "e885278b5f2b590cb4eb2b7c05042418548898ef6434d049cf074bcb197f5560",
+    "redactions": "none"
+  },
+  {
+    "file": "../../assets/demo/reports/after_timing.rpt",
+    "original_path": "reports/rx_dma_20261027_01/timing_summary.rpt",
+    "original_sha256": "8d6d1057d3598c3bf15892721c63655c431f8b310176c071106afe8f10733657",
+    "shared_sha256": "8d6d1057d3598c3bf15892721c63655c431f8b310176c071106afe8f10733657",
+    "redactions": "none"
+  },
+  {
+    "file": "source_linux_rebuild.log",
+    "original_path": "reports\\submission_v16_20261101\\linux_rebuild.log",
+    "original_sha256": "5ac18a9e81b006686d8314c524054a0c5cb16be2531eac32a41f1e17932e9e02",
+    "shared_sha256": "a2e598d4ca0c6aa061390de556d4cd3ba59705f9e2835983d1f33565d01ed92d",
+    "redactions": "user paths only"
+  },
+  {
+    "file": "source_cpp_tests.log",
+    "original_path": "reports\\submission_v16_20261101\\cpp_ctest.log",
+    "original_sha256": "d02a507a575fd793c0fe7c1943f656cb68a1b97dc7a0cdc1b3f0a33b800cf408",
+    "shared_sha256": "5d1d76fc03f5bb6623d80f7470f119c30f4510f1b8feb5bc1549a25f5bed7387",
+    "redactions": "user paths only"
+  },
+  {
+    "file": "source_rtl_tests.log",
+    "original_path": "reports\\submission_v16_20261101\\rtl_tests_02.log",
+    "original_sha256": "c18dd07eb0563df5d0f3bd97194a6623f73258bfda3eb1d6580c7818f32f2022",
+    "shared_sha256": "c18dd07eb0563df5d0f3bd97194a6623f73258bfda3eb1d6580c7818f32f2022",
+    "redactions": "user paths only"
+  },
+  {
+    "file": "source_python_tests.log",
+    "original_path": "reports\\submission_v16_20261101\\python_tests.log",
+    "original_sha256": "9d474859289b3c070138011895ebe653ff8d485e600859e1f6af3b5fd0591856",
+    "shared_sha256": "9d474859289b3c070138011895ebe653ff8d485e600859e1f6af3b5fd0591856",
+    "redactions": "user paths only"
+  },
+  {
+    "file": "source_restore.log",
+    "original_path": "reports\\submission_v16_20261101\\vivado_restore.log",
+    "original_sha256": "1292eaeae0594b9239b97787b0fe59f24c3821739c92888d9bd2b6279da031e6",
+    "shared_sha256": "cf4612c1e9d89dc17ea615d25b8bd03d2a605c92911245f024a668e3fd8e60b6",
+    "redactions": "user paths only"
+  }
+]

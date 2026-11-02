@@ -1,0 +1,7 @@
+{
+  "status": "NOT_COMPARABLE",
+  "reasons": [
+    "outside calibrated frequency_hz"
+  ],
+  "absolute_accuracy_certified": false
+}

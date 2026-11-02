@@ -1,0 +1,29 @@
+--- v15/src/gui.cpp
++++ v16/src/gui.cpp
+@@ -490,7 +490,7 @@
+         try{txCalibration=loadTxCwCalibration(text(resourcesPath/"tx_cw_calibration.json"),text(resourcesPath/"tx_cw_verification.json"));}catch(const std::exception &e){txCalibrationError=errorText(e);}
+         try{if(!txCalibration)throw std::runtime_error("Original CW model unavailable");txContextCalibration=loadTxCw4025gContext(*txCalibration,text(resourcesPath/"tx_cw_4025g_context.json"),text(resourcesPath/"tx_cw_4025g_verification.json"));}catch(const std::exception &e){txContextError=errorText(e);}
+         powerContext=new QComboBox;powerContext->addItems({"FSVA / original cable","4025G / current cable"});powerContext->setCurrentIndex(txContextCalibration?1:0);
+-        powerMode=new QComboBox;powerMode->addItems({"CW model / 1790MHz only","Digital / UNCALIBRATED"});powerUnit=new QComboBox;powerUnit->addItems({"dBm","dBW"});
++        powerMode=new QComboBox;powerMode->addItems({"CW model","Digital / UNCALIBRATED"});powerUnit=new QComboBox;powerUnit->addItems({"dBm","dBW"});
+         targetPower=number(txContextCalibration?-40:-50,txContextCalibration?-20:-10,-25," dBm",2,"CW output power");targetPower->setSingleStep(1);
+         txAdvanced=new QDialog(this);txAdvanced->setWindowTitle("Generator / advanced digital amplitude");auto *advancedLayout=new QFormLayout(txAdvanced);advancedLayout->addRow("Digital component peak",peakCounts);
+         auto *digitalNote=new QLabel("Used only in Digital / UNCALIBRATED mode. Counts are not dBm.\nChanging amplitude requires a fresh generation and upload.");digitalNote->setWordWrap(true);advancedLayout->addRow(digitalNote);
+@@ -751,7 +751,7 @@
+ int main(int argc,char **argv){
+     QApplication application(argc,argv);QCoreApplication::setOrganizationName("ZCU111");QCoreApplication::setApplicationName("StandaloneInstrument");application.setStyle("Fusion");application.setStyleSheet(style);
+     QApplication::setOverrideCursor(instrumentCursor());
+-    fprintf(stdout,"INSTRUMENT_CURSOR=BUILTIN_PIXMAP\nINSTRUMENT_INTERFACE=SA3000_NATIVE_MAIN_MARKERS_15\n");fflush(stdout);
++    fprintf(stdout,"INSTRUMENT_CURSOR=BUILTIN_PIXMAP\nINSTRUMENT_INTERFACE=SA3000_NATIVE_MAIN_MARKERS_16\n");fflush(stdout);
+     QString resource=QCoreApplication::applicationDirPath()+"/resources",output;bool full=false,selfTest=false,generatorTest=false,streamTest=false,showGenerator=false,uploadTest=false,sweepTest=false,liveSweepTest=false,sweepView=false,powerTest=false,manualSweepTest=false,markerTest=false;int videoTestMode=0;QString screenshot;
+     for(int i=1;i<argc;++i){const QString arg=QString::fromLocal8Bit(argv[i]);if(arg=="--data"&&i+1<argc)resource=QString::fromLocal8Bit(argv[++i]);else if(arg=="--output"&&i+1<argc)output=QString::fromLocal8Bit(argv[++i]);else if(arg=="--fullscreen")full=true;else if(arg=="--sweep-view")sweepView=true;else if(arg=="--generator")showGenerator=true;else if(arg=="--self-test")selfTest=true;else if(arg=="--self-test-tx-upload"){selfTest=true;uploadTest=true;}else if(arg=="--self-test-live-stream"){selfTest=true;streamTest=true;}else if(arg=="--self-test-live-manual"){selfTest=true;manualSweepTest=true;}else if(arg=="--self-test-live-sweep"){selfTest=true;liveSweepTest=true;}else if(arg=="--self-test-sweep"){selfTest=true;sweepTest=true;}else if(arg=="--self-test-live-vbw"){selfTest=true;videoTestMode=1;}else if(arg=="--self-test-live-vbw-record"){selfTest=true;videoTestMode=2;}else if(arg=="--self-test-markers"){selfTest=true;markerTest=true;}else if(arg=="--self-test-power"){selfTest=true;powerTest=true;}else if(arg=="--self-test-generator"){selfTest=true;generatorTest=true;}else if(arg=="--screenshot"&&i+1<argc)screenshot=QString::fromLocal8Bit(argv[++i]);else if(arg=="--help"){fprintf(stdout,"zcu111-instrument [--data DIR] [--output DIR] [--fullscreen] [--self-test --screenshot FILE]\n");return 0;}else{fprintf(stderr,"Unknown/incomplete argument\n");return 2;}}
+     if(!QFile::exists(resource+"/window_metrics.tsv"))resource="/usr/share/zcu111-instrument";
+--- v15/CMakeLists.txt
++++ v16/CMakeLists.txt
+@@ -1,5 +1,5 @@
+ cmake_minimum_required(VERSION 3.16)
+-project(zcu111_instrument VERSION 0.10.1 LANGUAGES CXX)
++project(zcu111_instrument VERSION 0.10.2 LANGUAGES CXX)
+ set(CMAKE_CXX_STANDARD 17)
+ set(CMAKE_CXX_STANDARD_REQUIRED ON)
+ set(CMAKE_CXX_EXTENSIONS OFF)

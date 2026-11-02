@@ -1,0 +1,6 @@
+target_dbm,role,command_offset_db,reading_1_dbm,reading_2_dbm,reading_3_dbm,arithmetic_mean_dbm,mean_minus_target_db,reference
+-40.0,screening_point,0,-40.0,-40.01,-40.0,-40.00333333333333,-0.0033333333333303017,4025G_current_cable_1790MHz_CW
+-30.0,screening_point,0,-30.11,-30.11,-30.12,-30.113333333333333,-0.11333333333333329,4025G_current_cable_1790MHz_CW
+-20.0,screening_point,0,-20.07,-20.08,-20.08,-20.076666666666664,-0.07666666666666444,4025G_current_cable_1790MHz_CW
+-35.0,predeclared_independent_check_point,0,-35.05,-35.06,-35.05,-35.053333333333335,-0.053333333333334565,4025G_current_cable_1790MHz_CW
+-25.0,new_independent_corrected_physical_check,0.06,-25.01,-25.01,-25.0,-25.00666666666667,-0.0066666666666712615,4025G_current_cable_1790MHz_CW

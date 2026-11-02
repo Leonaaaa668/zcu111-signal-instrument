@@ -1,0 +1,42 @@
+*************************************************************************************************************************************************
+The PetaLinux source code and images provided/generated are for demonstration purposes only.
+Please refer to https://xilinx-wiki.atlassian.net/wiki/spaces/A/pages/2741928025/Moving+from+PetaLinux+to+Production+Deployment
+ for more details
+*************************************************************************************************************************************************
+PetaLinux environment set to '/home/raden/petalinux/2025.2'
+[WARNING] The PetaLinux toolset is scheduled for deprecation in the 2026.2 release. Users are advised to adopt AMD EDF and its Yocto Project based workflows.
+[WARNING] The Microblaze BSP will be deprecated in version 26.1. PetaLinux Microblaze will be end-of-life in the 2026.2 release. Users are advised to transition to MB-V as the alternative.
+[INFO] Checking free disk space
+[INFO] Checking installed tools
+[INFO] Checking installed development libraries
+[INFO] Checking network and other services
+[INFO] Create project: zcu111_v16_plnx_source_check
+[INFO] New project successfully created in /home/raden/zcu111_v16_plnx_source_check
+[INFO] Getting hardware description
+[INFO] Extracting yocto SDK to components/yocto. This may take time!
+***** Gen Machine Conf v2025.2
+[INFO] Using HW file: /home/raden/zcu111_v16_plnx_source_check/project-spec/hw-description/system-top.dts
+[INFO] Getting Platform info from HW file
+[INFO] Generating Kconfig for the project
+[INFO] Silentconfig project
+[INFO] Generating kconfig for rootfs
+[INFO] Silentconfig rootfs
+[INFO] Generating configuration files
+[INFO] Generating cortex-a53 Linux configuration [ None ]
+[INFO] Generating cortex-a53 baremetal configuration for FSBL
+[INFO] Generating microblaze baremetal configuration for ZynqMP PMU
+[INFO] Generating microblaze processor tunes
+[INFO] Adding user layers
+[INFO] Generating machine conf file
+[WARNING] Unable to find a bit file in /home/raden/zcu111_v16_plnx_source_check/project-spec/hw-description,                         use the -p/--pl option to point to the directory containing a .bit file
+[INFO] Generating plnxtool conf file
+[INFO] Generating workspace directory
+NOTE: Starting bitbake server...
+NOTE: Started PRServer with DBfile: /home/raden/zcu111_v16_plnx_source_check/build/cache/prserv.sqlite3, Address: 127.0.0.1:32837, PID: 7004
+INFO: Specified workspace already set up, leaving as-is
+INFO: Enabling workspace layer in bblayers.conf
+[INFO] Successfully configured project
+PetaLinux project prepared using the captured SDT and sanitized actual configs.
+Provision your own root password, then petalinux-build and petalinux-build --sdk.
+For a NEW Vivado build, generate a matching new SDT and import it instead.
+RX/TX DMA remain disabled until the ordered board runtime initializes them.

@@ -1,0 +1,21 @@
+{
+  "date": "2026-11-01",
+  "release": "20261101_16",
+  "app_version": "0.10.2",
+  "state": "FROZEN_ACCEPTED",
+  "delta_verified": "Only requested combobox label and version/interface identifiers",
+  "FPGA_changed": false,
+  "driver_changed": false,
+  "power_calibration_expanded": false,
+  "build": "PASS SDK Release -Werror and Qt generator/power/markers QEMU smoke tests",
+  "board_deployment": "PASS native Weston power/markers and 82 frames / 8.416s continuous RX; V16 running stopped",
+  "frozen": true,
+  "error": "WinError10013 before SSH connection to both SDK VM and board",
+  "network_check": "SSH VM connected; board host-key changed, awaiting physical-console verification",
+  "build_inputs_archive": "work\\zcu111_adc3_2400\\delivery\\zcu111_v16_build_inputs_20261101.zip",
+  "build_inputs_sha256": "ab25e4ce157fc19a6f8fd32c73c9b1fc4e7f59ee677d05575afcfd40b113331b",
+  "gui_sha256": "2bfdec40a2170c9c78cc401a3122eaf74559ade0518a08165412119a6960e729",
+  "board_fingerprint": "SHA256:qz2XpNPlsAWl8NSbw+uRBuCCC6MtH1mlXGEC33N9uPQ",
+  "cold_boot": "V16 not repeated; V15 historical cold-boot acceptance retained separately",
+  "human_acceptance": "User confirmed mouse interaction, CW model dropdown, and Run Single spectrum all normal"
+}

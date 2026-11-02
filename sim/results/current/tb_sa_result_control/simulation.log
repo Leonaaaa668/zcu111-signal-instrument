@@ -1,0 +1,31 @@
+#-----------------------------------------------------------
+# xsim v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Sun Nov  1 17:46:41 2026
+# Process ID         : 31688
+# Current directory  : C:/fpga/v16_rtl_check_20261101_02/tb_sa_result_control
+# Command line       : xsim.exe -log simulation.log -mode tcl -source {xsim.dir/test_snapshot/xsim_script.tcl}
+# Log file           : C:/fpga/v16_rtl_check_20261101_02/tb_sa_result_control/simulation.log
+# Journal file       : C:/fpga/v16_rtl_check_20261101_02/tb_sa_result_control\xsim.jou
+# Running On         : LXC
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : AMD Ryzen 7 8845H w/ Radeon 780M Graphics
+# CPU Frequency      : 3793 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 16422 MB
+# Swap memory        : 23622 MB
+# Total Virtual      : 40045 MB
+# Available Virtual  : 8962 MB
+#-----------------------------------------------------------
+source xsim.dir/test_snapshot/xsim_script.tcl
+# xsim {test_snapshot} -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+SA_RESULT_CONTROL_PASS packets=          2
+$finish called at time : 18140 ns : File "C:/Users/25812/Documents/Codex/2026-09-23/ni/work/zcu111_adc3_2400/delivery/zcu111_v16_source/sim/rtl/tb_sa_result_control.v" Line 114
+exit
+INFO: [Common 17-206] Exiting xsim at Sun Nov  1 17:46:43 2026...

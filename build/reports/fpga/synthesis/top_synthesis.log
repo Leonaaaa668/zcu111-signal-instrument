@@ -1,0 +1,757 @@
+
+*** Running vivado
+    with args -log adc3_capture_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source adc3_capture_wrapper.tcl
+
+
+
+****** Vivado v2025.2 (64-bit)
+  **** SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+  **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+  **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+  **** Start of session at: Wed Oct 28 22:53:49 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source adc3_capture_wrapper.tcl -notrace
+create_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:07 . Memory (MB): peak = 562.219 ; gain = 228.754
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/2025.2/Vivado/data/ip'.
+WARNING: [filemgmt 56-443] The ECC Algorithm string is empty. Setting the Memory Map to default ECC value to ECC_NONE.
+WARNING: [filemgmt 56-443] The ECC Algorithm string is empty. Setting the Memory Map to default ECC value to ECC_NONE.
+INFO: [Project 1-5698] Found the below utility IPs instantiated in block design C:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.srcs/sources_1/bd/adc3_capture/adc3_capture.bd which have equivalent inline hdl with improved performance and reduced diskspace.
+It is recommended to migrate these utility IPs to inline hdl  using the command upgrade_project -migrate_to_inline_hdl.  The utility IPs may be deprecated in future releases.
+More information on inline hdl is available in UG994.
+Utility IP Component Instances:
+ adc3_capture_zero_0
+adc3_capture_one_0
+adc3_capture_tx_reset_invert_0
+adc3_capture_sa_events_0
+adc3_capture_rx_irq_0
+add_files: Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 757.156 ; gain = 194.938
+Command: read_checkpoint -auto_incremental -incremental C:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.srcs/utils_1/imports/synth_1/adc3_capture_wrapper.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.srcs/utils_1/imports/synth_1/adc3_capture_wrapper.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top adc3_capture_wrapper -part xczu28dr-ffvg1517-2-e
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu28dr'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu28dr'
+INFO: [Device 21-403] Loading part xczu28dr-ffvg1517-2-e
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 42300
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2158.469 ; gain = 386.727
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'adc3_capture_wrapper' [C:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/hdl/adc3_capture_wrapper.v:13]
+INFO: [Synth 8-6157] synthesizing module 'adc3_capture' [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/synth/adc3_capture.v:13]
+INFO: [Synth 8-6157] synthesizing module 'adc3_capture_control_axi_0' [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/synth/adc3_capture.v:1847]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_1D4NAXL' [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/synth/adc3_capture.v:3540]
+INFO: [Synth 8-6157] synthesizing module 'adc3_capture_control_axi_imp_auto_ds_0' [C:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.runs/synth_1/.Xil/Vivado-38972-LXC/realtime/adc3_capture_control_axi_imp_auto_ds_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'adc3_capture_control_axi_imp_auto_ds_0' (0#1) [C:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.runs/synth_1/.Xil/Vivado-38972-LXC/realtime/adc3_capture_control_axi_imp_auto_ds_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'adc3_capture_control_axi_imp_auto_pc_0' [C:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.runs/synth_1/.Xil/Vivado-38972-LXC/realtime/adc3_capture_control_axi_imp_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'adc3_capture_control_axi_imp_auto_pc_0' (0#1) [C:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.runs/synth_1/.Xil/Vivado-38972-LXC/realtime/adc3_capture_control_axi_imp_auto_pc_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'adc3_capture_control_axi_imp_auto_pc_0' is unconnected for instance 'auto_pc' [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/synth/adc3_capture.v:3833]
+WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'adc3_capture_control_axi_imp_auto_pc_0' is unconnected for instance 'auto_pc' [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/synth/adc3_capture.v:3833]
+WARNING: [Synth 8-7023] instance 'auto_pc' of module 'adc3_capture_control_axi_imp_auto_pc_0' has 56 connections declared, but only 54 given [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/synth/adc3_capture.v:3833]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_1D4NAXL' (0#1) [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/synth/adc3_capture.v:3540]
+INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_1A4BEU1' [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/synth/adc3_capture.v:3890]
+INFO: [Synth 8-6157] synthesizing module 'adc3_capture_control_axi_imp_auto_cc_0' [C:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.runs/synth_1/.Xil/Vivado-38972-LXC/realtime/adc3_capture_control_axi_imp_auto_cc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'adc3_capture_control_axi_imp_auto_cc_0' (0#1) [C:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.runs/synth_1/.Xil/Vivado-38972-LXC/realtime/adc3_capture_control_axi_imp_auto_cc_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_awuser' of module 'adc3_capture_control_axi_imp_auto_cc_0' is unconnected for instance 'auto_cc' [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/synth/adc3_capture.v:4150]
+WARNING: [Synth 8-7071] port 'm_axi_aruser' of module 'adc3_capture_control_axi_imp_auto_cc_0' is unconnected for instance 'auto_cc' [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/synth/adc3_capture.v:4150]
+WARNING: [Synth 8-7023] instance 'auto_cc' of module 'adc3_capture_control_axi_imp_auto_cc_0' has 86 connections declared, but only 84 given [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/synth/adc3_capture.v:4150]
+INFO: [Synth 8-6157] synthesizing module 'adc3_capture_control_axi_imp_auto_ds_1' [C:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.runs/synth_1/.Xil/Vivado-38972-LXC/realtime/adc3_capture_control_axi_imp_auto_ds_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'adc3_capture_control_axi_imp_auto_ds_1' (0#1) [C:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.runs/synth_1/.Xil/Vivado-38972-LXC/realtime/adc3_capture_control_axi_imp_auto_ds_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'adc3_capture_control_axi_imp_auto_pc_1' [C:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.runs/synth_1/.Xil/Vivado-38972-LXC/realtime/adc3_capture_control_axi_imp_auto_pc_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'adc3_capture_control_axi_imp_auto_pc_1' (0#1) [C:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.runs/synth_1/.Xil/Vivado-38972-LXC/realtime/adc3_capture_control_axi_imp_auto_pc_1_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'adc3_capture_control_axi_imp_auto_pc_1' is unconnected for instance 'auto_pc' [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/synth/adc3_capture.v:4312]
+WARNING: [Synth 8-7071] port 'm_axi_wstrb' of module 'adc3_capture_control_axi_imp_auto_pc_1' is unconnected for instance 'auto_pc' [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/synth/adc3_capture.v:4312]
+WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'adc3_capture_control_axi_imp_auto_pc_1' is unconnected for instance 'auto_pc' [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/synth/adc3_capture.v:4312]
+WARNING: [Synth 8-7023] instance 'auto_pc' of module 'adc3_capture_control_axi_imp_auto_pc_1' has 56 connections declared, but only 53 given [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/synth/adc3_capture.v:4312]
+INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_1A4BEU1' (0#1) [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/synth/adc3_capture.v:3890]
+INFO: [Synth 8-6157] synthesizing module 'm02_couplers_imp_186QC9L' [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/synth/adc3_capture.v:4368]
+INFO: [Synth 8-6157] synthesizing module 'adc3_capture_control_axi_imp_auto_cc_1' [C:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.runs/synth_1/.Xil/Vivado-38972-LXC/realtime/adc3_capture_control_axi_imp_auto_cc_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'adc3_capture_control_axi_imp_auto_cc_1' (0#1) [C:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.runs/synth_1/.Xil/Vivado-38972-LXC/realtime/adc3_capture_control_axi_imp_auto_cc_1_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_awuser' of module 'adc3_capture_control_axi_imp_auto_cc_1' is unconnected for instance 'auto_cc' [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/synth/adc3_capture.v:4628]
+WARNING: [Synth 8-7071] port 'm_axi_aruser' of module 'adc3_capture_control_axi_imp_auto_cc_1' is unconnected for instance 'auto_cc' [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/synth/adc3_capture.v:4628]
+WARNING: [Synth 8-7023] instance 'auto_cc' of module 'adc3_capture_control_axi_imp_auto_cc_1' has 86 connections declared, but only 84 given [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/synth/adc3_capture.v:4628]
+INFO: [Synth 8-6157] synthesizing module 'adc3_capture_control_axi_imp_auto_ds_2' [C:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.runs/synth_1/.Xil/Vivado-38972-LXC/realtime/adc3_capture_control_axi_imp_auto_ds_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'adc3_capture_control_axi_imp_auto_ds_2' (0#1) [C:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.runs/synth_1/.Xil/Vivado-38972-LXC/realtime/adc3_capture_control_axi_imp_auto_ds_2_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'adc3_capture_control_axi_imp_auto_pc_2' [C:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.runs/synth_1/.Xil/Vivado-38972-LXC/realtime/adc3_capture_control_axi_imp_auto_pc_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'adc3_capture_control_axi_imp_auto_pc_2' (0#1) [C:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.runs/synth_1/.Xil/Vivado-38972-LXC/realtime/adc3_capture_control_axi_imp_auto_pc_2_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'adc3_capture_control_axi_imp_auto_pc_2' is unconnected for instance 'auto_pc' [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/synth/adc3_capture.v:4790]
+WARNING: [Synth 8-7071] port 'm_axi_wstrb' of module 'adc3_capture_control_axi_imp_auto_pc_2' is unconnected for instance 'auto_pc' [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/synth/adc3_capture.v:4790]
+WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'adc3_capture_control_axi_imp_auto_pc_2' is unconnected for instance 'auto_pc' [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/synth/adc3_capture.v:4790]
+WARNING: [Synth 8-7023] instance 'auto_pc' of module 'adc3_capture_control_axi_imp_auto_pc_2' has 56 connections declared, but only 53 given [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/synth/adc3_capture.v:4790]
+INFO: [Synth 8-6155] done synthesizing module 'm02_couplers_imp_186QC9L' (0#1) [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/synth/adc3_capture.v:4368]
+INFO: [Synth 8-6157] synthesizing module 'm03_couplers_imp_11UK0NT' [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/synth/adc3_capture.v:4846]
+INFO: [Synth 8-6157] synthesizing module 'adc3_capture_control_axi_imp_auto_ds_3' [C:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.runs/synth_1/.Xil/Vivado-38972-LXC/realtime/adc3_capture_control_axi_imp_auto_ds_3_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'adc3_capture_control_axi_imp_auto_ds_3' (0#1) [C:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.runs/synth_1/.Xil/Vivado-38972-LXC/realtime/adc3_capture_control_axi_imp_auto_ds_3_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'adc3_capture_control_axi_imp_auto_pc_3' [C:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.runs/synth_1/.Xil/Vivado-38972-LXC/realtime/adc3_capture_control_axi_imp_auto_pc_3_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'adc3_capture_control_axi_imp_auto_pc_3' (0#1) [C:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.runs/synth_1/.Xil/Vivado-38972-LXC/realtime/adc3_capture_control_axi_imp_auto_pc_3_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'adc3_capture_control_axi_imp_auto_pc_3' is unconnected for instance 'auto_pc' [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/synth/adc3_capture.v:5139]
+WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'adc3_capture_control_axi_imp_auto_pc_3' is unconnected for instance 'auto_pc' [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/synth/adc3_capture.v:5139]
+WARNING: [Synth 8-7023] instance 'auto_pc' of module 'adc3_capture_control_axi_imp_auto_pc_3' has 56 connections declared, but only 54 given [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/synth/adc3_capture.v:5139]
+INFO: [Synth 8-6155] done synthesizing module 'm03_couplers_imp_11UK0NT' (0#1) [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/synth/adc3_capture.v:4846]
+INFO: [Synth 8-6157] synthesizing module 'm04_couplers_imp_1TY9OUX' [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/synth/adc3_capture.v:5196]
+INFO: [Synth 8-6157] synthesizing module 'adc3_capture_control_axi_imp_auto_cc_2' [C:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.runs/synth_1/.Xil/Vivado-38972-LXC/realtime/adc3_capture_control_axi_imp_auto_cc_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'adc3_capture_control_axi_imp_auto_cc_2' (0#1) [C:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.runs/synth_1/.Xil/Vivado-38972-LXC/realtime/adc3_capture_control_axi_imp_auto_cc_2_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_awregion' of module 'adc3_capture_control_axi_imp_auto_cc_2' is unconnected for instance 'auto_cc' [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/synth/adc3_capture.v:5451]
+WARNING: [Synth 8-7071] port 'm_axi_arregion' of module 'adc3_capture_control_axi_imp_auto_cc_2' is unconnected for instance 'auto_cc' [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/synth/adc3_capture.v:5451]
+WARNING: [Synth 8-7023] instance 'auto_cc' of module 'adc3_capture_control_axi_imp_auto_cc_2' has 86 connections declared, but only 84 given [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/synth/adc3_capture.v:5451]
+INFO: [Synth 8-6155] done synthesizing module 'm04_couplers_imp_1TY9OUX' (0#1) [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/synth/adc3_capture.v:5196]
+INFO: [Synth 8-6157] synthesizing module 'm05_couplers_imp_1XJ65LL' [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/synth/adc3_capture.v:5538]
+INFO: [Synth 8-6157] synthesizing module 'adc3_capture_control_axi_imp_auto_ds_4' [C:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.runs/synth_1/.Xil/Vivado-38972-LXC/realtime/adc3_capture_control_axi_imp_auto_ds_4_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'adc3_capture_control_axi_imp_auto_ds_4' (0#1) [C:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.runs/synth_1/.Xil/Vivado-38972-LXC/realtime/adc3_capture_control_axi_imp_auto_ds_4_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'adc3_capture_control_axi_imp_auto_pc_4' [C:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.runs/synth_1/.Xil/Vivado-38972-LXC/realtime/adc3_capture_control_axi_imp_auto_pc_4_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'adc3_capture_control_axi_imp_auto_pc_4' (0#1) [C:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.runs/synth_1/.Xil/Vivado-38972-LXC/realtime/adc3_capture_control_axi_imp_auto_pc_4_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'adc3_capture_control_axi_imp_auto_pc_4' is unconnected for instance 'auto_pc' [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/synth/adc3_capture.v:5831]
+WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'adc3_capture_control_axi_imp_auto_pc_4' is unconnected for instance 'auto_pc' [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/synth/adc3_capture.v:5831]
+WARNING: [Synth 8-7023] instance 'auto_pc' of module 'adc3_capture_control_axi_imp_auto_pc_4' has 56 connections declared, but only 54 given [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/synth/adc3_capture.v:5831]
+INFO: [Synth 8-6155] done synthesizing module 'm05_couplers_imp_1XJ65LL' (0#1) [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/synth/adc3_capture.v:5538]
+INFO: [Synth 8-6157] synthesizing module 'm06_couplers_imp_1ICL2U1' [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/synth/adc3_capture.v:5888]
+INFO: [Synth 8-6157] synthesizing module 'adc3_capture_control_axi_imp_auto_ds_5' [C:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.runs/synth_1/.Xil/Vivado-38972-LXC/realtime/adc3_capture_control_axi_imp_auto_ds_5_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'adc3_capture_control_axi_imp_auto_ds_5' (0#1) [C:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.runs/synth_1/.Xil/Vivado-38972-LXC/realtime/adc3_capture_control_axi_imp_auto_ds_5_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'adc3_capture_control_axi_imp_auto_pc_5' [C:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.runs/synth_1/.Xil/Vivado-38972-LXC/realtime/adc3_capture_control_axi_imp_auto_pc_5_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'adc3_capture_control_axi_imp_auto_pc_5' (0#1) [C:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.runs/synth_1/.Xil/Vivado-38972-LXC/realtime/adc3_capture_control_axi_imp_auto_pc_5_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'adc3_capture_control_axi_imp_auto_pc_5' is unconnected for instance 'auto_pc' [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/synth/adc3_capture.v:6178]
+WARNING: [Synth 8-7071] port 'm_axi_wstrb' of module 'adc3_capture_control_axi_imp_auto_pc_5' is unconnected for instance 'auto_pc' [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/synth/adc3_capture.v:6178]
+WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'adc3_capture_control_axi_imp_auto_pc_5' is unconnected for instance 'auto_pc' [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/synth/adc3_capture.v:6178]
+WARNING: [Synth 8-7023] instance 'auto_pc' of module 'adc3_capture_control_axi_imp_auto_pc_5' has 56 connections declared, but only 53 given [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/synth/adc3_capture.v:6178]
+INFO: [Synth 8-6155] done synthesizing module 'm06_couplers_imp_1ICL2U1' (0#1) [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/synth/adc3_capture.v:5888]
+INFO: [Synth 8-6157] synthesizing module 'm07_couplers_imp_1N1GM6X' [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/synth/adc3_capture.v:6234]
+INFO: [Synth 8-6157] synthesizing module 'adc3_capture_control_axi_imp_auto_ds_6' [C:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.runs/synth_1/.Xil/Vivado-38972-LXC/realtime/adc3_capture_control_axi_imp_auto_ds_6_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'adc3_capture_control_axi_imp_auto_ds_6' (0#1) [C:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.runs/synth_1/.Xil/Vivado-38972-LXC/realtime/adc3_capture_control_axi_imp_auto_ds_6_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'adc3_capture_control_axi_imp_auto_pc_6' [C:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.runs/synth_1/.Xil/Vivado-38972-LXC/realtime/adc3_capture_control_axi_imp_auto_pc_6_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'adc3_capture_control_axi_imp_auto_pc_6' (0#1) [C:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.runs/synth_1/.Xil/Vivado-38972-LXC/realtime/adc3_capture_control_axi_imp_auto_pc_6_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'm07_couplers_imp_1N1GM6X' (0#1) [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/synth/adc3_capture.v:6234]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_1BT04AY' [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/synth/adc3_capture.v:6592]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_1BT04AY' (0#1) [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/synth/adc3_capture.v:6592]
+INFO: [Synth 8-6157] synthesizing module 'adc3_capture_control_axi_imp_xbar_0' [C:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.runs/synth_1/.Xil/Vivado-38972-LXC/realtime/adc3_capture_control_axi_imp_xbar_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'adc3_capture_control_axi_imp_xbar_0' (0#1) [C:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.runs/synth_1/.Xil/Vivado-38972-LXC/realtime/adc3_capture_control_axi_imp_xbar_0_stub.v:6]
+WARNING: [Synth 8-689] width (80) of port connection 'm_axi_aruser' does not match port width (128) of module 'adc3_capture_control_axi_imp_xbar_0' [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/synth/adc3_capture.v:3469]
+WARNING: [Synth 8-689] width (80) of port connection 'm_axi_awuser' does not match port width (128) of module 'adc3_capture_control_axi_imp_xbar_0' [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/synth/adc3_capture.v:3482]
+INFO: [Synth 8-6155] done synthesizing module 'adc3_capture_control_axi_0' (0#1) [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/synth/adc3_capture.v:1847]
+INFO: [Synth 8-6157] synthesizing module 'adc3_capture_control_reset_0' [C:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.runs/synth_1/.Xil/Vivado-38972-LXC/realtime/adc3_capture_control_reset_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'adc3_capture_control_reset_0' (0#1) [C:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.runs/synth_1/.Xil/Vivado-38972-LXC/realtime/adc3_capture_control_reset_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'adc3_capture_control_reset_0' is unconnected for instance 'control_reset' [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/synth/adc3_capture.v:828]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'adc3_capture_control_reset_0' is unconnected for instance 'control_reset' [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/synth/adc3_capture.v:828]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'adc3_capture_control_reset_0' is unconnected for instance 'control_reset' [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/synth/adc3_capture.v:828]
+WARNING: [Synth 8-7023] instance 'control_reset' of module 'adc3_capture_control_reset_0' has 10 connections declared, but only 7 given [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/synth/adc3_capture.v:828]
+INFO: [Synth 8-6157] synthesizing module 'adc3_capture_dac_sample_clock_0' [C:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.runs/synth_1/.Xil/Vivado-38972-LXC/realtime/adc3_capture_dac_sample_clock_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'adc3_capture_dac_sample_clock_0' (0#1) [C:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.runs/synth_1/.Xil/Vivado-38972-LXC/realtime/adc3_capture_dac_sample_clock_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'adc3_capture_dac_sample_reset_0' [C:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.runs/synth_1/.Xil/Vivado-38972-LXC/realtime/adc3_capture_dac_sample_reset_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'adc3_capture_dac_sample_reset_0' (0#1) [C:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.runs/synth_1/.Xil/Vivado-38972-LXC/realtime/adc3_capture_dac_sample_reset_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'adc3_capture_dac_sample_reset_0' is unconnected for instance 'dac_sample_reset' [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/synth/adc3_capture.v:840]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'adc3_capture_dac_sample_reset_0' is unconnected for instance 'dac_sample_reset' [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/synth/adc3_capture.v:840]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'adc3_capture_dac_sample_reset_0' is unconnected for instance 'dac_sample_reset' [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/synth/adc3_capture.v:840]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'adc3_capture_dac_sample_reset_0' is unconnected for instance 'dac_sample_reset' [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/synth/adc3_capture.v:840]
+WARNING: [Synth 8-7023] instance 'dac_sample_reset' of module 'adc3_capture_dac_sample_reset_0' has 10 connections declared, but only 6 given [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/synth/adc3_capture.v:840]
+INFO: [Synth 8-6157] synthesizing module 'adc3_capture_ddr4_0_0' [C:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.runs/synth_1/.Xil/Vivado-38972-LXC/realtime/adc3_capture_ddr4_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'adc3_capture_ddr4_0_0' (0#1) [C:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.runs/synth_1/.Xil/Vivado-38972-LXC/realtime/adc3_capture_ddr4_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'dbg_clk' of module 'adc3_capture_ddr4_0_0' is unconnected for instance 'ddr4_0' [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/synth/adc3_capture.v:847]
+WARNING: [Synth 8-7071] port 'c0_ddr4_s_axi_bid' of module 'adc3_capture_ddr4_0_0' is unconnected for instance 'ddr4_0' [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/synth/adc3_capture.v:847]
+WARNING: [Synth 8-7071] port 'c0_ddr4_s_axi_rid' of module 'adc3_capture_ddr4_0_0' is unconnected for instance 'ddr4_0' [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/synth/adc3_capture.v:847]
+WARNING: [Synth 8-7071] port 'dbg_bus' of module 'adc3_capture_ddr4_0_0' is unconnected for instance 'ddr4_0' [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/synth/adc3_capture.v:847]
+WARNING: [Synth 8-7023] instance 'ddr4_0' of module 'adc3_capture_ddr4_0_0' has 60 connections declared, but only 56 given [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/synth/adc3_capture.v:847]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/synth/adc3_capture.v:904]
+INFO: [Synth 8-6157] synthesizing module 'adc3_capture_ila_iq_0' [C:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.runs/synth_1/.Xil/Vivado-38972-LXC/realtime/adc3_capture_ila_iq_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'adc3_capture_ila_iq_0' (0#1) [C:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.runs/synth_1/.Xil/Vivado-38972-LXC/realtime/adc3_capture_ila_iq_0_stub.v:6]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/synth/adc3_capture.v:918]
+INFO: [Synth 8-6157] synthesizing module 'adc3_capture_ila_sa_0' [C:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.runs/synth_1/.Xil/Vivado-38972-LXC/realtime/adc3_capture_ila_sa_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'adc3_capture_ila_sa_0' (0#1) [C:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.runs/synth_1/.Xil/Vivado-38972-LXC/realtime/adc3_capture_ila_sa_0_stub.v:6]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/synth/adc3_capture.v:930]
+INFO: [Synth 8-6157] synthesizing module 'adc3_capture_ila_tx_0' [C:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.runs/synth_1/.Xil/Vivado-38972-LXC/realtime/adc3_capture_ila_tx_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'adc3_capture_ila_tx_0' (0#1) [C:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.runs/synth_1/.Xil/Vivado-38972-LXC/realtime/adc3_capture_ila_tx_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'adc3_capture_iq_lanes_0' [C:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.runs/synth_1/.Xil/Vivado-38972-LXC/realtime/adc3_capture_iq_lanes_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'adc3_capture_iq_lanes_0' (0#1) [C:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.runs/synth_1/.Xil/Vivado-38972-LXC/realtime/adc3_capture_iq_lanes_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'adc3_capture_memory_reset_0' [C:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.runs/synth_1/.Xil/Vivado-38972-LXC/realtime/adc3_capture_memory_reset_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'adc3_capture_memory_reset_0' (0#1) [C:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.runs/synth_1/.Xil/Vivado-38972-LXC/realtime/adc3_capture_memory_reset_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'adc3_capture_memory_reset_0' is unconnected for instance 'memory_reset' [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/synth/adc3_capture.v:950]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'adc3_capture_memory_reset_0' is unconnected for instance 'memory_reset' [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/synth/adc3_capture.v:950]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'adc3_capture_memory_reset_0' is unconnected for instance 'memory_reset' [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/synth/adc3_capture.v:950]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'adc3_capture_memory_reset_0' is unconnected for instance 'memory_reset' [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/synth/adc3_capture.v:950]
+WARNING: [Synth 8-7023] instance 'memory_reset' of module 'adc3_capture_memory_reset_0' has 10 connections declared, but only 6 given [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/synth/adc3_capture.v:950]
+INFO: [Synth 8-6157] synthesizing module 'adc3_capture_one_0' [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/ip/adc3_capture_one_0/synth/adc3_capture_one_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_10_xlconstant' [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/ipshared/a165/hdl/xlconstant_v1_1_vl_rfs.v:68]
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_10_xlconstant' (0#1) [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/ipshared/a165/hdl/xlconstant_v1_1_vl_rfs.v:68]
+INFO: [Synth 8-6155] done synthesizing module 'adc3_capture_one_0' (0#1) [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/ip/adc3_capture_one_0/synth/adc3_capture_one_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'adc3_capture_rfdc_0' [C:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.runs/synth_1/.Xil/Vivado-38972-LXC/realtime/adc3_capture_rfdc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'adc3_capture_rfdc_0' (0#1) [C:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.runs/synth_1/.Xil/Vivado-38972-LXC/realtime/adc3_capture_rfdc_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'adc3_capture_rx_dma_0' [C:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.runs/synth_1/.Xil/Vivado-38972-LXC/realtime/adc3_capture_rx_dma_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'adc3_capture_rx_dma_0' (0#1) [C:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.runs/synth_1/.Xil/Vivado-38972-LXC/realtime/adc3_capture_rx_dma_0_stub.v:6]
+WARNING: [Synth 8-7071] port 's2mm_prmry_reset_out_n' of module 'adc3_capture_rx_dma_0' is unconnected for instance 'rx_dma' [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/synth/adc3_capture.v:1005]
+WARNING: [Synth 8-7071] port 'axi_dma_tstvec' of module 'adc3_capture_rx_dma_0' is unconnected for instance 'rx_dma' [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/synth/adc3_capture.v:1005]
+WARNING: [Synth 8-7023] instance 'rx_dma' of module 'adc3_capture_rx_dma_0' has 73 connections declared, but only 71 given [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/synth/adc3_capture.v:1005]
+INFO: [Synth 8-6157] synthesizing module 'adc3_capture_rx_irq_0' [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/ip/adc3_capture_rx_irq_0/synth/adc3_capture_rx_irq_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_7_xlconcat' [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/ipshared/9c1a/hdl/xlconcat_v2_1_vl_rfs.v:59]
+INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_7_xlconcat' (0#1) [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/ipshared/9c1a/hdl/xlconcat_v2_1_vl_rfs.v:59]
+INFO: [Synth 8-6155] done synthesizing module 'adc3_capture_rx_irq_0' (0#1) [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/ip/adc3_capture_rx_irq_0/synth/adc3_capture_rx_irq_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'adc3_capture_rx_memory_axi_0' [C:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.runs/synth_1/.Xil/Vivado-38972-LXC/realtime/adc3_capture_rx_memory_axi_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'adc3_capture_rx_memory_axi_0' (0#1) [C:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.runs/synth_1/.Xil/Vivado-38972-LXC/realtime/adc3_capture_rx_memory_axi_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'adc3_capture_rx_result_fifo_0' [C:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.runs/synth_1/.Xil/Vivado-38972-LXC/realtime/adc3_capture_rx_result_fifo_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'adc3_capture_rx_result_fifo_0' (0#1) [C:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.runs/synth_1/.Xil/Vivado-38972-LXC/realtime/adc3_capture_rx_result_fifo_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'adc3_capture_sa_control_0' [C:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.runs/synth_1/.Xil/Vivado-38972-LXC/realtime/adc3_capture_sa_control_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'adc3_capture_sa_control_0' (0#1) [C:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.runs/synth_1/.Xil/Vivado-38972-LXC/realtime/adc3_capture_sa_control_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'adc3_capture_sa_control_cdc_0' [C:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.runs/synth_1/.Xil/Vivado-38972-LXC/realtime/adc3_capture_sa_control_cdc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'adc3_capture_sa_control_cdc_0' (0#1) [C:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.runs/synth_1/.Xil/Vivado-38972-LXC/realtime/adc3_capture_sa_control_cdc_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'adc3_capture_sa_dsp_0' [C:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.runs/synth_1/.Xil/Vivado-38972-LXC/realtime/adc3_capture_sa_dsp_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'adc3_capture_sa_dsp_0' (0#1) [C:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.runs/synth_1/.Xil/Vivado-38972-LXC/realtime/adc3_capture_sa_dsp_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'adc3_capture_sa_events_0' [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/ip/adc3_capture_sa_events_0/synth/adc3_capture_sa_events_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_7_xlconcat__parameterized0' [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/ipshared/9c1a/hdl/xlconcat_v2_1_vl_rfs.v:59]
+INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_7_xlconcat__parameterized0' (0#1) [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/ipshared/9c1a/hdl/xlconcat_v2_1_vl_rfs.v:59]
+INFO: [Synth 8-6155] done synthesizing module 'adc3_capture_sa_events_0' (0#1) [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/ip/adc3_capture_sa_events_0/synth/adc3_capture_sa_events_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'adc3_capture_sa_fft_0' [C:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.runs/synth_1/.Xil/Vivado-38972-LXC/realtime/adc3_capture_sa_fft_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'adc3_capture_sa_fft_0' (0#1) [C:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.runs/synth_1/.Xil/Vivado-38972-LXC/realtime/adc3_capture_sa_fft_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axis_status_tdata' of module 'adc3_capture_sa_fft_0' is unconnected for instance 'sa_fft' [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/synth/adc3_capture.v:1259]
+WARNING: [Synth 8-7071] port 'm_axis_status_tvalid' of module 'adc3_capture_sa_fft_0' is unconnected for instance 'sa_fft' [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/synth/adc3_capture.v:1259]
+WARNING: [Synth 8-7071] port 'event_frame_started' of module 'adc3_capture_sa_fft_0' is unconnected for instance 'sa_fft' [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/synth/adc3_capture.v:1259]
+WARNING: [Synth 8-7071] port 'event_data_in_channel_halt' of module 'adc3_capture_sa_fft_0' is unconnected for instance 'sa_fft' [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/synth/adc3_capture.v:1259]
+WARNING: [Synth 8-7023] instance 'sa_fft' of module 'adc3_capture_sa_fft_0' has 24 connections declared, but only 20 given [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/synth/adc3_capture.v:1259]
+INFO: [Synth 8-6157] synthesizing module 'adc3_capture_sa_result_0' [C:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.runs/synth_1/.Xil/Vivado-38972-LXC/realtime/adc3_capture_sa_result_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'adc3_capture_sa_result_0' (0#1) [C:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.runs/synth_1/.Xil/Vivado-38972-LXC/realtime/adc3_capture_sa_result_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'live_status' of module 'adc3_capture_sa_result_0' is unconnected for instance 'sa_result' [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/synth/adc3_capture.v:1280]
+WARNING: [Synth 8-7023] instance 'sa_result' of module 'adc3_capture_sa_result_0' has 42 connections declared, but only 41 given [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/synth/adc3_capture.v:1280]
+INFO: [Synth 8-6157] synthesizing module 'adc3_capture_sample_clock_0' [C:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.runs/synth_1/.Xil/Vivado-38972-LXC/realtime/adc3_capture_sample_clock_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'adc3_capture_sample_clock_0' (0#1) [C:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.runs/synth_1/.Xil/Vivado-38972-LXC/realtime/adc3_capture_sample_clock_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'adc3_capture_sample_reset_0' [C:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.runs/synth_1/.Xil/Vivado-38972-LXC/realtime/adc3_capture_sample_reset_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'adc3_capture_sample_reset_0' (0#1) [C:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.runs/synth_1/.Xil/Vivado-38972-LXC/realtime/adc3_capture_sample_reset_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'adc3_capture_sample_reset_0' is unconnected for instance 'sample_reset' [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/synth/adc3_capture.v:1326]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'adc3_capture_sample_reset_0' is unconnected for instance 'sample_reset' [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/synth/adc3_capture.v:1326]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'adc3_capture_sample_reset_0' is unconnected for instance 'sample_reset' [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/synth/adc3_capture.v:1326]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'adc3_capture_sample_reset_0' is unconnected for instance 'sample_reset' [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/synth/adc3_capture.v:1326]
+WARNING: [Synth 8-7023] instance 'sample_reset' of module 'adc3_capture_sample_reset_0' has 10 connections declared, but only 6 given [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/synth/adc3_capture.v:1326]
+INFO: [Synth 8-6157] synthesizing module 'adc3_capture_tx_control_0' [C:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.runs/synth_1/.Xil/Vivado-38972-LXC/realtime/adc3_capture_tx_control_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'adc3_capture_tx_control_0' (0#1) [C:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.runs/synth_1/.Xil/Vivado-38972-LXC/realtime/adc3_capture_tx_control_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'adc3_capture_tx_dma_0' [C:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.runs/synth_1/.Xil/Vivado-38972-LXC/realtime/adc3_capture_tx_dma_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'adc3_capture_tx_dma_0' (0#1) [C:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.runs/synth_1/.Xil/Vivado-38972-LXC/realtime/adc3_capture_tx_dma_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'mm2s_prmry_reset_out_n' of module 'adc3_capture_tx_dma_0' is unconnected for instance 'tx_dma' [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/synth/adc3_capture.v:1355]
+WARNING: [Synth 8-7071] port 'mm2s_introut' of module 'adc3_capture_tx_dma_0' is unconnected for instance 'tx_dma' [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/synth/adc3_capture.v:1355]
+WARNING: [Synth 8-7071] port 'axi_dma_tstvec' of module 'adc3_capture_tx_dma_0' is unconnected for instance 'tx_dma' [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/synth/adc3_capture.v:1355]
+WARNING: [Synth 8-7023] instance 'tx_dma' of module 'adc3_capture_tx_dma_0' has 70 connections declared, but only 67 given [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/synth/adc3_capture.v:1355]
+INFO: [Synth 8-6157] synthesizing module 'adc3_capture_tx_fifo_reset_0' [C:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.runs/synth_1/.Xil/Vivado-38972-LXC/realtime/adc3_capture_tx_fifo_reset_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'adc3_capture_tx_fifo_reset_0' (0#1) [C:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.runs/synth_1/.Xil/Vivado-38972-LXC/realtime/adc3_capture_tx_fifo_reset_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'adc3_capture_tx_guard_0' [C:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.runs/synth_1/.Xil/Vivado-38972-LXC/realtime/adc3_capture_tx_guard_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'adc3_capture_tx_guard_0' (0#1) [C:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.runs/synth_1/.Xil/Vivado-38972-LXC/realtime/adc3_capture_tx_guard_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'adc3_capture_tx_memory_axi_0' [C:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.runs/synth_1/.Xil/Vivado-38972-LXC/realtime/adc3_capture_tx_memory_axi_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'adc3_capture_tx_memory_axi_0' (0#1) [C:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.runs/synth_1/.Xil/Vivado-38972-LXC/realtime/adc3_capture_tx_memory_axi_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'M00_AXI_awuser' of module 'adc3_capture_tx_memory_axi_0' is unconnected for instance 'tx_memory_axi' [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/synth/adc3_capture.v:1447]
+WARNING: [Synth 8-7071] port 'M00_AXI_aruser' of module 'adc3_capture_tx_memory_axi_0' is unconnected for instance 'tx_memory_axi' [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/synth/adc3_capture.v:1447]
+WARNING: [Synth 8-7023] instance 'tx_memory_axi' of module 'adc3_capture_tx_memory_axi_0' has 192 connections declared, but only 190 given [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/synth/adc3_capture.v:1447]
+INFO: [Synth 8-6157] synthesizing module 'adc3_capture_tx_prefill_fifo_0' [C:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.runs/synth_1/.Xil/Vivado-38972-LXC/realtime/adc3_capture_tx_prefill_fifo_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'adc3_capture_tx_prefill_fifo_0' (0#1) [C:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.runs/synth_1/.Xil/Vivado-38972-LXC/realtime/adc3_capture_tx_prefill_fifo_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'axis_wr_data_count' of module 'adc3_capture_tx_prefill_fifo_0' is unconnected for instance 'tx_prefill_fifo' [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/synth/adc3_capture.v:1638]
+WARNING: [Synth 8-7023] instance 'tx_prefill_fifo' of module 'adc3_capture_tx_prefill_fifo_0' has 15 connections declared, but only 14 given [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/synth/adc3_capture.v:1638]
+INFO: [Synth 8-6157] synthesizing module 'adc3_capture_tx_reset_invert_0' [C:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.runs/synth_1/.Xil/Vivado-38972-LXC/realtime/adc3_capture_tx_reset_invert_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'adc3_capture_tx_reset_invert_0' (0#1) [C:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.runs/synth_1/.Xil/Vivado-38972-LXC/realtime/adc3_capture_tx_reset_invert_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'adc3_capture_tx_unpack_4iq_0' [C:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.runs/synth_1/.Xil/Vivado-38972-LXC/realtime/adc3_capture_tx_unpack_4iq_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'adc3_capture_tx_unpack_4iq_0' (0#1) [C:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.runs/synth_1/.Xil/Vivado-38972-LXC/realtime/adc3_capture_tx_unpack_4iq_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'adc3_capture_tx_unpack_reset_0' [C:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.runs/synth_1/.Xil/Vivado-38972-LXC/realtime/adc3_capture_tx_unpack_reset_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'adc3_capture_tx_unpack_reset_0' (0#1) [C:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.runs/synth_1/.Xil/Vivado-38972-LXC/realtime/adc3_capture_tx_unpack_reset_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'adc3_capture_wave_upload_dma_0' [C:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.runs/synth_1/.Xil/Vivado-38972-LXC/realtime/adc3_capture_wave_upload_dma_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'adc3_capture_wave_upload_dma_0' (0#1) [C:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.runs/synth_1/.Xil/Vivado-38972-LXC/realtime/adc3_capture_wave_upload_dma_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'cdma_introut' of module 'adc3_capture_wave_upload_dma_0' is unconnected for instance 'wave_upload_dma' [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/synth/adc3_capture.v:1674]
+WARNING: [Synth 8-7071] port 'cdma_tvect_out' of module 'adc3_capture_wave_upload_dma_0' is unconnected for instance 'wave_upload_dma' [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/synth/adc3_capture.v:1674]
+WARNING: [Synth 8-7023] instance 'wave_upload_dma' of module 'adc3_capture_wave_upload_dma_0' has 50 connections declared, but only 48 given [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/synth/adc3_capture.v:1674]
+INFO: [Synth 8-6157] synthesizing module 'adc3_capture_zero_0' [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/ip/adc3_capture_zero_0/synth/adc3_capture_zero_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_10_xlconstant__parameterized0' [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/ipshared/a165/hdl/xlconstant_v1_1_vl_rfs.v:68]
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_10_xlconstant__parameterized0' (0#1) [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/ipshared/a165/hdl/xlconstant_v1_1_vl_rfs.v:68]
+INFO: [Synth 8-6155] done synthesizing module 'adc3_capture_zero_0' (0#1) [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/ip/adc3_capture_zero_0/synth/adc3_capture_zero_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'adc3_capture_zynq_ultra_ps_e_0_0' [C:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.runs/synth_1/.Xil/Vivado-38972-LXC/realtime/adc3_capture_zynq_ultra_ps_e_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'adc3_capture_zynq_ultra_ps_e_0_0' (0#1) [C:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.runs/synth_1/.Xil/Vivado-38972-LXC/realtime/adc3_capture_zynq_ultra_ps_e_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'saxigp2_bid' of module 'adc3_capture_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/synth/adc3_capture.v:1725]
+WARNING: [Synth 8-7071] port 'saxigp2_rid' of module 'adc3_capture_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/synth/adc3_capture.v:1725]
+WARNING: [Synth 8-7071] port 'saxigp3_bid' of module 'adc3_capture_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/synth/adc3_capture.v:1725]
+WARNING: [Synth 8-7071] port 'saxigp3_rid' of module 'adc3_capture_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/synth/adc3_capture.v:1725]
+WARNING: [Synth 8-7023] instance 'zynq_ultra_ps_e_0' of module 'adc3_capture_zynq_ultra_ps_e_0_0' has 123 connections declared, but only 119 given [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/synth/adc3_capture.v:1725]
+INFO: [Synth 8-6155] done synthesizing module 'adc3_capture' (0#1) [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/synth/adc3_capture.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'adc3_capture_wrapper' (0#1) [C:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/hdl/adc3_capture_wrapper.v:13]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'iq_lanes'. This will prevent further optimization [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/synth/adc3_capture.v:939]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ila_iq'. This will prevent further optimization [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/synth/adc3_capture.v:904]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'rfdc'. This will prevent further optimization [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/synth/adc3_capture.v:959]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'sa_dsp'. This will prevent further optimization [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/synth/adc3_capture.v:1219]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'sample_clock'. This will prevent further optimization [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/synth/adc3_capture.v:1322]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'sample_reset'. This will prevent further optimization [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/synth/adc3_capture.v:1326]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'sa_result'. This will prevent further optimization [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/synth/adc3_capture.v:1280]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ila_sa'. This will prevent further optimization [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/synth/adc3_capture.v:918]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'sa_control_cdc'. This will prevent further optimization [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/synth/adc3_capture.v:1210]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'tx_guard'. This will prevent further optimization [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/synth/adc3_capture.v:1428]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ila_tx'. This will prevent further optimization [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/synth/adc3_capture.v:930]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'tx_prefill_fifo'. This will prevent further optimization [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/synth/adc3_capture.v:1638]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'tx_unpack_4iq'. This will prevent further optimization [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/synth/adc3_capture.v:1656]
+WARNING: [Synth 8-7129] Port In6[0] in module xlconcat_v2_1_7_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In7[0] in module xlconcat_v2_1_7_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In8[0] in module xlconcat_v2_1_7_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In9[0] in module xlconcat_v2_1_7_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In10[0] in module xlconcat_v2_1_7_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In11[0] in module xlconcat_v2_1_7_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In12[0] in module xlconcat_v2_1_7_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In13[0] in module xlconcat_v2_1_7_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In14[0] in module xlconcat_v2_1_7_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In15[0] in module xlconcat_v2_1_7_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In16[0] in module xlconcat_v2_1_7_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In17[0] in module xlconcat_v2_1_7_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In18[0] in module xlconcat_v2_1_7_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In19[0] in module xlconcat_v2_1_7_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In20[0] in module xlconcat_v2_1_7_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In21[0] in module xlconcat_v2_1_7_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In22[0] in module xlconcat_v2_1_7_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In23[0] in module xlconcat_v2_1_7_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In24[0] in module xlconcat_v2_1_7_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In25[0] in module xlconcat_v2_1_7_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In26[0] in module xlconcat_v2_1_7_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In27[0] in module xlconcat_v2_1_7_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In28[0] in module xlconcat_v2_1_7_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In29[0] in module xlconcat_v2_1_7_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In30[0] in module xlconcat_v2_1_7_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In31[0] in module xlconcat_v2_1_7_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In32[0] in module xlconcat_v2_1_7_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In33[0] in module xlconcat_v2_1_7_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In34[0] in module xlconcat_v2_1_7_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In35[0] in module xlconcat_v2_1_7_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In36[0] in module xlconcat_v2_1_7_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In37[0] in module xlconcat_v2_1_7_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In38[0] in module xlconcat_v2_1_7_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In39[0] in module xlconcat_v2_1_7_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In40[0] in module xlconcat_v2_1_7_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In41[0] in module xlconcat_v2_1_7_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In42[0] in module xlconcat_v2_1_7_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In43[0] in module xlconcat_v2_1_7_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In44[0] in module xlconcat_v2_1_7_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In45[0] in module xlconcat_v2_1_7_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In46[0] in module xlconcat_v2_1_7_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In47[0] in module xlconcat_v2_1_7_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In48[0] in module xlconcat_v2_1_7_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In49[0] in module xlconcat_v2_1_7_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In50[0] in module xlconcat_v2_1_7_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In51[0] in module xlconcat_v2_1_7_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In52[0] in module xlconcat_v2_1_7_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In53[0] in module xlconcat_v2_1_7_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In54[0] in module xlconcat_v2_1_7_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In55[0] in module xlconcat_v2_1_7_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In56[0] in module xlconcat_v2_1_7_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In57[0] in module xlconcat_v2_1_7_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In58[0] in module xlconcat_v2_1_7_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In59[0] in module xlconcat_v2_1_7_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In60[0] in module xlconcat_v2_1_7_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In61[0] in module xlconcat_v2_1_7_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In62[0] in module xlconcat_v2_1_7_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In63[0] in module xlconcat_v2_1_7_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In64[0] in module xlconcat_v2_1_7_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In65[0] in module xlconcat_v2_1_7_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In66[0] in module xlconcat_v2_1_7_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In67[0] in module xlconcat_v2_1_7_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In68[0] in module xlconcat_v2_1_7_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In69[0] in module xlconcat_v2_1_7_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In70[0] in module xlconcat_v2_1_7_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In71[0] in module xlconcat_v2_1_7_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In72[0] in module xlconcat_v2_1_7_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In73[0] in module xlconcat_v2_1_7_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In74[0] in module xlconcat_v2_1_7_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In75[0] in module xlconcat_v2_1_7_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In76[0] in module xlconcat_v2_1_7_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In77[0] in module xlconcat_v2_1_7_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In78[0] in module xlconcat_v2_1_7_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In79[0] in module xlconcat_v2_1_7_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In80[0] in module xlconcat_v2_1_7_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In81[0] in module xlconcat_v2_1_7_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In82[0] in module xlconcat_v2_1_7_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In83[0] in module xlconcat_v2_1_7_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In84[0] in module xlconcat_v2_1_7_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In85[0] in module xlconcat_v2_1_7_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In86[0] in module xlconcat_v2_1_7_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In87[0] in module xlconcat_v2_1_7_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In88[0] in module xlconcat_v2_1_7_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In89[0] in module xlconcat_v2_1_7_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In90[0] in module xlconcat_v2_1_7_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In91[0] in module xlconcat_v2_1_7_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In92[0] in module xlconcat_v2_1_7_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In93[0] in module xlconcat_v2_1_7_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In94[0] in module xlconcat_v2_1_7_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In95[0] in module xlconcat_v2_1_7_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In96[0] in module xlconcat_v2_1_7_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In97[0] in module xlconcat_v2_1_7_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In98[0] in module xlconcat_v2_1_7_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In99[0] in module xlconcat_v2_1_7_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In100[0] in module xlconcat_v2_1_7_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In101[0] in module xlconcat_v2_1_7_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In102[0] in module xlconcat_v2_1_7_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In103[0] in module xlconcat_v2_1_7_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In104[0] in module xlconcat_v2_1_7_xlconcat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In105[0] in module xlconcat_v2_1_7_xlconcat__parameterized0 is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2312.141 ; gain = 540.398
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2330.062 ; gain = 558.320
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2330.062 ; gain = 558.320
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.203 . Memory (MB): peak = 2338.117 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/ip/adc3_capture_zynq_ultra_ps_e_0_0/adc3_capture_zynq_ultra_ps_e_0_0/adc3_capture_zynq_ultra_ps_e_0_0_in_context.xdc] for cell 'adc3_capture_i/zynq_ultra_ps_e_0'
+create_clock: Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2372.617 ; gain = 13.430
+Finished Parsing XDC File [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/ip/adc3_capture_zynq_ultra_ps_e_0_0/adc3_capture_zynq_ultra_ps_e_0_0/adc3_capture_zynq_ultra_ps_e_0_0_in_context.xdc] for cell 'adc3_capture_i/zynq_ultra_ps_e_0'
+Parsing XDC File [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/ip/adc3_capture_rfdc_0/adc3_capture_rfdc_0/adc3_capture_rfdc_0_in_context.xdc] for cell 'adc3_capture_i/rfdc'
+Finished Parsing XDC File [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/ip/adc3_capture_rfdc_0/adc3_capture_rfdc_0/adc3_capture_rfdc_0_in_context.xdc] for cell 'adc3_capture_i/rfdc'
+Parsing XDC File [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/ip/adc3_capture_control_axi_imp_xbar_0/adc3_capture_control_axi_imp_xbar_0/adc3_capture_control_axi_imp_xbar_0_in_context.xdc] for cell 'adc3_capture_i/control_axi/xbar'
+Finished Parsing XDC File [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/ip/adc3_capture_control_axi_imp_xbar_0/adc3_capture_control_axi_imp_xbar_0/adc3_capture_control_axi_imp_xbar_0_in_context.xdc] for cell 'adc3_capture_i/control_axi/xbar'
+Parsing XDC File [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/ip/adc3_capture_control_axi_imp_auto_ds_0/adc3_capture_control_axi_imp_auto_ds_0/adc3_capture_control_axi_imp_auto_ds_0_in_context.xdc] for cell 'adc3_capture_i/control_axi/m00_couplers/auto_ds'
+Finished Parsing XDC File [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/ip/adc3_capture_control_axi_imp_auto_ds_0/adc3_capture_control_axi_imp_auto_ds_0/adc3_capture_control_axi_imp_auto_ds_0_in_context.xdc] for cell 'adc3_capture_i/control_axi/m00_couplers/auto_ds'
+Parsing XDC File [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/ip/adc3_capture_control_axi_imp_auto_pc_0/adc3_capture_control_axi_imp_auto_pc_0/adc3_capture_control_axi_imp_auto_pc_0_in_context.xdc] for cell 'adc3_capture_i/control_axi/m00_couplers/auto_pc'
+Finished Parsing XDC File [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/ip/adc3_capture_control_axi_imp_auto_pc_0/adc3_capture_control_axi_imp_auto_pc_0/adc3_capture_control_axi_imp_auto_pc_0_in_context.xdc] for cell 'adc3_capture_i/control_axi/m00_couplers/auto_pc'
+Parsing XDC File [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/ip/adc3_capture_control_axi_imp_auto_cc_0/adc3_capture_control_axi_imp_auto_cc_0/adc3_capture_control_axi_imp_auto_cc_0_in_context.xdc] for cell 'adc3_capture_i/control_axi/m01_couplers/auto_cc'
+Finished Parsing XDC File [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/ip/adc3_capture_control_axi_imp_auto_cc_0/adc3_capture_control_axi_imp_auto_cc_0/adc3_capture_control_axi_imp_auto_cc_0_in_context.xdc] for cell 'adc3_capture_i/control_axi/m01_couplers/auto_cc'
+Parsing XDC File [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/ip/adc3_capture_control_axi_imp_auto_ds_1/adc3_capture_control_axi_imp_auto_ds_1/adc3_capture_control_axi_imp_auto_ds_1_in_context.xdc] for cell 'adc3_capture_i/control_axi/m01_couplers/auto_ds'
+Finished Parsing XDC File [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/ip/adc3_capture_control_axi_imp_auto_ds_1/adc3_capture_control_axi_imp_auto_ds_1/adc3_capture_control_axi_imp_auto_ds_1_in_context.xdc] for cell 'adc3_capture_i/control_axi/m01_couplers/auto_ds'
+Parsing XDC File [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/ip/adc3_capture_control_axi_imp_auto_pc_1/adc3_capture_control_axi_imp_auto_pc_1/adc3_capture_control_axi_imp_auto_pc_2_in_context.xdc] for cell 'adc3_capture_i/control_axi/m01_couplers/auto_pc'
+Finished Parsing XDC File [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/ip/adc3_capture_control_axi_imp_auto_pc_1/adc3_capture_control_axi_imp_auto_pc_1/adc3_capture_control_axi_imp_auto_pc_2_in_context.xdc] for cell 'adc3_capture_i/control_axi/m01_couplers/auto_pc'
+Parsing XDC File [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/ip/adc3_capture_control_axi_imp_auto_cc_1/adc3_capture_control_axi_imp_auto_cc_1/adc3_capture_control_axi_imp_auto_cc_0_in_context.xdc] for cell 'adc3_capture_i/control_axi/m02_couplers/auto_cc'
+Finished Parsing XDC File [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/ip/adc3_capture_control_axi_imp_auto_cc_1/adc3_capture_control_axi_imp_auto_cc_1/adc3_capture_control_axi_imp_auto_cc_0_in_context.xdc] for cell 'adc3_capture_i/control_axi/m02_couplers/auto_cc'
+Parsing XDC File [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/ip/adc3_capture_control_axi_imp_auto_ds_2/adc3_capture_control_axi_imp_auto_ds_2/adc3_capture_control_axi_imp_auto_ds_1_in_context.xdc] for cell 'adc3_capture_i/control_axi/m02_couplers/auto_ds'
+Finished Parsing XDC File [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/ip/adc3_capture_control_axi_imp_auto_ds_2/adc3_capture_control_axi_imp_auto_ds_2/adc3_capture_control_axi_imp_auto_ds_1_in_context.xdc] for cell 'adc3_capture_i/control_axi/m02_couplers/auto_ds'
+Parsing XDC File [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/ip/adc3_capture_control_axi_imp_auto_pc_2/adc3_capture_control_axi_imp_auto_pc_2/adc3_capture_control_axi_imp_auto_pc_2_in_context.xdc] for cell 'adc3_capture_i/control_axi/m02_couplers/auto_pc'
+Finished Parsing XDC File [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/ip/adc3_capture_control_axi_imp_auto_pc_2/adc3_capture_control_axi_imp_auto_pc_2/adc3_capture_control_axi_imp_auto_pc_2_in_context.xdc] for cell 'adc3_capture_i/control_axi/m02_couplers/auto_pc'
+Parsing XDC File [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/ip/adc3_capture_control_axi_imp_auto_ds_3/adc3_capture_control_axi_imp_auto_ds_3/adc3_capture_control_axi_imp_auto_ds_0_in_context.xdc] for cell 'adc3_capture_i/control_axi/m03_couplers/auto_ds'
+Finished Parsing XDC File [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/ip/adc3_capture_control_axi_imp_auto_ds_3/adc3_capture_control_axi_imp_auto_ds_3/adc3_capture_control_axi_imp_auto_ds_0_in_context.xdc] for cell 'adc3_capture_i/control_axi/m03_couplers/auto_ds'
+Parsing XDC File [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/ip/adc3_capture_control_axi_imp_auto_pc_3/adc3_capture_control_axi_imp_auto_pc_3/adc3_capture_control_axi_imp_auto_pc_3_in_context.xdc] for cell 'adc3_capture_i/control_axi/m03_couplers/auto_pc'
+Finished Parsing XDC File [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/ip/adc3_capture_control_axi_imp_auto_pc_3/adc3_capture_control_axi_imp_auto_pc_3/adc3_capture_control_axi_imp_auto_pc_3_in_context.xdc] for cell 'adc3_capture_i/control_axi/m03_couplers/auto_pc'
+Parsing XDC File [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/ip/adc3_capture_control_axi_imp_auto_cc_2/adc3_capture_control_axi_imp_auto_cc_2/adc3_capture_control_axi_imp_auto_cc_0_in_context.xdc] for cell 'adc3_capture_i/control_axi/m04_couplers/auto_cc'
+Finished Parsing XDC File [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/ip/adc3_capture_control_axi_imp_auto_cc_2/adc3_capture_control_axi_imp_auto_cc_2/adc3_capture_control_axi_imp_auto_cc_0_in_context.xdc] for cell 'adc3_capture_i/control_axi/m04_couplers/auto_cc'
+Parsing XDC File [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/ip/adc3_capture_control_axi_imp_auto_ds_4/adc3_capture_control_axi_imp_auto_ds_4/adc3_capture_control_axi_imp_auto_ds_0_in_context.xdc] for cell 'adc3_capture_i/control_axi/m05_couplers/auto_ds'
+Finished Parsing XDC File [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/ip/adc3_capture_control_axi_imp_auto_ds_4/adc3_capture_control_axi_imp_auto_ds_4/adc3_capture_control_axi_imp_auto_ds_0_in_context.xdc] for cell 'adc3_capture_i/control_axi/m05_couplers/auto_ds'
+Parsing XDC File [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/ip/adc3_capture_control_axi_imp_auto_pc_4/adc3_capture_control_axi_imp_auto_pc_4/adc3_capture_control_axi_imp_auto_pc_3_in_context.xdc] for cell 'adc3_capture_i/control_axi/m05_couplers/auto_pc'
+Finished Parsing XDC File [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/ip/adc3_capture_control_axi_imp_auto_pc_4/adc3_capture_control_axi_imp_auto_pc_4/adc3_capture_control_axi_imp_auto_pc_3_in_context.xdc] for cell 'adc3_capture_i/control_axi/m05_couplers/auto_pc'
+Parsing XDC File [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/ip/adc3_capture_control_axi_imp_auto_ds_5/adc3_capture_control_axi_imp_auto_ds_5/adc3_capture_control_axi_imp_auto_ds_0_in_context.xdc] for cell 'adc3_capture_i/control_axi/m06_couplers/auto_ds'
+Finished Parsing XDC File [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/ip/adc3_capture_control_axi_imp_auto_ds_5/adc3_capture_control_axi_imp_auto_ds_5/adc3_capture_control_axi_imp_auto_ds_0_in_context.xdc] for cell 'adc3_capture_i/control_axi/m06_couplers/auto_ds'
+Parsing XDC File [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/ip/adc3_capture_control_axi_imp_auto_pc_5/adc3_capture_control_axi_imp_auto_pc_5/adc3_capture_control_axi_imp_auto_pc_3_in_context.xdc] for cell 'adc3_capture_i/control_axi/m06_couplers/auto_pc'
+Finished Parsing XDC File [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/ip/adc3_capture_control_axi_imp_auto_pc_5/adc3_capture_control_axi_imp_auto_pc_5/adc3_capture_control_axi_imp_auto_pc_3_in_context.xdc] for cell 'adc3_capture_i/control_axi/m06_couplers/auto_pc'
+Parsing XDC File [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/ip/adc3_capture_control_axi_imp_auto_ds_6/adc3_capture_control_axi_imp_auto_ds_6/adc3_capture_control_axi_imp_auto_ds_6_in_context.xdc] for cell 'adc3_capture_i/control_axi/m07_couplers/auto_ds'
+Finished Parsing XDC File [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/ip/adc3_capture_control_axi_imp_auto_ds_6/adc3_capture_control_axi_imp_auto_ds_6/adc3_capture_control_axi_imp_auto_ds_6_in_context.xdc] for cell 'adc3_capture_i/control_axi/m07_couplers/auto_ds'
+Parsing XDC File [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/ip/adc3_capture_control_axi_imp_auto_pc_6/adc3_capture_control_axi_imp_auto_pc_6/adc3_capture_control_axi_imp_auto_pc_6_in_context.xdc] for cell 'adc3_capture_i/control_axi/m07_couplers/auto_pc'
+Finished Parsing XDC File [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/ip/adc3_capture_control_axi_imp_auto_pc_6/adc3_capture_control_axi_imp_auto_pc_6/adc3_capture_control_axi_imp_auto_pc_6_in_context.xdc] for cell 'adc3_capture_i/control_axi/m07_couplers/auto_pc'
+Parsing XDC File [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/ip/adc3_capture_control_reset_0/adc3_capture_control_reset_0/adc3_capture_control_reset_0_in_context.xdc] for cell 'adc3_capture_i/control_reset'
+Finished Parsing XDC File [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/ip/adc3_capture_control_reset_0/adc3_capture_control_reset_0/adc3_capture_control_reset_0_in_context.xdc] for cell 'adc3_capture_i/control_reset'
+Parsing XDC File [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/ip/adc3_capture_sample_reset_0/adc3_capture_sample_reset_0/adc3_capture_sample_reset_0_in_context.xdc] for cell 'adc3_capture_i/sample_reset'
+Finished Parsing XDC File [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/ip/adc3_capture_sample_reset_0/adc3_capture_sample_reset_0/adc3_capture_sample_reset_0_in_context.xdc] for cell 'adc3_capture_i/sample_reset'
+Parsing XDC File [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/ip/adc3_capture_sample_clock_0/adc3_capture_sample_clock_0/adc3_capture_sample_clock_0_in_context.xdc] for cell 'adc3_capture_i/sample_clock'
+Finished Parsing XDC File [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/ip/adc3_capture_sample_clock_0/adc3_capture_sample_clock_0/adc3_capture_sample_clock_0_in_context.xdc] for cell 'adc3_capture_i/sample_clock'
+Parsing XDC File [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/ip/adc3_capture_iq_lanes_0/adc3_capture_iq_lanes_0/adc3_capture_iq_lanes_0_in_context.xdc] for cell 'adc3_capture_i/iq_lanes'
+Finished Parsing XDC File [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/ip/adc3_capture_iq_lanes_0/adc3_capture_iq_lanes_0/adc3_capture_iq_lanes_0_in_context.xdc] for cell 'adc3_capture_i/iq_lanes'
+Parsing XDC File [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/ip/adc3_capture_ila_iq_0/adc3_capture_ila_iq_0/adc3_capture_ila_iq_0_in_context.xdc] for cell 'adc3_capture_i/ila_iq'
+Finished Parsing XDC File [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/ip/adc3_capture_ila_iq_0/adc3_capture_ila_iq_0/adc3_capture_ila_iq_0_in_context.xdc] for cell 'adc3_capture_i/ila_iq'
+Parsing XDC File [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/ip/adc3_capture_ddr4_0_0/adc3_capture_ddr4_0_0/adc3_capture_ddr4_0_0_in_context.xdc] for cell 'adc3_capture_i/ddr4_0'
+Finished Parsing XDC File [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/ip/adc3_capture_ddr4_0_0/adc3_capture_ddr4_0_0/adc3_capture_ddr4_0_0_in_context.xdc] for cell 'adc3_capture_i/ddr4_0'
+Parsing XDC File [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/ip/adc3_capture_tx_reset_invert_0/adc3_capture_tx_reset_invert_0/adc3_capture_tx_reset_invert_0_in_context.xdc] for cell 'adc3_capture_i/tx_reset_invert'
+Finished Parsing XDC File [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/ip/adc3_capture_tx_reset_invert_0/adc3_capture_tx_reset_invert_0/adc3_capture_tx_reset_invert_0_in_context.xdc] for cell 'adc3_capture_i/tx_reset_invert'
+Parsing XDC File [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/ip/adc3_capture_memory_reset_0/adc3_capture_memory_reset_0/adc3_capture_memory_reset_0_in_context.xdc] for cell 'adc3_capture_i/memory_reset'
+Finished Parsing XDC File [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/ip/adc3_capture_memory_reset_0/adc3_capture_memory_reset_0/adc3_capture_memory_reset_0_in_context.xdc] for cell 'adc3_capture_i/memory_reset'
+Parsing XDC File [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/ip/adc3_capture_wave_upload_dma_0/adc3_capture_wave_upload_dma_0/adc3_capture_wave_upload_dma_0_in_context.xdc] for cell 'adc3_capture_i/wave_upload_dma'
+Finished Parsing XDC File [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/ip/adc3_capture_wave_upload_dma_0/adc3_capture_wave_upload_dma_0/adc3_capture_wave_upload_dma_0_in_context.xdc] for cell 'adc3_capture_i/wave_upload_dma'
+Parsing XDC File [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/ip/adc3_capture_tx_dma_0/adc3_capture_tx_dma_0/adc3_capture_tx_dma_0_in_context.xdc] for cell 'adc3_capture_i/tx_dma'
+Finished Parsing XDC File [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/ip/adc3_capture_tx_dma_0/adc3_capture_tx_dma_0/adc3_capture_tx_dma_0_in_context.xdc] for cell 'adc3_capture_i/tx_dma'
+Parsing XDC File [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/ip/adc3_capture_tx_memory_axi_0/adc3_capture_tx_memory_axi_0/adc3_capture_tx_memory_axi_0_in_context.xdc] for cell 'adc3_capture_i/tx_memory_axi'
+Finished Parsing XDC File [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/ip/adc3_capture_tx_memory_axi_0/adc3_capture_tx_memory_axi_0/adc3_capture_tx_memory_axi_0_in_context.xdc] for cell 'adc3_capture_i/tx_memory_axi'
+Parsing XDC File [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/ip/adc3_capture_tx_control_0/adc3_capture_tx_control_0/adc3_capture_tx_control_0_in_context.xdc] for cell 'adc3_capture_i/tx_control'
+Finished Parsing XDC File [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/ip/adc3_capture_tx_control_0/adc3_capture_tx_control_0/adc3_capture_tx_control_0_in_context.xdc] for cell 'adc3_capture_i/tx_control'
+Parsing XDC File [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/ip/adc3_capture_dac_sample_clock_0/adc3_capture_dac_sample_clock_0/adc3_capture_dac_sample_clock_0_in_context.xdc] for cell 'adc3_capture_i/dac_sample_clock'
+Finished Parsing XDC File [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/ip/adc3_capture_dac_sample_clock_0/adc3_capture_dac_sample_clock_0/adc3_capture_dac_sample_clock_0_in_context.xdc] for cell 'adc3_capture_i/dac_sample_clock'
+Parsing XDC File [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/ip/adc3_capture_dac_sample_reset_0/adc3_capture_dac_sample_reset_0/adc3_capture_dac_sample_reset_0_in_context.xdc] for cell 'adc3_capture_i/dac_sample_reset'
+Finished Parsing XDC File [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/ip/adc3_capture_dac_sample_reset_0/adc3_capture_dac_sample_reset_0/adc3_capture_dac_sample_reset_0_in_context.xdc] for cell 'adc3_capture_i/dac_sample_reset'
+Parsing XDC File [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/ip/adc3_capture_tx_prefill_fifo_0/adc3_capture_tx_prefill_fifo_0/adc3_capture_tx_prefill_fifo_0_in_context.xdc] for cell 'adc3_capture_i/tx_prefill_fifo'
+Finished Parsing XDC File [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/ip/adc3_capture_tx_prefill_fifo_0/adc3_capture_tx_prefill_fifo_0/adc3_capture_tx_prefill_fifo_0_in_context.xdc] for cell 'adc3_capture_i/tx_prefill_fifo'
+Parsing XDC File [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/ip/adc3_capture_tx_unpack_4iq_0/adc3_capture_tx_unpack_4iq_0/adc3_capture_tx_unpack_4iq_0_in_context.xdc] for cell 'adc3_capture_i/tx_unpack_4iq'
+Finished Parsing XDC File [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/ip/adc3_capture_tx_unpack_4iq_0/adc3_capture_tx_unpack_4iq_0/adc3_capture_tx_unpack_4iq_0_in_context.xdc] for cell 'adc3_capture_i/tx_unpack_4iq'
+Parsing XDC File [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/ip/adc3_capture_tx_guard_0/adc3_capture_tx_guard_0/adc3_capture_tx_guard_0_in_context.xdc] for cell 'adc3_capture_i/tx_guard'
+Finished Parsing XDC File [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/ip/adc3_capture_tx_guard_0/adc3_capture_tx_guard_0/adc3_capture_tx_guard_0_in_context.xdc] for cell 'adc3_capture_i/tx_guard'
+Parsing XDC File [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/ip/adc3_capture_tx_fifo_reset_0/adc3_capture_tx_fifo_reset_0/adc3_capture_tx_fifo_reset_0_in_context.xdc] for cell 'adc3_capture_i/tx_fifo_reset'
+Finished Parsing XDC File [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/ip/adc3_capture_tx_fifo_reset_0/adc3_capture_tx_fifo_reset_0/adc3_capture_tx_fifo_reset_0_in_context.xdc] for cell 'adc3_capture_i/tx_fifo_reset'
+Parsing XDC File [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/ip/adc3_capture_tx_unpack_reset_0/adc3_capture_tx_unpack_reset_0/adc3_capture_tx_unpack_reset_0_in_context.xdc] for cell 'adc3_capture_i/tx_unpack_reset'
+Finished Parsing XDC File [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/ip/adc3_capture_tx_unpack_reset_0/adc3_capture_tx_unpack_reset_0/adc3_capture_tx_unpack_reset_0_in_context.xdc] for cell 'adc3_capture_i/tx_unpack_reset'
+Parsing XDC File [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/ip/adc3_capture_ila_tx_0/adc3_capture_ila_tx_0/adc3_capture_ila_tx_0_in_context.xdc] for cell 'adc3_capture_i/ila_tx'
+Finished Parsing XDC File [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/ip/adc3_capture_ila_tx_0/adc3_capture_ila_tx_0/adc3_capture_ila_tx_0_in_context.xdc] for cell 'adc3_capture_i/ila_tx'
+Parsing XDC File [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/ip/adc3_capture_sa_fft_0/adc3_capture_sa_fft_0/adc3_capture_sa_fft_0_in_context.xdc] for cell 'adc3_capture_i/sa_fft'
+Finished Parsing XDC File [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/ip/adc3_capture_sa_fft_0/adc3_capture_sa_fft_0/adc3_capture_sa_fft_0_in_context.xdc] for cell 'adc3_capture_i/sa_fft'
+Parsing XDC File [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/ip/adc3_capture_sa_dsp_0/adc3_capture_sa_dsp_0/adc3_capture_sa_dsp_0_in_context.xdc] for cell 'adc3_capture_i/sa_dsp'
+Finished Parsing XDC File [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/ip/adc3_capture_sa_dsp_0/adc3_capture_sa_dsp_0/adc3_capture_sa_dsp_0_in_context.xdc] for cell 'adc3_capture_i/sa_dsp'
+Parsing XDC File [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/ip/adc3_capture_sa_control_cdc_0/adc3_capture_sa_control_cdc_0/adc3_capture_sa_control_cdc_0_in_context.xdc] for cell 'adc3_capture_i/sa_control_cdc'
+Finished Parsing XDC File [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/ip/adc3_capture_sa_control_cdc_0/adc3_capture_sa_control_cdc_0/adc3_capture_sa_control_cdc_0_in_context.xdc] for cell 'adc3_capture_i/sa_control_cdc'
+Parsing XDC File [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/ip/adc3_capture_sa_control_0/adc3_capture_sa_control_0/adc3_capture_sa_control_0_in_context.xdc] for cell 'adc3_capture_i/sa_control'
+Finished Parsing XDC File [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/ip/adc3_capture_sa_control_0/adc3_capture_sa_control_0/adc3_capture_sa_control_0_in_context.xdc] for cell 'adc3_capture_i/sa_control'
+Parsing XDC File [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/ip/adc3_capture_ila_sa_0/adc3_capture_ila_sa_0/adc3_capture_ila_sa_0_in_context.xdc] for cell 'adc3_capture_i/ila_sa'
+Finished Parsing XDC File [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/ip/adc3_capture_ila_sa_0/adc3_capture_ila_sa_0/adc3_capture_ila_sa_0_in_context.xdc] for cell 'adc3_capture_i/ila_sa'
+Parsing XDC File [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/ip/adc3_capture_sa_result_0/adc3_capture_sa_result_0/adc3_capture_sa_result_0_in_context.xdc] for cell 'adc3_capture_i/sa_result'
+Finished Parsing XDC File [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/ip/adc3_capture_sa_result_0/adc3_capture_sa_result_0/adc3_capture_sa_result_0_in_context.xdc] for cell 'adc3_capture_i/sa_result'
+Parsing XDC File [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/ip/adc3_capture_rx_dma_0/adc3_capture_rx_dma_0/adc3_capture_rx_dma_0_in_context.xdc] for cell 'adc3_capture_i/rx_dma'
+Finished Parsing XDC File [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/ip/adc3_capture_rx_dma_0/adc3_capture_rx_dma_0/adc3_capture_rx_dma_0_in_context.xdc] for cell 'adc3_capture_i/rx_dma'
+Parsing XDC File [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/ip/adc3_capture_rx_result_fifo_0/adc3_capture_rx_result_fifo_0/adc3_capture_rx_result_fifo_0_in_context.xdc] for cell 'adc3_capture_i/rx_result_fifo'
+Finished Parsing XDC File [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/ip/adc3_capture_rx_result_fifo_0/adc3_capture_rx_result_fifo_0/adc3_capture_rx_result_fifo_0_in_context.xdc] for cell 'adc3_capture_i/rx_result_fifo'
+Parsing XDC File [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/ip/adc3_capture_rx_memory_axi_0/adc3_capture_rx_memory_axi_0/adc3_capture_rx_memory_axi_0_in_context.xdc] for cell 'adc3_capture_i/rx_memory_axi'
+Finished Parsing XDC File [c:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.gen/sources_1/bd/adc3_capture/ip/adc3_capture_rx_memory_axi_0/adc3_capture_rx_memory_axi_0/adc3_capture_rx_memory_axi_0_in_context.xdc] for cell 'adc3_capture_i/rx_memory_axi'
+Parsing XDC File [C:/Users/25812/Documents/Codex/2026-09-23/ni/work/zcu111_2025_2/reference/non_mts/constrs/ddr_cons.xdc]
+Finished Parsing XDC File [C:/Users/25812/Documents/Codex/2026-09-23/ni/work/zcu111_2025_2/reference/non_mts/constrs/ddr_cons.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/25812/Documents/Codex/2026-09-23/ni/work/zcu111_2025_2/reference/non_mts/constrs/ddr_cons.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/adc3_capture_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/adc3_capture_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2372.617 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.070 . Memory (MB): peak = 2372.617 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '3.333' specified during out-of-context synthesis of instance 'adc3_capture_i/memory_reset' at clock pin 'slowest_sync_clk' is different from the actual clock period '3.331', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '3.333' specified during out-of-context synthesis of instance 'adc3_capture_i/tx_dma' at clock pin 'm_axi_mm2s_aclk' is different from the actual clock period '3.331', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '3.333' specified during out-of-context synthesis of instance 'adc3_capture_i/tx_memory_axi' at clock pin 'aclk' is different from the actual clock period '3.331', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '3.333' specified during out-of-context synthesis of instance 'adc3_capture_i/tx_prefill_fifo' at clock pin 's_axis_aclk' is different from the actual clock period '3.331', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '3.333' specified during out-of-context synthesis of instance 'adc3_capture_i/wave_upload_dma' at clock pin 'm_axi_aclk' is different from the actual clock period '3.331', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '3.333' specified during out-of-context synthesis of instance 'adc3_capture_i/control_axi/m01_couplers/auto_cc' at clock pin 'm_axi_aclk' is different from the actual clock period '3.331', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '3.333' specified during out-of-context synthesis of instance 'adc3_capture_i/control_axi/m01_couplers/auto_ds' at clock pin 's_axi_aclk' is different from the actual clock period '3.331', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '3.333' specified during out-of-context synthesis of instance 'adc3_capture_i/control_axi/m01_couplers/auto_pc' at clock pin 'aclk' is different from the actual clock period '3.331', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '3.333' specified during out-of-context synthesis of instance 'adc3_capture_i/control_axi/m02_couplers/auto_cc' at clock pin 'm_axi_aclk' is different from the actual clock period '3.331', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '3.333' specified during out-of-context synthesis of instance 'adc3_capture_i/control_axi/m02_couplers/auto_ds' at clock pin 's_axi_aclk' is different from the actual clock period '3.331', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '3.333' specified during out-of-context synthesis of instance 'adc3_capture_i/control_axi/m02_couplers/auto_pc' at clock pin 'aclk' is different from the actual clock period '3.331', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '3.333' specified during out-of-context synthesis of instance 'adc3_capture_i/control_axi/m04_couplers/auto_cc' at clock pin 'm_axi_aclk' is different from the actual clock period '3.331', this can lead to different synthesis results.
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 2372.617 ; gain = 600.875
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu28dr-ffvg1517-2-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 2372.617 ; gain = 600.875
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:35 ; elapsed = 00:00:38 . Memory (MB): peak = 2372.617 ; gain = 600.875
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:35 ; elapsed = 00:00:38 . Memory (MB): peak = 2372.617 ; gain = 600.875
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 4272 (col length:192)
+BRAMs: 2160 (col length: RAMB18 192 RAMB36 96)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:39 ; elapsed = 00:00:42 . Memory (MB): peak = 2372.617 ; gain = 600.875
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:52 ; elapsed = 00:00:56 . Memory (MB): peak = 2882.211 ; gain = 1110.469
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:52 ; elapsed = 00:00:57 . Memory (MB): peak = 2892.234 ; gain = 1120.492
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:53 ; elapsed = 00:00:57 . Memory (MB): peak = 2906.879 ; gain = 1135.137
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:58 ; elapsed = 00:01:03 . Memory (MB): peak = 3128.473 ; gain = 1356.730
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:58 ; elapsed = 00:01:03 . Memory (MB): peak = 3128.473 ; gain = 1356.730
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:58 ; elapsed = 00:01:03 . Memory (MB): peak = 3128.473 ; gain = 1356.730
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:58 ; elapsed = 00:01:03 . Memory (MB): peak = 3128.473 ; gain = 1356.730
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:58 ; elapsed = 00:01:03 . Memory (MB): peak = 3128.473 ; gain = 1356.730
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:58 ; elapsed = 00:01:03 . Memory (MB): peak = 3128.473 ; gain = 1356.730
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+---------------------------------------+----------+
+|      |BlackBox name                          |Instances |
++------+---------------------------------------+----------+
+|1     |adc3_capture_control_axi_imp_xbar_0    |         1|
+|2     |adc3_capture_control_axi_imp_auto_ds_0 |         1|
+|3     |adc3_capture_control_axi_imp_auto_pc_0 |         1|
+|4     |adc3_capture_control_axi_imp_auto_cc_0 |         1|
+|5     |adc3_capture_control_axi_imp_auto_ds_1 |         1|
+|6     |adc3_capture_control_axi_imp_auto_pc_1 |         1|
+|7     |adc3_capture_control_axi_imp_auto_cc_1 |         1|
+|8     |adc3_capture_control_axi_imp_auto_ds_2 |         1|
+|9     |adc3_capture_control_axi_imp_auto_pc_2 |         1|
+|10    |adc3_capture_control_axi_imp_auto_ds_3 |         1|
+|11    |adc3_capture_control_axi_imp_auto_pc_3 |         1|
+|12    |adc3_capture_control_axi_imp_auto_cc_2 |         1|
+|13    |adc3_capture_control_axi_imp_auto_ds_4 |         1|
+|14    |adc3_capture_control_axi_imp_auto_pc_4 |         1|
+|15    |adc3_capture_control_axi_imp_auto_ds_5 |         1|
+|16    |adc3_capture_control_axi_imp_auto_pc_5 |         1|
+|17    |adc3_capture_control_axi_imp_auto_ds_6 |         1|
+|18    |adc3_capture_control_axi_imp_auto_pc_6 |         1|
+|19    |adc3_capture_control_reset_0           |         1|
+|20    |adc3_capture_dac_sample_clock_0        |         1|
+|21    |adc3_capture_dac_sample_reset_0        |         1|
+|22    |adc3_capture_ddr4_0_0                  |         1|
+|23    |adc3_capture_ila_iq_0                  |         1|
+|24    |adc3_capture_ila_sa_0                  |         1|
+|25    |adc3_capture_ila_tx_0                  |         1|
+|26    |adc3_capture_iq_lanes_0                |         1|
+|27    |adc3_capture_memory_reset_0            |         1|
+|28    |adc3_capture_rfdc_0                    |         1|
+|29    |adc3_capture_rx_dma_0                  |         1|
+|30    |adc3_capture_rx_memory_axi_0           |         1|
+|31    |adc3_capture_rx_result_fifo_0          |         1|
+|32    |adc3_capture_sa_control_0              |         1|
+|33    |adc3_capture_sa_control_cdc_0          |         1|
+|34    |adc3_capture_sa_dsp_0                  |         1|
+|35    |adc3_capture_sa_fft_0                  |         1|
+|36    |adc3_capture_sa_result_0               |         1|
+|37    |adc3_capture_sample_clock_0            |         1|
+|38    |adc3_capture_sample_reset_0            |         1|
+|39    |adc3_capture_tx_control_0              |         1|
+|40    |adc3_capture_tx_dma_0                  |         1|
+|41    |adc3_capture_tx_fifo_reset_0           |         1|
+|42    |adc3_capture_tx_guard_0                |         1|
+|43    |adc3_capture_tx_memory_axi_0           |         1|
+|44    |adc3_capture_tx_prefill_fifo_0         |         1|
+|45    |adc3_capture_tx_reset_invert_0         |         1|
+|46    |adc3_capture_tx_unpack_4iq_0           |         1|
+|47    |adc3_capture_tx_unpack_reset_0         |         1|
+|48    |adc3_capture_wave_upload_dma_0         |         1|
+|49    |adc3_capture_zynq_ultra_ps_e_0_0       |         1|
++------+---------------------------------------+----------+
+
+Report Cell Usage: 
++------+-------------------------------------+------+
+|      |Cell                                 |Count |
++------+-------------------------------------+------+
+|1     |adc3_capture_control_axi_imp_auto_cc |     3|
+|4     |adc3_capture_control_axi_imp_auto_ds |     7|
+|11    |adc3_capture_control_axi_imp_auto_pc |     7|
+|18    |adc3_capture_control_axi_imp_xbar    |     1|
+|19    |adc3_capture_control_reset           |     1|
+|20    |adc3_capture_dac_sample_clock        |     1|
+|21    |adc3_capture_dac_sample_reset        |     1|
+|22    |adc3_capture_ddr4_0                  |     1|
+|23    |adc3_capture_ila_iq                  |     1|
+|24    |adc3_capture_ila_sa                  |     1|
+|25    |adc3_capture_ila_tx                  |     1|
+|26    |adc3_capture_iq_lanes                |     1|
+|27    |adc3_capture_memory_reset            |     1|
+|28    |adc3_capture_rfdc                    |     1|
+|29    |adc3_capture_rx_dma                  |     1|
+|30    |adc3_capture_rx_memory_axi           |     1|
+|31    |adc3_capture_rx_result_fifo          |     1|
+|32    |adc3_capture_sa_control              |     1|
+|33    |adc3_capture_sa_control_cdc          |     1|
+|34    |adc3_capture_sa_dsp                  |     1|
+|35    |adc3_capture_sa_fft                  |     1|
+|36    |adc3_capture_sa_result               |     1|
+|37    |adc3_capture_sample_clock            |     1|
+|38    |adc3_capture_sample_reset            |     1|
+|39    |adc3_capture_tx_control              |     1|
+|40    |adc3_capture_tx_dma                  |     1|
+|41    |adc3_capture_tx_fifo_reset           |     1|
+|42    |adc3_capture_tx_guard                |     1|
+|43    |adc3_capture_tx_memory_axi           |     1|
+|44    |adc3_capture_tx_prefill_fifo         |     1|
+|45    |adc3_capture_tx_reset_invert         |     1|
+|46    |adc3_capture_tx_unpack_4iq           |     1|
+|47    |adc3_capture_tx_unpack_reset         |     1|
+|48    |adc3_capture_wave_upload_dma         |     1|
+|49    |adc3_capture_zynq_ultra_ps_e_0       |     1|
++------+-------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:58 ; elapsed = 00:01:03 . Memory (MB): peak = 3128.473 ; gain = 1356.730
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 12 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:33 ; elapsed = 00:00:48 . Memory (MB): peak = 3128.473 ; gain = 1314.176
+Synthesis Optimization Complete : Time (s): cpu = 00:00:59 ; elapsed = 00:01:04 . Memory (MB): peak = 3128.473 ; gain = 1356.730
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.258 . Memory (MB): peak = 3128.473 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3128.473 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 6d77ac4d
+INFO: [Common 17-83] Releasing license: Synthesis
+176 Infos, 200 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:16 ; elapsed = 00:01:26 . Memory (MB): peak = 3128.473 ; gain = 2365.621
+INFO: [Common 17-1381] The checkpoint 'C:/Users/25812/Documents/Codex/zcu111_adc3_2400_hw/zcu111_adc3_2400_hw.runs/synth_1/adc3_capture_wrapper.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file adc3_capture_wrapper_utilization_synth.rpt -pb adc3_capture_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Oct 28 22:55:55 2026...

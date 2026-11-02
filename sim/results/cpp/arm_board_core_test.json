@@ -1,0 +1,26 @@
+{
+  "host": "192.168.21.136",
+  "remote_directory": "/tmp/zcu111_cpp_05476cfa09",
+  "commands": [
+    {
+      "command": "/tmp/zcu111_cpp_05476cfa09/instrument-core-tests-aarch64 /tmp/zcu111_cpp_05476cfa09/resources /tmp/zcu111_cpp_05476cfa09/core-test-output",
+      "stdout": "CORE_TESTS_PASS checks=18 no hardware access\n",
+      "stderr": "",
+      "exit": 0
+    },
+    {
+      "command": "df -h /tmp",
+      "stdout": "Filesystem                Size      Used Available Use% Mounted on\ntmpfs                     1.9G     16.7M      1.9G   1% /tmp\n",
+      "stderr": "",
+      "exit": 0
+    },
+    {
+      "command": "free -m",
+      "stdout": "              total        used        free      shared  buff/cache   available\nMem:           3924         261        3430          59         233        3365\nSwap:             0           0           0\n",
+      "stderr": "",
+      "exit": 0
+    }
+  ],
+  "rf_actions": false,
+  "qt_gui_run": false
+}

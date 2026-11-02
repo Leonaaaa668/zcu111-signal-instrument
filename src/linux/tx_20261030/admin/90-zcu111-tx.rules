@@ -1,0 +1,1 @@
+SUBSYSTEM=="misc", KERNEL=="zcu111_tx", OWNER="root", GROUP="video", MODE="0660"

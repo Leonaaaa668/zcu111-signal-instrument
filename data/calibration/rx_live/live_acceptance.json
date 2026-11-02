@@ -1,0 +1,23 @@
+{
+  "date": "2026-10-30",
+  "timezone": "Asia/Shanghai",
+  "status": "LIVE_GUI_ACCEPTANCE_PASS",
+  "source_set_frequency_hz": 1790000000,
+  "source_set_dbm": -45,
+  "source_level_offset_db": 0,
+  "reference_dbm": -45.70664875114443,
+  "gui_user_reported_dbm": -45.735,
+  "native_saved_input_dbm": -45.73527678168449,
+  "native_minus_reference_db": -0.028628030540062355,
+  "fft_n": 65536,
+  "linear_averages": 16,
+  "mouse": "USER_CONFIRMED_NORMAL",
+  "rf_last_state": "OFF_USER_CONFIRMED",
+  "profile_sha256": "e5265c40ad6b256deff008bec7bc6fb314eb7fe0db62ca86e48d4fdf60789a9b",
+  "remote_capture_directory": "/tmp/zcu111_measurements_petalinux/capture_20250529_230034_5a55399b-d054-42d4-8675-1b2e4a575ce6",
+  "board_rtc_note": "Board capture directory carries stale 2025 RTC date; acceptance date above comes from current client date and user confirmation. Raw files unchanged.",
+  "raw_packet_sha256_verified": 16,
+  "pc_recomputed_input_dbm": -45.73527678168449,
+  "absolute_accuracy_claimed_db": null,
+  "scope": "1790 MHz CW only; measured endpoint power range; no full-band/channel/noise calibration"
+}

@@ -1,0 +1,16 @@
+{
+  "date": "2026-10-30",
+  "version": "0.3.1",
+  "GUI_sha256": "2650204258430054bf862d009fe91545d33fded1e961576d31a0701dbe50f35c",
+  "build": "SDK_QT5_15_13_PASS",
+  "QEMU_gui_selftest": "PASS_WITH_IMAGE_RUNTIME",
+  "board_visual_check": "USER_CONFIRMED_INSTRUMENT_WINDOW_AND_CURSOR",
+  "board_interaction_check": "USER_CONFIRMED_MOVEMENT_AND_CLICK_AFTER_PIXMAN_1080P",
+  "board_replay_8192": "USER_CONFIRMED_CURVE_AND_MEASUREMENTS",
+  "center_hz": 1800000000,
+  "saved_tone_estimate_hz": 1789999810.0061617,
+  "FPGA_changed": false,
+  "RF_actions": "NONE",
+  "current_board_display_settings": "VOLATILE_/run_AND_/tmp",
+  "PetaLinux_recipe_image_rebuild": "PENDING"
+}

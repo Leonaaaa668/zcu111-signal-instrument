@@ -1,0 +1,4 @@
+interface:
+  display_name: "FPGA证据驱动复现与验收"
+  short_description: "从时钟复位、数值验证到资源对比、标定和冻结交付的可复用FPGA工作流"
+  default_prompt: "使用 $fpga-evidence-workflow，依据原始日志和配置制定最小验证步骤，区分推断与实测并形成可复现验收记录。"

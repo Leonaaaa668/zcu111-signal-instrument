@@ -1,0 +1,14 @@
+{
+  "rtl/sa_halfband_decim2.v": "2c511dcfadd9c2cac1da20b2e21352e046769126b2800ac3d8d6d616500c1d4f",
+  "rtl/sa_d8_zoom.v": "3fe39e2ca32e34de3e363b11eaaeb93707208ca0ddc891d7ad6f9c5d8fda6f90",
+  "rtl/sa_hann_rom.v": "24c0525375d6878439ba4db41479d4e7b4ea35b370d7d027e1aaf98e233a0398",
+  "rtl/sa_hann_window.v": "fad1b9713340b211ba6e28772d1e04f36f44e1c9dbdcdbe669b2a34a0a86897d",
+  "rtl/sa_axis_loss_guard.v": "b189e6cc2769c854eacb36c701a1c1d2e342234318cf9a288e7066975019c13a",
+  "rtl/sa_fft_power.v": "9bdcd76d9608045b8c12f784b5b276335927fd167f3e516e85a0694300a98769",
+  "sim/tb_sa_d8_zoom.v": "092fd93c0b59c3e6b42276fda37e7331f4b5fb94578796704f63d90dc346dcac",
+  "sim/tb_sa_fft.v": "8266f769ef442af44ae43469526f4a75751150bf4eca5728fc2b58abdcf265f6",
+  "python/generate_sa_rx_vectors.py": "f527a4980ec2e3397cdbac7f0d0cfe8decdf107b462657b57786e656420ee902",
+  "python/generate_sa_decim_vectors.py": "c21d482fc1c74f50b8a06c947afea28cf5b97694bc8e0ebce3d9c4885a1520d9",
+  "python/sa_filter_design.py": "eece26ec354f095573666b2485635f3cf195d60a9b342bc954e156ca71e760c6",
+  "python/verify_sa_fft.py": "558c94a32a0fac35b422d96b24d208e7b6eb1436c1faa8fb780ddc0416ac99c3"
+}

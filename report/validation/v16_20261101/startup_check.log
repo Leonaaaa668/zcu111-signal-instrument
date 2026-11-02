@@ -1,0 +1,9 @@
+/tmp/zcu111_instrument_qt5_20261101_16/usr/bin/zcu111-instrument
+2bfdec40a2170c9c78cc401a3122eaf74559ade0518a08165412119a6960e729  /proc/3741/exe
+/run/media/mmcblk0p1/zcu111_instrument_qt5_20261101_16.tar.gz: OK
+/run/media/mmcblk0p1/BOOT.BIN: OK
+V16_FILES_KERNEL_CHECK_PASS; no initialization, capture or playback performed.
+/run/media/mmcblk0p1/zcu111_instrument_qt5_20261101_16.tar.gz: OK
+/run/media/mmcblk0p1/BOOT.BIN: OK
+V16_ALREADY_RUNNING; no reset, restart, frequency or playback change.
+{"abi":1,"flags":1,"guard_status":135,"cdma_status":4098,"mm2s_status":65545,"dac_state":15,"last_errno":0,"loaded_bytes":0,"received_bytes":48000000,"session":4,"nco_word":70368744177664}

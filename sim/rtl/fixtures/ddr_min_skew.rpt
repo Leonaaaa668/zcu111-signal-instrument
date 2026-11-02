@@ -1,0 +1,40 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version      : Vivado v.2025.2 (win64) Build 6299465 Fri Nov 14 19:35:11 GMT 2025
+| Date              : Sun Oct 25 13:32:00 2026
+| Host              : LXC running 64-bit major release  (build 9200)
+| Command           : report_pulse_width -all_violators -limit 100 -file C:/Users/25812/Documents/Codex/2026-09-23/ni/work/zcu111_adc3_2400/reports/tx/route_diagnosis/pulse_all.rpt
+| Design            : adc3_capture_wrapper
+| Device            : xczu28dr-ffvg1517
+| Speed File        : -2  PRODUCTION 1.30 05-03-2022
+| Design State      : Routed
+| Temperature Grade : E
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Pulse Width Report
+
+Clock Name:         mmcm_clkout0
+Waveform(ns):       { 0.000 1.666 }
+Period(ns):         3.331
+Sources:            { adc3_capture_i/ddr4_0/inst/u_ddr4_infrastructure/gen_mmcme4.u_mmcme_adv_inst/CLKOUT0 }
+
+Check Type  Corner  Lib Pin             Reference Pin       Required(ns)  Actual(ns)  Slack(ns)  Location               Pin
+Min Skew    Slow    RXTX_BITSLICE/D[2]  RXTX_BITSLICE/D[1]  0.090         0.060       -0.030     BITSLICE_RX_TX_X0Y179  adc3_capture_i/ddr4_0/inst/u_ddr4_mem_intfc/u_mig_ddr4_phy/inst/generate_block1.u_ddr_xiphy/byte_num[1].xiphy_byte_wrapper.u_xiphy_byte_wrapper/I_BITSLICE_UPPER[4].GEN_RXTX_BITSLICE_EN.u_xiphy_bitslice_upper/xiphy_rxtx_bitslice/D[2]
+Min Skew    Slow    RXTX_BITSLICE/D[2]  RXTX_BITSLICE/D[1]  0.090         0.069       -0.021     BITSLICE_RX_TX_X0Y192  adc3_capture_i/ddr4_0/inst/u_ddr4_mem_intfc/u_mig_ddr4_phy/inst/generate_block1.u_ddr_xiphy/byte_num[2].xiphy_byte_wrapper.u_xiphy_byte_wrapper/I_BITSLICE_UPPER[4].GEN_RXTX_BITSLICE_EN.u_xiphy_bitslice_upper/xiphy_rxtx_bitslice/D[2]
+Min Skew    Fast    RXTX_BITSLICE/D[2]  RXTX_BITSLICE/D[1]  0.050         0.076       0.026      BITSLICE_RX_TX_X0Y179  adc3_capture_i/ddr4_0/inst/u_ddr4_mem_intfc/u_mig_ddr4_phy/inst/generate_block1.u_ddr_xiphy/byte_num[1].xiphy_byte_wrapper.u_xiphy_byte_wrapper/I_BITSLICE_UPPER[4].GEN_RXTX_BITSLICE_EN.u_xiphy_bitslice_upper/xiphy_rxtx_bitslice/D[2]
+Min Skew    Slow    RXTX_BITSLICE/D[2]  RXTX_BITSLICE/D[1]  0.090         0.130       0.040      BITSLICE_RX_TX_X0Y166  adc3_capture_i/ddr4_0/inst/u_ddr4_mem_intfc/u_mig_ddr4_phy/inst/generate_block1.u_ddr_xiphy/byte_num[0].xiphy_byte_wrapper.u_xiphy_byte_wrapper/I_BITSLICE_UPPER[4].GEN_RXTX_BITSLICE_EN.u_xiphy_bitslice_upper/xiphy_rxtx_bitslice/D[2]
+Min Skew    Fast    RXTX_BITSLICE/D[2]  RXTX_BITSLICE/D[1]  0.050         0.090       0.040      BITSLICE_RX_TX_X0Y192  adc3_capture_i/ddr4_0/inst/u_ddr4_mem_intfc/u_mig_ddr4_phy/inst/generate_block1.u_ddr_xiphy/byte_num[2].xiphy_byte_wrapper.u_xiphy_byte_wrapper/I_BITSLICE_UPPER[4].GEN_RXTX_BITSLICE_EN.u_xiphy_bitslice_upper/xiphy_rxtx_bitslice/D[2]
+Min Skew    Slow    RXTX_BITSLICE/D[2]  RXTX_BITSLICE/D[1]  0.090         0.140       0.050      BITSLICE_RX_TX_X0Y231  adc3_capture_i/ddr4_0/inst/u_ddr4_mem_intfc/u_mig_ddr4_phy/inst/generate_block1.u_ddr_xiphy/byte_num[5].xiphy_byte_wrapper.u_xiphy_byte_wrapper/I_BITSLICE_UPPER[4].GEN_RXTX_BITSLICE_EN.u_xiphy_bitslice_upper/xiphy_rxtx_bitslice/D[2]
+Min Skew    Slow    RXTX_BITSLICE/D[1]  RXTX_BITSLICE/D[2]  0.090         0.163       0.073      BITSLICE_RX_TX_X0Y244  adc3_capture_i/ddr4_0/inst/u_ddr4_mem_intfc/u_mig_ddr4_phy/inst/generate_block1.u_ddr_xiphy/byte_num[6].xiphy_byte_wrapper.u_xiphy_byte_wrapper/I_BITSLICE_UPPER[4].GEN_RXTX_BITSLICE_EN.u_xiphy_bitslice_upper/xiphy_rxtx_bitslice/D[1]
+Min Skew    Fast    RXTX_BITSLICE/D[2]  RXTX_BITSLICE/D[1]  0.050         0.124       0.074      BITSLICE_RX_TX_X0Y231  adc3_capture_i/ddr4_0/inst/u_ddr4_mem_intfc/u_mig_ddr4_phy/inst/generate_block1.u_ddr_xiphy/byte_num[5].xiphy_byte_wrapper.u_xiphy_byte_wrapper/I_BITSLICE_UPPER[4].GEN_RXTX_BITSLICE_EN.u_xiphy_bitslice_upper/xiphy_rxtx_bitslice/D[2]
+Min Skew    Fast    RXTX_BITSLICE/D[2]  RXTX_BITSLICE/D[1]  0.050         0.130       0.080      BITSLICE_RX_TX_X0Y166  adc3_capture_i/ddr4_0/inst/u_ddr4_mem_intfc/u_mig_ddr4_phy/inst/generate_block1.u_ddr_xiphy/byte_num[0].xiphy_byte_wrapper.u_xiphy_byte_wrapper/I_BITSLICE_UPPER[4].GEN_RXTX_BITSLICE_EN.u_xiphy_bitslice_upper/xiphy_rxtx_bitslice/D[2]
+Min Skew    Fast    RXTX_BITSLICE/D[1]  RXTX_BITSLICE/D[2]  0.050         0.135       0.085      BITSLICE_RX_TX_X0Y296  adc3_capture_i/ddr4_0/inst/u_ddr4_mem_intfc/u_mig_ddr4_phy/inst/generate_block1.u_ddr_xiphy/byte_num[10].xiphy_byte_wrapper.u_xiphy_byte_wrapper/I_BITSLICE_UPPER[4].GEN_RXTX_BITSLICE_EN.u_xiphy_bitslice_upper/xiphy_rxtx_bitslice/D[1]
+Min Skew    Fast    RXTX_BITSLICE/D[1]  RXTX_BITSLICE/D[2]  0.050         0.144       0.094      BITSLICE_RX_TX_X0Y244  adc3_capture_i/ddr4_0/inst/u_ddr4_mem_intfc/u_mig_ddr4_phy/inst/generate_block1.u_ddr_xiphy/byte_num[6].xiphy_byte_wrapper.u_xiphy_byte_wrapper/I_BITSLICE_UPPER[4].GEN_RXTX_BITSLICE_EN.u_xiphy_bitslice_upper/xiphy_rxtx_bitslice/D[1]
+Min Skew    Slow    RXTX_BITSLICE/D[1]  RXTX_BITSLICE/D[2]  0.090         0.327       0.237      BITSLICE_RX_TX_X0Y296  adc3_capture_i/ddr4_0/inst/u_ddr4_mem_intfc/u_mig_ddr4_phy/inst/generate_block1.u_ddr_xiphy/byte_num[10].xiphy_byte_wrapper.u_xiphy_byte_wrapper/I_BITSLICE_UPPER[4].GEN_RXTX_BITSLICE_EN.u_xiphy_bitslice_upper/xiphy_rxtx_bitslice/D[1]
+Min Skew    Fast    RXTX_BITSLICE/D[1]  RXTX_BITSLICE/D[2]  0.050         0.295       0.245      BITSLICE_RX_TX_X0Y205  adc3_capture_i/ddr4_0/inst/u_ddr4_mem_intfc/u_mig_ddr4_phy/inst/generate_block1.u_ddr_xiphy/byte_num[3].xiphy_byte_wrapper.u_xiphy_byte_wrapper/I_BITSLICE_UPPER[4].GEN_RXTX_BITSLICE_EN.u_xiphy_bitslice_upper/xiphy_rxtx_bitslice/D[1]
+Min Skew    Fast    RXTX_BITSLICE/D[1]  RXTX_BITSLICE/D[2]  0.050         0.306       0.256      BITSLICE_RX_TX_X0Y218  adc3_capture_i/ddr4_0/inst/u_ddr4_mem_intfc/u_mig_ddr4_phy/inst/generate_block1.u_ddr_xiphy/byte_num[4].xiphy_byte_wrapper.u_xiphy_byte_wrapper/I_BITSLICE_UPPER[4].GEN_RXTX_BITSLICE_EN.u_xiphy_bitslice_upper/xiphy_rxtx_bitslice/D[1]
+Min Skew    Slow    RXTX_BITSLICE/D[1]  RXTX_BITSLICE/D[2]  0.090         0.406       0.316      BITSLICE_RX_TX_X0Y205  adc3_capture_i/ddr4_0/inst/u_ddr4_mem_intfc/u_mig_ddr4_phy/inst/generate_block1.u_ddr_xiphy/byte_num[3].xiphy_byte_wrapper.u_xiphy_byte_wrapper/I_BITSLICE_UPPER[4].GEN_RXTX_BITSLICE_EN.u_xiphy_bitslice_upper/xiphy_rxtx_bitslice/D[1]
+Min Skew    Slow    RXTX_BITSLICE/D[1]  RXTX_BITSLICE/D[2]  0.090         0.430       0.340      BITSLICE_RX_TX_X0Y218  adc3_capture_i/ddr4_0/inst/u_ddr4_mem_intfc/u_mig_ddr4_phy/inst/generate_block1.u_ddr_xiphy/byte_num[4].xiphy_byte_wrapper.u_xiphy_byte_wrapper/I_BITSLICE_UPPER[4].GEN_RXTX_BITSLICE_EN.u_xiphy_bitslice_upper/xiphy_rxtx_bitslice/D[1]
+Min Skew    Fast    RXTX_BITSLICE/D[2]  RXTX_BITSLICE/D[1]  0.050         0.414       0.364      BITSLICE_RX_TX_X0Y257  adc3_capture_i/ddr4_0/inst/u_ddr4_mem_intfc/u_mig_ddr4_phy/inst/generate_block1.u_ddr_xiphy/byte_num[7].xiphy_byte_wrapper.u_xiphy_byte_wrapper/I_BITSLICE_UPPER[4].GEN_RXTX_BITSLICE_EN.u_xiphy_bitslice_upper/xiphy_rxtx_bitslice/D[2]
+Min Skew    Slow    RXTX_BITSLICE/D[2]  RXTX_BITSLICE/D[1]  0.090         0.561       0.471      BITSLICE_RX_TX_X0Y257  adc3_capture_i/ddr4_0/inst/u_ddr4_mem_intfc/u_mig_ddr4_phy/inst/generate_block1.u_ddr_xiphy/byte_num[7].xiphy_byte_wrapper.u_xiphy_byte_wrapper/I_BITSLICE_UPPER[4].GEN_RXTX_BITSLICE_EN.u_xiphy_bitslice_upper/xiphy_rxtx_bitslice/D[2]
+

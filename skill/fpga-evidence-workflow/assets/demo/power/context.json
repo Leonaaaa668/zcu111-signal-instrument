@@ -1,0 +1,18 @@
+{
+  "waveform": "CW",
+  "frequency_hz": 1790000000,
+  "reference_plane": "j7_same_cable_end_to_4025g",
+  "setup_id": "manual_4025g_20261031_same_cable",
+  "target_range_dbm": [
+    -40,
+    -20
+  ],
+  "fit_point_ids": [
+    "p_minus40",
+    "p_minus30",
+    "p_minus20",
+    "p_minus35"
+  ],
+  "reference_uncertainty_db": null,
+  "source": "Archived record1038; actual reserved -25dBm spot, readings manually transcribed by user. Physical target -25dBm; old GUI command -24.94dBm applied candidate +0.06dB. Not absolute accuracy certification."
+}

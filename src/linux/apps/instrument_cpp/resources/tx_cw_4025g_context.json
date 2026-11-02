@@ -1,0 +1,17 @@
+{
+  "schema": 1,
+  "kind": "CW_REFERENCE_CONTEXT_OFFSET",
+  "status": "ONE_INDEPENDENT_CORRECTED_POINT_PASS",
+  "base_profile_sha256": "5dea09fa5050d3bda273107ba2daa3f42d2c91429a1fa9faaca1f1a6290c0f56",
+  "verification_sha256": "051fe9ab47fb0289fa2d77c2d6ab400b55d2e10320a4a44187af953c95149397",
+  "setup_id": "zcu111_j7_4025g_current_cable_20261031",
+  "reference_plane": "4025G_input_including_current_cable",
+  "frequency_hz": 1790000000,
+  "minimum_dbm": -40,
+  "maximum_dbm": -20,
+  "command_offset_db": 0.06,
+  "waveform": "CW",
+  "extrapolation": "FORBIDDEN",
+  "absolute_accuracy_claimed": false,
+  "scope": "same4025G/cable,1790MHzCW; one corrected point physically checked; continuous-range accuracy not certified"
+}

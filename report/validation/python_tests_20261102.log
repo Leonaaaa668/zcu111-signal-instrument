@@ -1,0 +1,9 @@
+Command: python -B -m unittest discover -s sim/python -p 'test_*.py'
+Host: Windows/Python3.14, normal user token outside restricted sandbox
+....................
+----------------------------------------------------------------------
+Ran 20 tests in 2.922s
+
+OK
+
+Earlier restricted-token attempts failed while creating/accessing temporary test directories; no test assertion was removed or modified. Same source tests passed with normal user directory permissions.

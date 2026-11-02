@@ -1,0 +1,20 @@
+{
+  "release": "20261101_16",
+  "package": "source_only",
+  "fpga_baseline": "narrow09",
+  "production_files_match_frozen_v16": 88,
+  "vivado_clean_project_restore": "PASS Vivado2025.2; new XPR+BD+wrapper and configuration/address checks",
+  "full_synthesis_implementation": "NOT REPEATED; original routed reports included",
+  "linux_rebuild": "PASS native Qt+CLI, TX/RX kernel modules, RFDC helpers, overlay, assembled runtime",
+  "cpp_ctest": "11/11 PASS",
+  "rtl": "6/6 Verilog controls/dataflow simulations PASS",
+  "snapshot": "6 packets including65536 bins; exact payload and14 corruption/truncation rejections PASS",
+  "python_reference": "20/20 PASS",
+  "petalinux_import": "PASS new project+captured SDT/config/meta-user import; no full image rebuild",
+  "board_actions_during_packaging": "NONE",
+  "credentials": "Removed captured shared root-password hash; no private SSH keys or licenses",
+  "excluded": "DCP, BIT, XSA, ELF, KO, SDK, Vivado caches, generated project trees, PetaLinux build/tmp, image.ub/BOOT.BIN, large waveform binaries",
+  "limitations": "No full new-image build/cold boot/new RF measurements. Historical validation is identified separately.",
+  "runtime_packager": "PASS rebuilt runtime packed with its actual SHA256 and BOOT.BIN SHA256; generated shell syntax checked",
+  "credential_scan": "PASS no crypt password hash, private SSH key or license file in submission"
+}

@@ -1,0 +1,30 @@
+{
+  "date": "2026-10-31",
+  "evidence": "user supplied 4025G photos",
+  "spectrum": {
+    "center_hz": 1790000000.0,
+    "span_hz": 20000000.0,
+    "rbw_hz": 100000.0,
+    "vbw_hz": 100000.0,
+    "input_attenuation_db": 10,
+    "reference_level_dbm": 0,
+    "averaging": "OFF",
+    "detector": "standard",
+    "validation": "modulated band visible; exact bandwidth and total power not derived from photograph"
+  },
+  "iq": {
+    "center_hz": 1790000000.0,
+    "sample_rate_hz": 56250000.0,
+    "acquisition_seconds": 0.02,
+    "analysis_bandwidth_hz": 40000000.0,
+    "display_span_hz": 55000000.0,
+    "display_rbw_hz": 2925,
+    "input_attenuation_db": 10,
+    "iq_swap": "OFF",
+    "base_name": "IQCapture",
+    "expected_complex_samples": 1125000
+  },
+  "raw_file_status": "F drive read denied after granted read permission; Computer Use native pipe unavailable; awaiting copy into iq_inbox",
+  "rf_evm": "NOT_ANALYZED",
+  "rf_power_dbm": "NOT_CALIBRATED_FOR_QAM"
+}

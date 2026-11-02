@@ -1,0 +1,6 @@
+{
+  "archive": "delivery/zcu111_full_resetreg08_20261028.zip",
+  "member": "zcu111_full_resetreg08_20261028/evidence/failed_routed.dcp",
+  "sha256": "0ad7ca926c5636a93f42e12cf9c2dc0ffe5c627cb8cde21e5060b8c0588f157b",
+  "purpose": "Read-only report export; known failing timing; no rebuild or board actions"
+}

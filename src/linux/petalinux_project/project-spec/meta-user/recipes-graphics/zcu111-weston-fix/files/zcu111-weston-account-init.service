@@ -1,0 +1,12 @@
+[Unit]
+Description=Initialize ZCU111 Weston GUI account before PAM session
+After=local-fs.target
+Before=weston.service
+
+[Service]
+Type=oneshot
+ExecStart=/usr/sbin/zcu111-weston-account-init
+RemainAfterExit=yes
+
+[Install]
+WantedBy=graphical.target

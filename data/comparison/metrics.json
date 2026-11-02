@@ -1,0 +1,26 @@
+{
+  "release": "20261101_16",
+  "compiled_app_version": "0.10.2",
+  "fpga": "narrow09",
+  "adc_dac_gsps": 2.4,
+  "rx_complex_msps": 150,
+  "tx_complex_msps": 1200,
+  "n65536_bin_spacing_hz": 2288.818359375,
+  "n65536_hann_enbw_hz": 3433.227673742605,
+  "tx_record_bytes": 48000000,
+  "tx_record_ms": 10,
+  "v16_displayed": 82,
+  "v16_painted": 81,
+  "v16_seconds": 8.416,
+  "v16_display_updates_per_second": 9.743346007604563,
+  "routed": {
+    "lut": 72273,
+    "registers": 113196,
+    "bram_tile": 602.5,
+    "dsp": 183,
+    "wns_ns": 0.14,
+    "whs_ns": 0.01,
+    "wpws_ns": 0.014
+  },
+  "scope": "Recorded conditions only; no new board actions on2026-11-02"
+}

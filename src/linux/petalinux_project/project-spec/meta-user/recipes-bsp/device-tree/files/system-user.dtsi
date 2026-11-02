@@ -1,0 +1,9 @@
+/include/ "system-conf.dtsi"
+/ {
+};
+
+/* Bootstrap profile: RX/TX AXI DMA stay disabled until HOLD_RESET release and
+ * probe ordering are integrated (see LINUX_PORTING.md). Do not enable before
+ * the reset sequencing exists, or the DMA driver may hang probing registers. */
+&rx_dma { status = "disabled"; };
+&tx_dma { status = "disabled"; };

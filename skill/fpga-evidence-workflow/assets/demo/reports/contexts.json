@@ -1,0 +1,60 @@
+{
+  "claim": "feature_pruning",
+  "before": {
+    "clock_target_hz": {
+      "dsp": 300000000
+    },
+    "sample_rate_hz": 150000000,
+    "fft_max_n": 65536,
+    "data_width_bits": 24,
+    "channel_count": 1,
+    "feature_set": {
+      "zoom_levels": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    "included_blocks": [
+      "adc",
+      "dac",
+      "ddr4",
+      "d8",
+      "hann",
+      "fft",
+      "dual_bank_snapshot",
+      "rx_dma"
+    ],
+    "constraints_id": null
+  },
+  "after": {
+    "clock_target_hz": {
+      "dsp": 300000000
+    },
+    "sample_rate_hz": 150000000,
+    "fft_max_n": 65536,
+    "data_width_bits": 24,
+    "channel_count": 1,
+    "feature_set": {
+      "zoom_levels": [
+        0
+      ]
+    },
+    "included_blocks": [
+      "adc",
+      "dac",
+      "ddr4",
+      "d8",
+      "hann",
+      "fft",
+      "dual_bank_snapshot",
+      "rx_dma"
+    ],
+    "constraints_id": null
+  },
+  "notes": "Actual project: same device/tool/routed stage; different feature range and pipeline/reset. Do not claim strict equivalent-function resource savings. Constraints equivalence not asserted."
+}

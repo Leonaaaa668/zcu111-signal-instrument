@@ -1,0 +1,53 @@
+{
+  "client_date": "2026-10-31",
+  "status": "RF_SPECTRUM_PHOTO_RECEIVED_IQ_EXPORT_BLOCKED_MODULATION_ACCEPTANCE_DEFERRED",
+  "reference_plane": "4025G_input_including_current_cable",
+  "source": "current ARM C++ Qt/shared waveform core",
+  "test_order": [
+    "16QAM",
+    "64QAM",
+    "PULSE",
+    "LFM",
+    "BARKER13"
+  ],
+  "qam16": {
+    "frequency_hz": 1790000000,
+    "type": "QAM",
+    "order": 16,
+    "symbol_rate_hz": 5000000,
+    "rrc_alpha": 0.35,
+    "record_seconds": 0.01,
+    "sample_rate_hz": 1200000000,
+    "digital_component_peak_counts": 2048,
+    "power_control": "DIGITAL_UNCALIBRATED",
+    "expected_nominal_rrc_bandwidth_hz": 6750000,
+    "analyzer_suggested_demod_symbol_count": 2048,
+    "expected_average_dbm": null
+  },
+  "measurement_fields": [
+    "frequency_hz",
+    "EVM_RMS_percent",
+    "EVM_max_percent",
+    "symbol_rate_hz",
+    "RRC_alpha",
+    "symbol_count",
+    "amplitude_reference_or_input_level",
+    "channel_power_dbm_if_available",
+    "screenshot",
+    "RF_stopped_confirmation"
+  ],
+  "CW_compensation_applied_to_QAM": false,
+  "analyzer_vector_capability": "USER_CONFIRMED_SPECTRUM_USB_PEAK_POWER_IQ_ONLY_NO_DIGITAL_DEMOD",
+  "remote_qam16_file": "/tmp/zcu111_measurements_petalinux/qam16_1790_5msps_rrc035_20261031_check01.bin",
+  "qam16_sha256": "3510a6390b1db1d251bff4f1b2c49f091b9022afb30b40aa13c85ea824e13552",
+  "measurement_route": "Spectrum inspection then exported measured IQ analysis on host Python",
+  "digital_window_check": "PASS; 16 decisions, 0.119911 percent numerical EVM; not RF measurement",
+  "deferred_reason": "User reports instrument-saved IQ not visible on USB in Windows; prioritize stable main-function demonstration.",
+  "raw_iq_received": false,
+  "rf_spectrum_photo_received": true,
+  "rf_evm_measured_this_round": false,
+  "modulated_dbm_calibration_complete": false,
+  "next_scope": "Retain stable release; no FPGA/Qt rollback or modification performed. Resume measured IQ analysis when export is available.",
+  "RF_play_issued_by_assistant_this_round": false,
+  "user_reported_RF_test_completed": true
+}

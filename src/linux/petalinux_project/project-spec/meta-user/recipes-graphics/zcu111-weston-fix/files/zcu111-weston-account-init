@@ -1,0 +1,19 @@
+#!/bin/sh
+# Initialize only the forced-first-password-change flag for the GUI account.
+set -eu
+export LC_ALL=C
+if [ "$(id -u)" != 0 ]; then
+    echo 'GUI account initialization requires root' >&2
+    exit 1
+fi
+if awk -F: '$1 == "petalinux" {found=1; forced=($3 == "0")} END {if (!found) exit 2; exit (forced ? 0 : 1)}' /etc/shadow; then
+    chage -d "$(date -u +%F)" petalinux
+    echo 'Weston GUI account first-login flag initialized; password unchanged'
+else
+    result=$?
+    if [ "$result" != 1 ]; then
+        echo 'Cannot find/check petalinux GUI account' >&2
+        exit "$result"
+    fi
+    echo 'Weston GUI account already initialized; no changes'
+fi

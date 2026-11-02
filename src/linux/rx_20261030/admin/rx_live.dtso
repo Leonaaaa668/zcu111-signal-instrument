@@ -1,0 +1,47 @@
+/dts-v1/;
+/plugin/;
+
+/* Same frozen XSA. Apply only after ADC init and HOLD_RESET release. */
+/ {
+    fragment@0 {
+        target-path = "/amba_pl";
+        __overlay__ {
+            /* Both S2MM payloads and generic-driver SG descriptors must use
+             * the PS DDR aperture actually connected through HP1. */
+            #address-cells = <2>;
+            #size-cells = <2>;
+            dma-ranges = <0 0 0 0 0 0x80000000>;
+        };
+    };
+    fragment@1 {
+        target = <&sa_control>;
+        __overlay__ { status = "disabled"; };
+    };
+    fragment@2 {
+        target = <&sa_result>;
+        __overlay__ { status = "disabled"; };
+    };
+    fragment@3 {
+        target = <&rx_dma>;
+        __overlay__ { status = "okay"; };
+    };
+    fragment@4 {
+        target-path = "/amba_pl";
+        __overlay__ {
+            #address-cells = <2>;
+            #size-cells = <2>;
+            spectrum_snapshot@b00d0000 {
+                compatible = "zcu111,spectrum-snapshot-v1";
+                reg = <0 0xb00d0000 0 0x1000>, <0 0xb00b0000 0 0x10000>;
+                reg-names = "result", "control";
+                clocks = <&zynqmp_clk 71>;
+                clock-names = "ctrl_clk";
+                /* RX-only S2MM is logical channel 1 in xilinx_dma.c. */
+                dmas = <&rx_dma 1>;
+                dma-names = "rx";
+                rfdc = <&rfdc>;
+                status = "okay";
+            };
+        };
+    };
+};

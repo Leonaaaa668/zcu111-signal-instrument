@@ -1,0 +1,38 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/25812/Documents/Codex/2026-09-23/ni/work/zcu111_adc3_2400/delivery/zcu111_v16_source/src/fpga/rtl/adc_iq_split4.v" into library work
+INFO: [VRFC 10-311] analyzing module adc_iq_split4
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/25812/Documents/Codex/2026-09-23/ni/work/zcu111_adc3_2400/delivery/zcu111_v16_source/src/fpga/rtl/dac_stream_guard.v" into library work
+INFO: [VRFC 10-311] analyzing module dac_stream_guard
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/25812/Documents/Codex/2026-09-23/ni/work/zcu111_adc3_2400/delivery/zcu111_v16_source/src/fpga/rtl/sa_axis_loss_guard.v" into library work
+INFO: [VRFC 10-311] analyzing module sa_axis_loss_guard
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/25812/Documents/Codex/2026-09-23/ni/work/zcu111_adc3_2400/delivery/zcu111_v16_source/src/fpga/rtl/sa_d8_zoom.v" into library work
+INFO: [VRFC 10-311] analyzing module sa_d8_zoom
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/25812/Documents/Codex/2026-09-23/ni/work/zcu111_adc3_2400/delivery/zcu111_v16_source/src/fpga/rtl/sa_fft_power.v" into library work
+INFO: [VRFC 10-311] analyzing module sa_fft_power
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/25812/Documents/Codex/2026-09-23/ni/work/zcu111_adc3_2400/delivery/zcu111_v16_source/src/fpga/rtl/sa_halfband_decim2.v" into library work
+INFO: [VRFC 10-311] analyzing module sa_halfband_decim2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/25812/Documents/Codex/2026-09-23/ni/work/zcu111_adc3_2400/delivery/zcu111_v16_source/src/fpga/rtl/sa_hann_rom.v" into library work
+INFO: [VRFC 10-311] analyzing module sa_hann_rom
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/25812/Documents/Codex/2026-09-23/ni/work/zcu111_adc3_2400/delivery/zcu111_v16_source/src/fpga/rtl/sa_hann_window.v" into library work
+INFO: [VRFC 10-311] analyzing module sa_hann_window
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/25812/Documents/Codex/2026-09-23/ni/work/zcu111_adc3_2400/delivery/zcu111_v16_source/src/fpga/rtl/sa_result_bd.v" into library work
+INFO: [VRFC 10-311] analyzing module sa_result_bd
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/25812/Documents/Codex/2026-09-23/ni/work/zcu111_adc3_2400/delivery/zcu111_v16_source/src/fpga/rtl/sa_result_control.v" into library work
+INFO: [VRFC 10-311] analyzing module sa_result_control
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/25812/Documents/Codex/2026-09-23/ni/work/zcu111_adc3_2400/delivery/zcu111_v16_source/src/fpga/rtl/sa_rx_control_bd.v" into library work
+INFO: [VRFC 10-311] analyzing module sa_rx_control_bd
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/25812/Documents/Codex/2026-09-23/ni/work/zcu111_adc3_2400/delivery/zcu111_v16_source/src/fpga/rtl/sa_rx_control.v" into library work
+INFO: [VRFC 10-311] analyzing module sa_rx_control
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/25812/Documents/Codex/2026-09-23/ni/work/zcu111_adc3_2400/delivery/zcu111_v16_source/src/fpga/rtl/sa_rx_dsp_bd.v" into library work
+INFO: [VRFC 10-311] analyzing module sa_rx_dsp_bd
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/25812/Documents/Codex/2026-09-23/ni/work/zcu111_adc3_2400/delivery/zcu111_v16_source/src/fpga/rtl/sa_rx_dsp.v" into library work
+INFO: [VRFC 10-311] analyzing module sa_rx_dsp
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/25812/Documents/Codex/2026-09-23/ni/work/zcu111_adc3_2400/delivery/zcu111_v16_source/src/fpga/rtl/sa_snapshot_ram.v" into library work
+INFO: [VRFC 10-311] analyzing module sa_snapshot_ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/25812/Documents/Codex/2026-09-23/ni/work/zcu111_adc3_2400/delivery/zcu111_v16_source/src/fpga/rtl/sa_snapshot.v" into library work
+INFO: [VRFC 10-311] analyzing module sa_snapshot
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/25812/Documents/Codex/2026-09-23/ni/work/zcu111_adc3_2400/delivery/zcu111_v16_source/src/fpga/rtl/tx_reset_sync.v" into library work
+INFO: [VRFC 10-311] analyzing module tx_reset_sync
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/25812/Documents/Codex/2026-09-23/ni/work/zcu111_adc3_2400/delivery/zcu111_v16_source/sim/rtl/tb_sa_snapshot.v" into library work
+INFO: [VRFC 10-311] analyzing module tb_sa_snapshot
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/2025.2/data/verilog/src/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl

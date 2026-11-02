@@ -1,0 +1,34 @@
+{
+  "hardware_actions": "NONE",
+  "cases": [
+    {
+      "log_n": 13,
+      "n": 8192,
+      "actual_bins": 8192,
+      "fft_total_right_shift": 14,
+      "main_peak_bin": 7,
+      "max_fft_component_error_lsb": 1.2562119393634816,
+      "rms_fft_component_error_lsb": 0.4244033708180209,
+      "peak_gain_error_db": -1.9333259281412485e-06,
+      "power_bit_exact": true,
+      "fft_internal_bit_exact_claim": false,
+      "fft_component_tolerance_lsb": 16,
+      "status": "WINDOW_REAL_FFT_POWER_REFERENCE_PASS"
+    },
+    {
+      "log_n": 16,
+      "n": 65536,
+      "actual_bins": 65536,
+      "fft_total_right_shift": 17,
+      "main_peak_bin": 7,
+      "max_fft_component_error_lsb": 1.1679224407681943,
+      "rms_fft_component_error_lsb": 0.3507420695558219,
+      "peak_gain_error_db": 1.8117098631837679e-06,
+      "power_bit_exact": true,
+      "fft_internal_bit_exact_claim": false,
+      "fft_component_tolerance_lsb": 16,
+      "status": "WINDOW_REAL_FFT_POWER_REFERENCE_PASS"
+    }
+  ],
+  "limitations": "Offline functional/reference test, NOT300MHz closure or RF acceptance"
+}

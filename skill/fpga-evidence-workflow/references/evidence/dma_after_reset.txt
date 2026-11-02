@@ -1,0 +1,8 @@
+TX_DMA_REGISTER_READ_PASS_NO_RESET_NO_TRANSFER
+DIAG_RETURNED
+[  735.635197] audit: type=1006 audit(1748545231.540:25): pid=818 uid=0 old-auid=4294967295 auid=0 tty=(none) old-ses=4294967295 ses=9 res=1
+[  735.647620] audit: type=1300 audit(1748545231.540:25): arch=c00000b7 syscall=64 success=yes exit=1 a0=7 a1=ffffccf7ac40 a2=1 a3=1 items=0 ppid=1 pid=818 auid=0 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=9 comm="sshd" exe="/usr/sbin/sshd" key=(null)
+[  735.672068] audit: type=1327 audit(1748545231.540:25): proctitle=737368643A20726F6F74205B707269765D
+[  735.695938] zcu111-vector-tx zcu111-vector-tx: diagnostic: before CDMA status read (0xb0080004), no reset
+[  735.705529] zcu111-vector-tx zcu111-vector-tx: diagnostic: CDMA status=0x2; before MM2S read (0xb0090004)
+[  735.715116] zcu111-vector-tx zcu111-vector-tx: diagnostic: MM2S status=0x10009; no register writes performed

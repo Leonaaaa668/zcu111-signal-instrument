@@ -1,0 +1,108 @@
+{
+  "status": "INDEPENDENT_RELATIVE_POWER_CHECK_PASS",
+  "worst_single_reading_error_db": 0.03611755370000225,
+  "worst_mean_error_db": 0.02252387999999428,
+  "levels": [
+    {
+      "target_dbm": -50.0,
+      "amplitude_counts": 304,
+      "repeats": 10,
+      "mean_dbm": -50.01454429627,
+      "mean_error_db": -0.014544296270003088,
+      "max_single_reading_error_db": 0.03611755370000225,
+      "repeat_span_db": 0.04935836790000536,
+      "std_db": 0.014967931546262232
+    },
+    {
+      "target_dbm": -45.0,
+      "amplitude_counts": 541,
+      "repeats": 10,
+      "mean_dbm": -45.01073493957,
+      "mean_error_db": -0.010734939569999824,
+      "max_single_reading_error_db": 0.03120803830000085,
+      "repeat_span_db": 0.037715911799999446,
+      "std_db": 0.010405573118859325
+    },
+    {
+      "target_dbm": -40.0,
+      "amplitude_counts": 962,
+      "repeats": 10,
+      "mean_dbm": -39.977476120000006,
+      "mean_error_db": 0.02252387999999428,
+      "max_single_reading_error_db": 0.03291320799999653,
+      "repeat_span_db": 0.016437530499999298,
+      "std_db": 0.005410213366073511
+    },
+    {
+      "target_dbm": -35.0,
+      "amplitude_counts": 1711,
+      "repeats": 10,
+      "mean_dbm": -34.99224853515,
+      "mean_error_db": 0.007751464850002776,
+      "max_single_reading_error_db": 0.012775421100002404,
+      "repeat_span_db": 0.009502410800003247,
+      "std_db": 0.0029645763889280283
+    },
+    {
+      "target_dbm": -30.0,
+      "amplitude_counts": 3042,
+      "repeats": 10,
+      "mean_dbm": -29.996376228349998,
+      "mean_error_db": 0.003623771650001828,
+      "max_single_reading_error_db": 0.006439208999999835,
+      "repeat_span_db": 0.004787445099999843,
+      "std_db": 0.0015760908642078815
+    },
+    {
+      "target_dbm": -25.0,
+      "amplitude_counts": 5409,
+      "repeats": 10,
+      "mean_dbm": -24.99152889252,
+      "mean_error_db": 0.008471107479998352,
+      "max_single_reading_error_db": 0.010057449299999632,
+      "repeat_span_db": 0.004499435399999641,
+      "std_db": 0.0012653983447003516
+    },
+    {
+      "target_dbm": -20.0,
+      "amplitude_counts": 9616,
+      "repeats": 10,
+      "mean_dbm": -19.989117622370003,
+      "mean_error_db": 0.010882377629997109,
+      "max_single_reading_error_db": 0.012813568100000339,
+      "repeat_span_db": 0.0032615661000008345,
+      "std_db": 0.0009796810639186632
+    },
+    {
+      "target_dbm": -15.0,
+      "amplitude_counts": 17098,
+      "repeats": 10,
+      "mean_dbm": -14.99044542311,
+      "mean_error_db": 0.009554576890000277,
+      "max_single_reading_error_db": 0.010438919100000277,
+      "repeat_span_db": 0.0017833710000001446,
+      "std_db": 0.0005324248135127266
+    },
+    {
+      "target_dbm": -10.0,
+      "amplitude_counts": 30400,
+      "repeats": 10,
+      "mean_dbm": -9.990747833251998,
+      "mean_error_db": 0.00925216674800211,
+      "max_single_reading_error_db": 0.01183700562000034,
+      "repeat_span_db": 0.005955696110000019,
+      "std_db": 0.0017672794911450641
+    }
+  ],
+  "frozen_profile_sha256": "5dea09fa5050d3bda273107ba2daa3f42d2c91429a1fa9faaca1f1a6290c0f56",
+  "source_session_sha256": "1a228a8273dfacadfeac40d6dae2de7c65920e6ca37c0303bca8fdfd4dda165e",
+  "source_measurements_sha256": "13d2f5a60cc138c13c4e77e05876d437ac679b4d0c0d7c9c218ebb08bb933196",
+  "cleanup_tx_stop_confirmed": true,
+  "absolute_accuracy_below_0p1_db": "NOT_CLAIMED",
+  "limitations": [
+    "Same analyzer/cable/frequency/setup, single session",
+    "Analyzer bias and cable reference-plane accuracy are NOT removed",
+    "Does not prove all frequencies, all amplitudes or long-term drift",
+    "CW only, not QAM/LFM/pulse total power"
+  ]
+}

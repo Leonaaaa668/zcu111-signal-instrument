@@ -1,0 +1,20 @@
+{
+  "hardware_actions": "NONE",
+  "cases": [
+    {
+      "log_n": 10,
+      "n": 1024,
+      "actual_bins": 1024,
+      "fft_total_right_shift": 11,
+      "main_peak_bin": 7,
+      "max_fft_component_error_lsb": 1.00927734375,
+      "rms_fft_component_error_lsb": 0.3521279091595378,
+      "peak_gain_error_db": -5.063536174278225e-06,
+      "power_bit_exact": true,
+      "fft_internal_bit_exact_claim": false,
+      "fft_component_tolerance_lsb": 16,
+      "status": "WINDOW_REAL_FFT_POWER_REFERENCE_PASS"
+    }
+  ],
+  "limitations": "Offline functional/reference test, NOT300MHz closure or RF acceptance"
+}

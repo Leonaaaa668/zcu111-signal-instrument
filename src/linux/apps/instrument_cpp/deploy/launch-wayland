@@ -1,0 +1,28 @@
+#!/bin/sh
+set -eu
+if [ "$(id -u)" = 0 ]; then
+    echo 'Launch the instrument as the normal Weston user (petalinux).' >&2
+    exit 2
+fi
+export XDG_RUNTIME_DIR="/run/user/$(id -u)"
+if [ -n "${WAYLAND_DISPLAY:-}" ] && [ ! -S "$XDG_RUNTIME_DIR/$WAYLAND_DISPLAY" ]; then
+    unset WAYLAND_DISPLAY
+fi
+attempt=0
+while [ -z "${WAYLAND_DISPLAY:-}" ] && [ "$attempt" -lt 30 ]; do
+    for candidate in "$XDG_RUNTIME_DIR"/wayland-[0-9]*; do
+        if [ -S "$candidate" ]; then
+            WAYLAND_DISPLAY="${candidate##*/}"
+            export WAYLAND_DISPLAY
+            break
+        fi
+    done
+    if [ -z "${WAYLAND_DISPLAY:-}" ]; then sleep 1; fi
+    attempt=$((attempt+1))
+done
+if [ -z "${WAYLAND_DISPLAY:-}" ]; then
+    echo 'Weston socket is unavailable for the current user.' >&2
+    exit 2
+fi
+export QT_QPA_PLATFORM=wayland
+exec /usr/bin/zcu111-instrument --data /usr/share/zcu111-instrument "$@"

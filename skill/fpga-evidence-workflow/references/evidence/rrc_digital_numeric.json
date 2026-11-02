@@ -1,0 +1,34 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "type": "CW",
+      "max_quantization_error_counts": 0.4207437110928822
+    },
+    {
+      "type": "PULSE",
+      "width_samples": 12000,
+      "plateau_verified": true
+    },
+    {
+      "type": "BARKER13",
+      "all_chip_signs_and_zero_tail_verified": true
+    },
+    {
+      "type": "LFM_PULSE",
+      "measured_iq_chirp_rate_hz_per_s": 1999999919231.9739
+    },
+    {
+      "type": "PSK",
+      "offline_iq_matched_filter_evm": 0.0012036018019262549,
+      "note": "Digital file only; not RF EVM measurement"
+    },
+    {
+      "type": "QAM",
+      "offline_iq_matched_filter_evm": 0.0012064460326820976,
+      "note": "Digital file only; not RF EVM measurement"
+    }
+  ],
+  "hardware_rf_measurement": false,
+  "reference_used_on_development_pc_only": true
+}

@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "stdout": "PSK DIGITAL_FILE_MATCHED_FILTER_EVM=0.0012036 (not RF EVM)\nQAM DIGITAL_FILE_MATCHED_FILTER_EVM=0.00120645 (not RF EVM)\nWAVEFORM_CONTRACT_PASS C++_ONLY NO_RF_ACTION\n",
+  "stderr": "",
+  "exit": 0,
+  "elapsed_s": 11.532340400000976,
+  "python_on_board": false,
+  "rf_output": false
+}

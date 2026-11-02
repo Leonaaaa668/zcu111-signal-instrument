@@ -1,0 +1,145 @@
+{
+  "status": "RX_DMA_RELEASE_REVIEW_PASS",
+  "scope": "Offline diagnostic candidate only; no physical acceptance",
+  "timing": {
+    "wns_ns": 0.14,
+    "whs_ns": 0.01,
+    "wpws_ns": 0.014,
+    "setup_failures": 0,
+    "hold_failures": 0,
+    "pulse_failures": 0
+  },
+  "cdc_counts": {
+    "CDC-3": 308,
+    "CDC-10": 16,
+    "CDC-6": 7,
+    "CDC-15": 155,
+    "CDC-11": 2,
+    "CDC-9": 32
+  },
+  "critical_cdc_review": [
+    {
+      "rule": "CDC-10",
+      "source": "adc3_capture_i/tx_control/U0/gpio_core_1/Dual.gpio_Data_Out_reg[30]/C",
+      "destination": "adc3_capture_i/tx_unpack_reset/inst/release_sync_reg[0]/CLR",
+      "review": "Unchanged accepted TX asynchronous assertion / three-stage release reset structure; exact endpoint exceptions retained."
+    },
+    {
+      "rule": "CDC-10",
+      "source": "adc3_capture_wrapper/adc3_capture/adc3_capture_ila_tx_0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+      "destination": "adc3_capture_wrapper/adc3_capture/adc3_capture_ila_tx_0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+      "review": "Vendor ILA debug internals; diagnostic cores retained; not a claim of inspecting encrypted RTL."
+    },
+    {
+      "rule": "CDC-10",
+      "source": "adc3_capture_wrapper/adc3_capture/adc3_capture_ila_tx_0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+      "destination": "adc3_capture_wrapper/adc3_capture/adc3_capture_ila_tx_0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+      "review": "Vendor ILA debug internals; diagnostic cores retained; not a claim of inspecting encrypted RTL."
+    },
+    {
+      "rule": "CDC-10",
+      "source": "adc3_capture_wrapper/adc3_capture/adc3_capture_ila_tx_0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+      "destination": "adc3_capture_wrapper/adc3_capture/adc3_capture_ila_tx_0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+      "review": "Vendor ILA debug internals; diagnostic cores retained; not a claim of inspecting encrypted RTL."
+    },
+    {
+      "rule": "CDC-10",
+      "source": "adc3_capture_wrapper/adc3_capture/adc3_capture_ila_tx_0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+      "destination": "adc3_capture_wrapper/adc3_capture/adc3_capture_ila_tx_0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+      "review": "Vendor ILA debug internals; diagnostic cores retained; not a claim of inspecting encrypted RTL."
+    },
+    {
+      "rule": "CDC-10",
+      "source": "adc3_capture_i/control_reset/U0/ACTIVE_LOW_PR_OUT_DFF[0].FDRE_PER_N_replica/C",
+      "destination": "adc3_capture_i/sa_result/inst/reset_cdc/arststages_ff_reg[0]/CLR",
+      "review": "Combined reset enters vendor XPM async reset only; three DSP-clock release stages. Startup and runtime assertion/release regression passed. No payload exception added."
+    },
+    {
+      "rule": "CDC-10",
+      "source": "adc3_capture_wrapper/adc3_capture/adc3_capture_ila_iq_0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+      "destination": "adc3_capture_wrapper/adc3_capture/adc3_capture_ila_iq_0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+      "review": "Vendor ILA debug internals; diagnostic cores retained; not a claim of inspecting encrypted RTL."
+    },
+    {
+      "rule": "CDC-10",
+      "source": "adc3_capture_wrapper/adc3_capture/adc3_capture_ila_iq_0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+      "destination": "adc3_capture_wrapper/adc3_capture/adc3_capture_ila_iq_0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+      "review": "Vendor ILA debug internals; diagnostic cores retained; not a claim of inspecting encrypted RTL."
+    },
+    {
+      "rule": "CDC-10",
+      "source": "adc3_capture_wrapper/adc3_capture/adc3_capture_ila_iq_0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+      "destination": "adc3_capture_wrapper/adc3_capture/adc3_capture_ila_iq_0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+      "review": "Vendor ILA debug internals; diagnostic cores retained; not a claim of inspecting encrypted RTL."
+    },
+    {
+      "rule": "CDC-10",
+      "source": "adc3_capture_wrapper/adc3_capture/adc3_capture_ila_iq_0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+      "destination": "adc3_capture_wrapper/adc3_capture/adc3_capture_ila_iq_0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+      "review": "Vendor ILA debug internals; diagnostic cores retained; not a claim of inspecting encrypted RTL."
+    },
+    {
+      "rule": "CDC-10",
+      "source": "adc3_capture_wrapper/adc3_capture/adc3_capture_ila_iq_0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+      "destination": "adc3_capture_wrapper/adc3_capture/adc3_capture_ila_iq_0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+      "review": "Vendor ILA debug internals; diagnostic cores retained; not a claim of inspecting encrypted RTL."
+    },
+    {
+      "rule": "CDC-10",
+      "source": "adc3_capture_wrapper/adc3_capture/adc3_capture_ila_sa_0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+      "destination": "adc3_capture_wrapper/adc3_capture/adc3_capture_ila_sa_0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+      "review": "Vendor ILA debug internals; diagnostic cores retained; not a claim of inspecting encrypted RTL."
+    },
+    {
+      "rule": "CDC-10",
+      "source": "adc3_capture_wrapper/adc3_capture/adc3_capture_ila_sa_0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+      "destination": "adc3_capture_wrapper/adc3_capture/adc3_capture_ila_sa_0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+      "review": "Vendor ILA debug internals; diagnostic cores retained; not a claim of inspecting encrypted RTL."
+    },
+    {
+      "rule": "CDC-10",
+      "source": "adc3_capture_wrapper/adc3_capture/adc3_capture_ila_sa_0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+      "destination": "adc3_capture_wrapper/adc3_capture/adc3_capture_ila_sa_0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+      "review": "Vendor ILA debug internals; diagnostic cores retained; not a claim of inspecting encrypted RTL."
+    },
+    {
+      "rule": "CDC-10",
+      "source": "adc3_capture_wrapper/adc3_capture/adc3_capture_ila_sa_0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+      "destination": "adc3_capture_wrapper/adc3_capture/adc3_capture_ila_sa_0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+      "review": "Vendor ILA debug internals; diagnostic cores retained; not a claim of inspecting encrypted RTL."
+    },
+    {
+      "rule": "CDC-11",
+      "source": "adc3_capture_i/dac_sample_reset/U0/ACTIVE_LOW_PR_OUT_DFF[0].FDRE_PER_N/C",
+      "destination": "adc3_capture_i/rfdc/inst/cdc_dac1_clk_valid_i/syncstages_ff_reg[0]/D",
+      "review": "Unchanged accepted TX reset-status fanout into separate four/eight-stage synchronizers; diagnostic status, not multi-bit payload."
+    },
+    {
+      "rule": "CDC-11",
+      "source": "adc3_capture_i/dac_sample_reset/U0/ACTIVE_LOW_PR_OUT_DFF[0].FDRE_PER_N/C",
+      "destination": "adc3_capture_i/tx_guard/inst/status_cdc/syncstages_ff_reg[0][0]/D",
+      "review": "Unchanged accepted TX reset-status fanout into separate four/eight-stage synchronizers; diagnostic status, not multi-bit payload."
+    },
+    {
+      "rule": "CDC-10",
+      "source": "adc3_capture_i/tx_control/U0/gpio_core_1/Dual.gpio_Data_Out_reg[30]/C",
+      "destination": "adc3_capture_i/tx_fifo_reset/inst/release_sync_reg[0]/CLR",
+      "review": "Unchanged accepted TX asynchronous assertion / three-stage release reset structure; exact endpoint exceptions retained."
+    }
+  ],
+  "independent_live_flags": "Five live flags individually synchronized with four stages; not a coherent multi-bit sample. Coherent command/response metadata uses XPM handshake.",
+  "residual_methodology": "Two inherited RFDC-to-clock-wizard primary clock warnings; two inactive RFDC hard DAC clock pins; DDR RESET_N has no synchronous output-delay requirement. ILA query efficiency and vendor reset advisories retained. No new clock/data exceptions.",
+  "residual_scope": "Not CDC-warning-free, not board tested. First release N1024/zoom0 only, fixed center, raw power, VBW bypass, uncalibrated receiver dBm.",
+  "reports_sha256": {
+    "timing_summary.rpt": "8d6d1057d3598c3bf15892721c63655c431f8b310176c071106afe8f10733657",
+    "bus_skew.rpt": "c85c8a6fef3df609c5658a4cfebff1bf0fc85d6b35a618d70441702b09963fcc",
+    "route_status.rpt": "4609a687da5a19cd93644e7ec8375a9a1745ec79901e4f7c7976efbe96833ef0",
+    "drc.rpt": "3f1f4bb11ebceac3befca68058858d70824241743d701b1596299632e84c6bb4",
+    "methodology.rpt": "e914e0bae28deb6698b66fa02f70ee945ff22c9426ce5ceff506d2ddd095f0c4",
+    "cdc_details.rpt": "f0aee43e3d399e281edca0299bffcc85d6ffa1075381d02f33c515873f8c7f8d",
+    "io.rpt": "d2826e3598ed7459fa72b8fd0070bf23611d4256dda17af3a48c84b487939699",
+    "utilization.rpt": "6a1a36ecdde0b389561449436d657cc20df40e9ea8a28108ef55730f905064e4",
+    "source_freeze_narrow09.json": "62c114ea59eb825807beb0116132f9b483685bb9189806da80750a693e3f77c5",
+    "source_freeze_narrow09_swfix01.json": "2640f5e57ef78e22a1763dc0ca360bb9aadc3ee616f0fc055b8b3326af9ce20f"
+  }
+}

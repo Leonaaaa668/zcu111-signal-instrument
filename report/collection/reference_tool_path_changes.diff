@@ -1,0 +1,53 @@
+--- original/decode_rx_dma.py
++++ submission/decode_rx_dma.py
+@@ -6,7 +6,7 @@
+ from pathlib import Path
+ import struct
+ 
+-ROOT=Path(__file__).resolve().parents[1]
++ROOT=Path(__file__).resolve().parents[2]/"src/fpga"
+ 
+ def validate_receipt(expected):
+     keys={'ticket_id','epoch','segment_id','nco_update_seq','log_n','zoom','packet_sequence','counter_epoch'}
+--- original/test_tx_power_cal.py
++++ submission/test_tx_power_cal.py
+@@ -7,7 +7,8 @@
+ import numpy as np
+ from tx_power_cal import (prepare, fit_campaign, recommend_cw, save_json, cw_words, FIELDS)
+ 
+-TEST_PARENT = Path(__file__).resolve().parents[1] / "reports"
++TEST_PARENT = Path(__file__).resolve().parents[2] / "generated/python_tests"
++TEST_PARENT.mkdir(parents=True, exist_ok=True)
+ 
+ 
+ class CalibrationTests(unittest.TestCase):
+--- original/test_tx_waveforms.py
++++ submission/test_tx_waveforms.py
+@@ -33,8 +33,8 @@
+                 self.assertEqual(meta['symbol_rate_hz'], 5e6)
+ 
+     def test_contract_constants(self):
+-        header = (ROOT/'sw/tx_memory_map.h').read_text()
+-        host = (ROOT/'scripts/tx_command.tcl').read_text()
++        header = (ROOT.parent/'src/baremetal_reference/tx_memory_map.h').read_text()
++        host = (ROOT.parent/'src/baremetal_reference/tx_command.tcl').read_text()
+         for value in ('0x24000000', '0x28000000', '0x54585757'):
+             self.assertIn(value, header)
+         for value in ('0x24000000', '0x54585757', '67108864', '1200000000'):
+--- original/tx_cw_power.py
++++ submission/tx_cw_power.py
+@@ -8,9 +8,9 @@
+ from pathlib import Path
+ from tx_power_cal import recommend_cw, cw_words, save_json, sha256
+ 
+-ROOT = Path(__file__).resolve().parents[1]
+-PROFILE = ROOT/"calibration/tx/cw_1790_fsva_20261026/calibration.json"
+-VERIFICATION = ROOT/"calibration/tx/cw_1790_fsva_20261026/independent_verification.json"
++ROOT = Path(__file__).resolve().parents[2]
++PROFILE = ROOT/"data/calibration/historical_fsva/calibration.json"
++VERIFICATION = ROOT/"data/calibration/historical_fsva/independent_verification.json"
+ 
+ 
+ def generate(dbm, output):
+
+The original bare-metal command is included only as a reference/test contract; do not execute it in Linux.

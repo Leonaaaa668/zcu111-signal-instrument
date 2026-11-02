@@ -1,0 +1,52 @@
+{
+  "status": "V16_INCLUDED_EVIDENCE_REPLAY_PASS",
+  "date": "2026-11-02",
+  "packet_receipts": [
+    {
+      "file": "src/linux/apps/instrument_cpp/resources/fixtures/lower/spectrum.bin",
+      "bins": 1024,
+      "sha256": "b7506637d2215df34d1182ca4f555620d0d94225127401c6d039aba7d3fe695b",
+      "receipt": "PASS"
+    },
+    {
+      "file": "src/linux/apps/instrument_cpp/resources/fixtures/n65536/spectrum.bin",
+      "bins": 65536,
+      "sha256": "835be7537014c33203dcd25b3153cdf5fa5ff676717edd029a5e2ff5ce6f410f",
+      "receipt": "PASS"
+    },
+    {
+      "file": "src/linux/apps/instrument_cpp/resources/fixtures/n65536_half/spectrum.bin",
+      "bins": 65536,
+      "sha256": "2c604a074e3e9c252d76280f9dc5f0feb8535a9ea8cdc5b8ce273d99c9f9e2de",
+      "receipt": "PASS"
+    },
+    {
+      "file": "src/linux/apps/instrument_cpp/resources/fixtures/n8192/spectrum.bin",
+      "bins": 8192,
+      "sha256": "74437048ae2d354a376e3da8aa20ed8ad670ca73588c209efefab3bffde5c2be",
+      "receipt": "PASS"
+    },
+    {
+      "file": "src/linux/apps/instrument_cpp/resources/fixtures/upper/spectrum.bin",
+      "bins": 1024,
+      "sha256": "c7719cbf8a22b0c6642bdd289565c90e6f21925b1f29dabaa43aaaf011f932aa",
+      "receipt": "PASS"
+    }
+  ],
+  "loopback_bin_count": 65536,
+  "fft_recorded_cases": [
+    1024,
+    8192,
+    65536
+  ],
+  "rx_affine_residual_db": {
+    "p01": -0.03154887684143404,
+    "p03": 0.01608402229177841,
+    "p05": 0.015464854550305773,
+    "p07": -0.06434975494146755
+  },
+  "rx_live_minus_reference_db": -0.028628030540062355,
+  "tx_corrected_holdout_mean_error_db": -0.006666666666667709,
+  "v16_display_updates_per_second": 9.743346007604563,
+  "scope": "Offline replay and arithmetic; no new RTL simulation, compilation, RF or hardware actions"
+}

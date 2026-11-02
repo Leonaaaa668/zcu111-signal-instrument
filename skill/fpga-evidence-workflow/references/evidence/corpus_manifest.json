@@ -1,0 +1,30 @@
+{
+  "archived_messages": 1111,
+  "sources": [
+    {
+      "file": "zcu111_chat_history_20260923_20261029.md",
+      "sha256": "3c35db3eb94d0a21fbea214791408f4eb9859a9e5671ee405cfd26c6e4b6c8e5",
+      "messages": 703
+    },
+    {
+      "file": "zcu111_chat_history_increment_20261029_20261030.md",
+      "sha256": "47c0ad916347a0afab7c041b3afaf42cc1199a6accca573f2583c668c4725539",
+      "messages": 190
+    },
+    {
+      "file": "zcu111_chat_history_increment_20261030_20261101.md",
+      "sha256": "184b2aafb4124547e020fea37dad97c9e2971d1907cf914b3d6b15bec3c3d2c3",
+      "messages": 218
+    },
+    {
+      "file": "rollout-2026-10-31T19-24-53-01a191b4-967b-7cb2-9948-11aa1f693622.jsonl",
+      "snapshot_bytes": 33170050,
+      "snapshot_sha256": "a55b90ed3685f58a7b6e49dfdf824f4d818c9085940d557404777c77c7a81386",
+      "visible_messages_after_previous_export": 65,
+      "excerpts": 3,
+      "cutoff_exclusive_utc": "2026-10-31T16:26:27.069Z"
+    }
+  ],
+  "privacy": "Only selected visible excerpts shared; full private corpus stays outside skill.",
+  "coverage": "From initial MATLAB/BRAM learning through Linux/Qt, calibration, V16 source recreation and resource-comparison audit."
+}

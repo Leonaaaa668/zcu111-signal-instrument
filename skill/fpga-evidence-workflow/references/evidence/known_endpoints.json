@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-31",
+  "status": "KNOWN_ENDPOINT_SWEPT_RECEPTION_PASS",
+  "sweeps": [
+    {
+      "remote": "/tmp/zcu111_measurements_petalinux/sweep_20250529_194821_cba9eaf7-dfc7-4126-9831-dafbce505808",
+      "peak_hz": 2299990234.375,
+      "peak_dbfs": -55.10422332527178,
+      "seconds": 2.65354495,
+      "raw_packets_sha256_checked": 13,
+      "fft_n": 8192,
+      "frames": 1
+    },
+    {
+      "remote": "/tmp/zcu111_measurements_petalinux/sweep_20250529_194424_3b00b11b-ace3-442e-92df-eaa8c99b1b1e",
+      "peak_hz": 1300009765.625,
+      "peak_dbfs": -55.011442010474944,
+      "seconds": 2.656765102,
+      "raw_packets_sha256_checked": 13,
+      "fft_n": 8192,
+      "frames": 1
+    }
+  ],
+  "user_axis_confirmed": "1300..2300MHz",
+  "source_last_state": "RF_OFF_USER_CONFIRMED",
+  "mouse": "USER_CONFIRMED_NORMAL",
+  "calibrated_dbm_applied": false,
+  "instantaneous_bandwidth_1GHz": false
+}

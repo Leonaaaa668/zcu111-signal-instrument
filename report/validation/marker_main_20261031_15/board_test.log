@@ -1,0 +1,20 @@
+INSTRUMENT_CURSOR=BUILTIN_PIXMAP
+INSTRUMENT_INTERFACE=SA3000_NATIVE_MAIN_MARKERS_15
+INSTRUMENT_EVENT RX CW calibration loaded: zcu111_j1_cw1790_4025g_manual_20261030_v02; 1790MHz only, engineering reference
+libEGL warning: MESA-LOADER: failed to open zink: /usr/lib/dri/zink_dri.so: cannot open shared object file: No such file or directory (search paths /usr/lib/dri, suffix _dri)
+
+qt.qpa.wayland: Wayland does not support QWindow::requestActivate()
+INSTRUMENT_EVENT MAIN_MARKER_CARDS_REFRESH_SELECT_DELTA_PASS
+INSTRUMENT_EVENT MARKER_PENDING_EDIT_PRESERVED_PASS
+INSTRUMENT_CURSOR=BUILTIN_PIXMAP
+INSTRUMENT_INTERFACE=SA3000_NATIVE_MAIN_MARKERS_15
+INSTRUMENT_EVENT RX CW calibration loaded: zcu111_j1_cw1790_4025g_manual_20261030_v02; 1790MHz only, engineering reference
+libEGL warning: MESA-LOADER: failed to open zink: /usr/lib/dri/zink_dri.so: cannot open shared object file: No such file or directory (search paths /usr/lib/dri, suffix _dri)
+
+qt.qpa.wayland: Wayland does not support QWindow::requestActivate()
+INSTRUMENT_EVENT Continuous RX started: persistent device, latest-frame display, no automatic recording. STOP then SINGLE to save.
+INSTRUMENT_EVENT STREAM batches=5 shown=1 replaced=4 read=15.40ms validate=14.71ms measure=26.65ms painted=1 avg_frames=1; view only, not gapless IQ
+INSTRUMENT_EVENT STREAM batches=87 shown=48 replaced=39 read=18.65ms validate=14.66ms measure=27.42ms painted=47 avg_frames=1; view only, not gapless IQ
+INSTRUMENT_EVENT RX stream stopped; displayed=74 painted=73 seconds=7.644. DMA released, no reset; no automatic recording.
+{"abi":1,"flags":1,"guard_status":135,"cdma_status":4098,"mm2s_status":65545,"dac_state":15,"last_errno":0,"loaded_bytes":0,"received_bytes":48000000,"session":8,"nco_word":70368744177664}
+MAIN_MARKERS15_BOARD_DISPLAY_STREAM_PASS_NO_RF_PLAY

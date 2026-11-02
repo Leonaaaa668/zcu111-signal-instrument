@@ -1,0 +1,26 @@
+#!/bin/sh
+# Run the bundled native tests. Only local files are touched; no RF/I2C/DMA access.
+set -eu
+if [ "$#" -ne 1 ]; then
+    echo 'Usage: sh deploy/test-offline /writable/new_test_directory' >&2
+    exit 2
+fi
+APP_ROOT=$(CDPATH= cd -- "$(dirname -- "$0")/.." && pwd)
+OUT=$1
+mkdir -- "$OUT"
+OUT=$(CDPATH= cd -- "$OUT" && pwd)
+BIN="$APP_ROOT/bin/aarch64"
+for tool in instrument-core-tests instrument-waveform-tests instrument-control-tests zcu111-clock; do
+    if [ ! -x "$BIN/$tool" ]; then
+        echo "Missing executable: $BIN/$tool; extract on Linux and chmod +x bin/aarch64/*" >&2
+        exit 2
+    fi
+done
+"$BIN/instrument-core-tests" "$APP_ROOT/resources" "$OUT/core" >"$OUT/core.log" 2>&1
+cat "$OUT/core.log"
+"$BIN/instrument-control-tests" "$APP_ROOT/resources" "$OUT/control" >"$OUT/control.log" 2>&1
+cat "$OUT/control.log"
+"$BIN/instrument-waveform-tests" "$OUT/waveforms" >"$OUT/waveforms.log" 2>&1
+cat "$OUT/waveforms.log"
+"$BIN/zcu111-clock" --plan "$APP_ROOT/resources/clock" "$OUT/clock_plan.json"
+echo "OFFLINE_TESTS_PASS; local files only; not GUI/RF acceptance; evidence=$OUT"

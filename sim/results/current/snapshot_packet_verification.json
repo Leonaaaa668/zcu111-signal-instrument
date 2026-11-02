@@ -1,0 +1,43 @@
+{
+  "status": "SA_SNAPSHOT_NUMERIC_PACKET_CHECK_PASS",
+  "packets": [
+    {
+      "ticket": 1,
+      "n": 128,
+      "sequence": 1,
+      "sha256": "051f3b6e264c00da368dd50579b3a4bfca0055b79a3ec5d662c8f2483334fd53"
+    },
+    {
+      "ticket": 2,
+      "n": 1024,
+      "sequence": 2,
+      "sha256": "60cc6e2bbcf2360037480a6627a20bbe4c0669f47110e66c6530931b9725878c"
+    },
+    {
+      "ticket": 3,
+      "n": 65536,
+      "sequence": 3,
+      "sha256": "4e09acaf9d990a3e61395351168ae0504196b16e40a007af05780b4801e32c31"
+    },
+    {
+      "ticket": 4,
+      "n": 128,
+      "sequence": 4,
+      "sha256": "39e0544e31e93109989b2fa3744bd18700497bf14f18b3e787d9ebcf28694468"
+    },
+    {
+      "ticket": 5,
+      "n": 128,
+      "sequence": 5,
+      "sha256": "579f1b20ab0382ff2856791a96b06b285d4a0c30d8c9a3ded215d7479440d5d5"
+    },
+    {
+      "ticket": 20,
+      "n": 128,
+      "sequence": 1,
+      "sha256": "647fdfa9a9368ea86dd8868aa8219cbc547f2d5a86a5c4147afadeeade15717b"
+    }
+  ],
+  "corruption_cases": 14,
+  "scope": "RTL simulation only; not a physical DMA/board test"
+}

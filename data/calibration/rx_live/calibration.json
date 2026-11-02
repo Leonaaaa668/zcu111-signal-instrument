@@ -1,0 +1,53 @@
+{
+  "format_version": 2,
+  "id": "zcu111_j1_cw1790_4025g_manual_20261030_v02",
+  "kind": "RX_CW_ENERGY_5_BIN_NOISE_SUBTRACTED__AFFINE_DB",
+  "status": "MEASURED_PROJECT_SCREENING_PASS",
+  "reference_plane": "XM500_J1_INPUT",
+  "channel": "ADC_TILE1_ADC1",
+  "reference_instrument": "4025G / manual same-cable-end reference",
+  "source_instrument": "SMB100A",
+  "absolute_accuracy_claimed_db": null,
+  "fft_n": 65536,
+  "sample_rate_hz": 150000000,
+  "center_hz": 1800000000,
+  "frequency_hz": 1790000000,
+  "nco_word": "400000000000",
+  "window_fingerprint_hex": "8cbf9904c4f36ed5371f94e1d60f70c6703db1651d7b1a36021e85ae91a5e289",
+  "offset_db": 12.730710617556895,
+  "minimum_input_dbm": -50.67978467058048,
+  "maximum_input_dbm": -30.72999232471975,
+  "noise_window_linear_fs": 3.031649001332401e-11,
+  "minimum_local_snr_db": 25,
+  "screening_limit_db": 0.1,
+  "training_points": 3,
+  "independent_holdout_points": 1,
+  "training_max_residual_db": 0.031548876841824836,
+  "holdout_max_error_db": 0.06434975494111228,
+  "observed_linearity_slope": 1.0126796954964605,
+  "training_point_ids": [
+    "p01",
+    "p03",
+    "p05"
+  ],
+  "holdout_point_ids": [
+    "p07"
+  ],
+  "training_errors_db": [
+    -0.031548876841824836,
+    0.016084022291941835,
+    0.015464854549851026
+  ],
+  "holdout_errors_db": [
+    -0.06434975494111228
+  ],
+  "limitations": "Single-frequency CW input only; engineering reference, no absolute<0.1dB claim; reference certificates/serial not confirmed; no spectrum-axis/channel/noise calibration.",
+  "excluded_reference_points": {
+    "p02": "Reference repeat span exceeds 0.1dB"
+  },
+  "measured_reference_span_db": 19.949792345860732,
+  "gain_db_per_db": 1.0126796954964605,
+  "model_kind": "affine",
+  "formula": "input_dbm = gain_db_per_db * noise_subtracted_cw_dbfs + offset_db",
+  "holdout_used_for_fit": false
+}

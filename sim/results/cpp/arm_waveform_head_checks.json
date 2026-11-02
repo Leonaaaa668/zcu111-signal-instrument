@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "type": "CW",
+      "head_max_quantization_error_counts": 0.4207437110928822,
+      "status": "PASS"
+    },
+    {
+      "type": "LFM_PULSE",
+      "zero_after_10us_in_captured_head": true,
+      "status": "PASS"
+    },
+    {
+      "type": "QAM64",
+      "nonzero_shaped_iq_and_peak_bounds": true,
+      "status": "PASS"
+    }
+  ],
+  "note": "Generated IQ file validation, not RF transmission/EVM acceptance"
+}

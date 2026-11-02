@@ -1,0 +1,3 @@
+NEW_RUNTIME_PACKAGED /home/raden/zcu111_v16_submission_check/sd_check/zcu111_instrument_qt5_20261101_16.tar.gz
+BOOT.BIN sha256 dbec5bb2c132297faeb3467b17467566e61d0d555e186171c93757efec4b054b
+Copy matching BOOT.BIN/image.ub/boot.scr plus this archive/start_v16.sh to FAT partition.

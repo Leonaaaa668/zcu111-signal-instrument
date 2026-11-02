@@ -1,0 +1,30 @@
+{
+  "model_kind": "constant",
+  "status": "FAIL",
+  "training_point_ids": [
+    "p01",
+    "p03",
+    "p05"
+  ],
+  "excluded_reference_points": {
+    "p02": "Reference repeat span exceeds 0.1dB"
+  },
+  "holdout_point_ids": [
+    "p07"
+  ],
+  "gain_db_per_db": 1.0,
+  "offset_db": 12.061027501598666,
+  "training_errors_db": [
+    -0.029914828928305326,
+    0.14015813737431415,
+    -0.1102433084460337
+  ],
+  "holdout_errors_db": [
+    -0.0015368398155573004
+  ],
+  "screening_limit_db": 0.1,
+  "observed_reference_span_db": 19.949792345860732,
+  "absolute_accuracy_claimed_db": null,
+  "holdout_used_for_fit": false,
+  "note": "Engineering amplitude-scale calibration; preserves measured gain error. No nonlinear curve, no power-range extrapolation."
+}

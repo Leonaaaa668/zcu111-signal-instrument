@@ -1,0 +1,157 @@
+RX_DMA_RUNTIME_HASH_CHECK_PASS; not board acceptance
+LARGE_RX_CASE_BEGIN n8192
+
+****** Software Commandline Tool (XSCT) v2025.2.0
+  **** SW Build 6298600 on Thu Nov 13 01:12:30 MST 2025
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+
+Warning: XSCT is deprecated and will be removed in future releases.
+We recommend using the new Python command-line tool for project management and debugging:
+- Run "vitis -i" for interactive mode.
+- Run "vitis -s <script>" for script mode.
+INFO: [Hsi 55-2053] elapsed time for repository (D:/Vivado/2025.2/Vitis/data/embeddedsw) loading 0 seconds
+hsi::open_hw_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 326.652 ; gain = 233.672
+RX_DMA_STOP_CONFIRMED; DAC unchanged
+RX_DMA_DOWNLOAD_COMPLETE: C:/Users/25812/Documents/Codex/2026-09-23/ni/work/zcu111_adc3_2400/reports/rx_dma_20261027_01/large_board_20261029_01/n8192/spectrum.bin; run strict host decoder with receipt before accepting spectrum
+{
+  "status": "RX_DMA_PACKET_VALID",
+  "packet_bytes": 65792,
+  "packet_sha256": "74437048ae2d354a376e3da8aa20ed8ad670ca73588c209efefab3bffde5c2be",
+  "packet_sequence": 1,
+  "epoch": 6,
+  "segment_id": 0,
+  "nco_update_seq": 1,
+  "ticket_id": 2240283660,
+  "fft_n": 8192,
+  "log_n": 13,
+  "zoom": 0,
+  "fft_right_shift": 14,
+  "fs_complex_hz": 150000000,
+  "requested_nco_hz": 1800000000,
+  "nco_tuning_word_raw": 70368744177664,
+  "source_completed_frames_at_first_bin": 18,
+  "first_output_observed_adc_counter": 1320620,
+  "last_output_observed_adc_counter": 1386144,
+  "counter_epoch": 261808844028,
+  "quality": 0,
+  "discarded_requests": 0,
+  "timestamp_semantics": "FFT output observation; not analog sample-window start",
+  "vbw_mode": "bypass",
+  "receiver_dbm_calibrated": false,
+  "peak_bin": 7646,
+  "peak_digital_offset_hz": -9997558.59375,
+  "peak_rf_estimate_hz": 1790002441.40625,
+  "peak_coherent_bin_dbfs": -50.491272301086745
+}
+LARGE_RX_PACKET_VALID_AND_TX_STOPPED n8192
+LARGE_RX_CASE_BEGIN n65536
+
+****** Software Commandline Tool (XSCT) v2025.2.0
+  **** SW Build 6298600 on Thu Nov 13 01:12:30 MST 2025
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+
+Warning: XSCT is deprecated and will be removed in future releases.
+We recommend using the new Python command-line tool for project management and debugging:
+- Run "vitis -i" for interactive mode.
+- Run "vitis -s <script>" for script mode.
+INFO: [Hsi 55-2053] elapsed time for repository (D:/Vivado/2025.2/Vitis/data/embeddedsw) loading 1 seconds
+hsi::open_hw_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 326.219 ; gain = 233.430
+RX_DMA_STOP_CONFIRMED; DAC unchanged
+RX_DMA_DOWNLOAD_COMPLETE: C:/Users/25812/Documents/Codex/2026-09-23/ni/work/zcu111_adc3_2400/reports/rx_dma_20261027_01/large_board_20261029_01/n65536/spectrum.bin; run strict host decoder with receipt before accepting spectrum
+{
+  "status": "RX_DMA_PACKET_VALID",
+  "packet_bytes": 524544,
+  "packet_sha256": "835be7537014c33203dcd25b3153cdf5fa5ff676717edd029a5e2ff5ce6f410f",
+  "packet_sequence": 1,
+  "epoch": 7,
+  "segment_id": 0,
+  "nco_update_seq": 1,
+  "ticket_id": 2240335290,
+  "fft_n": 65536,
+  "log_n": 16,
+  "zoom": 0,
+  "fft_right_shift": 17,
+  "fs_complex_hz": 150000000,
+  "requested_nco_hz": 1800000000,
+  "nco_tuning_word_raw": 70368744177664,
+  "source_completed_frames_at_first_bin": 1,
+  "first_output_observed_adc_counter": 1582948,
+  "last_output_observed_adc_counter": 2107216,
+  "counter_epoch": 266972011883,
+  "quality": 0,
+  "discarded_requests": 0,
+  "timestamp_semantics": "FFT output observation; not analog sample-window start",
+  "vbw_mode": "bypass",
+  "receiver_dbm_calibrated": false,
+  "peak_bin": 61167,
+  "peak_digital_offset_hz": -9999847.412109375,
+  "peak_rf_estimate_hz": 1790000152.5878906,
+  "peak_coherent_bin_dbfs": -50.4367603743954
+}
+LARGE_RX_PACKET_VALID_AND_TX_STOPPED n65536
+LARGE_RX_CASE_BEGIN n65536_half
+
+****** Software Commandline Tool (XSCT) v2025.2.0
+  **** SW Build 6298600 on Thu Nov 13 01:12:30 MST 2025
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+
+Warning: XSCT is deprecated and will be removed in future releases.
+We recommend using the new Python command-line tool for project management and debugging:
+- Run "vitis -i" for interactive mode.
+- Run "vitis -s <script>" for script mode.
+INFO: [Hsi 55-2053] elapsed time for repository (D:/Vivado/2025.2/Vitis/data/embeddedsw) loading 0 seconds
+hsi::open_hw_design: Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 326.500 ; gain = 233.535
+RX_DMA_STOP_CONFIRMED; DAC unchanged
+RX_DMA_DOWNLOAD_COMPLETE: C:/Users/25812/Documents/Codex/2026-09-23/ni/work/zcu111_adc3_2400/reports/rx_dma_20261027_01/large_board_20261029_01/n65536_half/spectrum.bin; run strict host decoder with receipt before accepting spectrum
+{
+  "status": "RX_DMA_PACKET_VALID",
+  "packet_bytes": 524544,
+  "packet_sha256": "2c604a074e3e9c252d76280f9dc5f0feb8535a9ea8cdc5b8ce273d99c9f9e2de",
+  "packet_sequence": 1,
+  "epoch": 8,
+  "segment_id": 0,
+  "nco_update_seq": 1,
+  "ticket_id": 2240384875,
+  "fft_n": 65536,
+  "log_n": 16,
+  "zoom": 0,
+  "fft_right_shift": 17,
+  "fs_complex_hz": 150000000,
+  "requested_nco_hz": 1800000000,
+  "nco_tuning_word_raw": 70368744177664,
+  "source_completed_frames_at_first_bin": 1,
+  "first_output_observed_adc_counter": 1582948,
+  "last_output_observed_adc_counter": 2107216,
+  "counter_epoch": 271930677321,
+  "quality": 0,
+  "discarded_requests": 0,
+  "timestamp_semantics": "FFT output observation; not analog sample-window start",
+  "vbw_mode": "bypass",
+  "receiver_dbm_calibrated": false,
+  "peak_bin": 61167,
+  "peak_digital_offset_hz": -9999847.412109375,
+  "peak_rf_estimate_hz": 1790000152.5878906,
+  "peak_coherent_bin_dbfs": -56.3527058364992
+}
+LARGE_RX_PACKET_VALID_AND_TX_STOPPED n65536_half
+
+****** Software Commandline Tool (XSCT) v2025.2.0
+  **** SW Build 6298600 on Thu Nov 13 01:12:30 MST 2025
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+
+Warning: XSCT is deprecated and will be removed in future releases.
+We recommend using the new Python command-line tool for project management and debugging:
+- Run "vitis -i" for interactive mode.
+- Run "vitis -s <script>" for script mode.
+INFO: [Hsi 55-2053] elapsed time for repository (D:/Vivado/2025.2/Vitis/data/embeddedsw) loading 0 seconds
+hsi::open_hw_design: Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 326.906 ; gain = 233.750
+RX_DMA_STOP_CONFIRMED; DAC unchanged
+LARGE_RX_BOARD_PACKETS_COMPLETE_TX_RX_STOPPED; numerical summary required

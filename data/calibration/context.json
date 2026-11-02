@@ -1,0 +1,39 @@
+{
+  "format_version": 1,
+  "status": "AFFINE_REFERENCE_SCREENING_PASS_RUNTIME_VALIDATION_PENDING",
+  "purpose": "RX CW input power calibration, not TX calibration",
+  "reference_plane": "XM500 J1 input connector, cable-end power characterized with4025G before connecting to J1",
+  "source_model": "Rohde & Schwarz SMB100A",
+  "reference_analyzer_model_user_reported": "CEYEAR4025G",
+  "frequency_hz": 1790000000,
+  "rx_center_hz": 1800000000,
+  "rx_complex_sample_rate_hz": 150000000,
+  "fft_n": 65536,
+  "window": "released Hann",
+  "average": "linear power, independent packets",
+  "power_estimator": "energy-normalized power summed around expected CW frequency; noise-off subtraction from the same bins",
+  "hardware_changed": false,
+  "rx_profile": "ADC Tile1 physicalADC1/public RFDC block1, XM500 J1; RFDC decimation2 + existing PL8x",
+  "receiver_dbm_calibrated": false,
+  "coefficient": null,
+  "calibration_source": "measured cable-end reference; never treat nominal source display as exact connector power",
+  "scope": "Initial single-frequency CW only. No full-band, other FFT modes, channel/noise/QAM total-power or <0.1dB absolute accuracy claim.",
+  "measured_points": [
+    "p01",
+    "p03",
+    "p05",
+    "p07"
+  ],
+  "rf_state_last_confirmed": "OFF",
+  "rf_state_evidence": "User confirms RF OFF after p07, SMB to J1, J7 empty",
+  "reference_points_received": [
+    "p01",
+    "p02",
+    "p03",
+    "p05",
+    "p07"
+  ],
+  "excluded_reference_points": {
+    "p02": "Observed three-reading span 0.15dB exceeds project 0.1dB screening threshold; keep raw readings, no forced repeat requested."
+  }
+}

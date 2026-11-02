@@ -1,0 +1,34 @@
+{
+  "status": "PASS",
+  "rf_actions": false,
+  "python_on_board": false,
+  "generations": [
+    {
+      "type": "CW",
+      "exit": 0,
+      "stdout": "WAVEFORM_SAVED_NOT_PLAYING bytes=48000000 C++_ONLY\n",
+      "stderr": "",
+      "elapsed_s": 7.665761899999779,
+      "bytes": 48000000,
+      "remote_file": "/tmp/zcu111_cpp_05476cfa09/cw_10ms.bin"
+    },
+    {
+      "type": "LFM_PULSE",
+      "exit": 0,
+      "stdout": "WAVEFORM_SAVED_NOT_PLAYING bytes=48000000 C++_ONLY\n",
+      "stderr": "",
+      "elapsed_s": 8.939338000000134,
+      "bytes": 48000000,
+      "remote_file": "/tmp/zcu111_cpp_05476cfa09/lfm_pulse_10ms.bin"
+    },
+    {
+      "type": "QAM",
+      "exit": 0,
+      "stdout": "WAVEFORM_SAVED_NOT_PLAYING bytes=48000000 C++_ONLY\n",
+      "stderr": "",
+      "elapsed_s": 8.726252399999794,
+      "bytes": 48000000,
+      "remote_file": "/tmp/zcu111_cpp_05476cfa09/qam_10ms.bin"
+    }
+  ]
+}

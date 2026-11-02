@@ -1,0 +1,55 @@
+{
+  "status": "PASS",
+  "cases": [
+    {
+      "case": "rate_budget",
+      "expected_checker_status": "PASS",
+      "expected_exit": 0,
+      "actual_checker_status": "PASS",
+      "actual_exit": 0,
+      "behavior_test_passed": true
+    },
+    {
+      "case": "rtl_payload",
+      "expected_checker_status": "PASS",
+      "expected_exit": 0,
+      "actual_checker_status": "PASS",
+      "actual_exit": 0,
+      "behavior_test_passed": true
+    },
+    {
+      "case": "synthetic_one_bit_fault",
+      "expected_checker_status": "FAIL",
+      "expected_exit": 1,
+      "actual_checker_status": "FAIL",
+      "actual_exit": 1,
+      "behavior_test_passed": true
+    },
+    {
+      "case": "actual_reserved_power_point",
+      "expected_checker_status": "PASS",
+      "expected_exit": 0,
+      "actual_checker_status": "PASS",
+      "actual_exit": 0,
+      "behavior_test_passed": true
+    },
+    {
+      "case": "wrong_frequency_rejected",
+      "expected_checker_status": "NOT_COMPARABLE",
+      "expected_exit": 2,
+      "actual_checker_status": "NOT_COMPARABLE",
+      "actual_exit": 2,
+      "behavior_test_passed": true
+    },
+    {
+      "case": "non_equivalent_resources_rejected",
+      "expected_checker_status": "NOT_COMPARABLE",
+      "expected_exit": 2,
+      "actual_checker_status": "NOT_COMPARABLE",
+      "actual_exit": 2,
+      "behavior_test_passed": true
+    }
+  ],
+  "hardware_actions": "NONE",
+  "scope": "Offline tool behavior; correct rejection is a successful test. No new RF measurements."
+}

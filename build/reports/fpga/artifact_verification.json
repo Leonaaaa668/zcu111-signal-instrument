@@ -1,0 +1,82 @@
+{
+  "status": "RX_DMA_ARTIFACT_CONSISTENCY_PASS",
+  "hardware_actions": "NONE",
+  "board_tested": false,
+  "build_variant": "narrow09_zoom0_hann_pipeline_xpm_reset",
+  "firmware_revision": "rx_init_order_fix01",
+  "released_log_n": [
+    10
+  ],
+  "released_zoom": [
+    0
+  ],
+  "release_profile_sha256": "190ce1c6ca7eafff419346be9db5d5caa394bc59f2e8e680a7d0bc1c5fdc6af9",
+  "release_command_sources": {
+    "rx_release_profile.json": "190ce1c6ca7eafff419346be9db5d5caa394bc59f2e8e680a7d0bc1c5fdc6af9",
+    "scripts/rx_dma_command.tcl": "62a430a671e98c62582d530589653c02801aaf9f6e3274ddaa64e77568442589",
+    "scripts/capture_rx_spectrum.ps1": "3302b630b799457eefa0d0f696276f8c1af794416933c5c49b515a6c73376baa",
+    "sim/test_rx_dma_command.tcl": "f48a7fce7d5d4a7d36386421cd4fe9aec084372c612a97163b75a8fb5c813219"
+  },
+  "files": {
+    "adc3_capture.bit": {
+      "bytes": 34437498,
+      "sha256": "0283237eb5775333f657a091d242731221423a375b972d96c0e8e2cfe355925c"
+    },
+    "adc3_capture.ltx": {
+      "bytes": 148833,
+      "sha256": "f6bf54774b499391fec3cd4c1040d940662eb26b5e4f66c2b2111a08c38143d9"
+    },
+    "adc_dac_rx_dma.xsa": {
+      "bytes": 15083372,
+      "sha256": "3e6ac551a7199b89242c997af95348f162c5d850cc5949628b397183e84e3878"
+    },
+    "adc3_startup.elf": {
+      "bytes": 1423520,
+      "sha256": "823c0a4a4bdddc88b09c52151bff4633d9a5f3aa85175c32f05f007326e5fa69"
+    },
+    "fsbl.elf": {
+      "bytes": 592928,
+      "sha256": "5e8c8ee97ea95927e95cd7124cf67569300f12e4644b3f53ec48050100d07c03"
+    },
+    "psu_init.tcl": {
+      "bytes": 860564,
+      "sha256": "8f22af9ee1f422a56584f14b51c5d8087db1fa44bc3108798a6814cada7bbb02"
+    }
+  },
+  "app_sources": {
+    "adc3_startup.c": "e5890a08ac06783d8cee5225f348ab9598bf7beb5a78a04d5d3a5f4acf891875",
+    "vector_tx.c": "922bfdef0e4a0dbf15969b82c173043da59b674409a89799e9e95a17eaceb962",
+    "vector_tx.h": "eebccac3ed49ffcbf96c0b2a940bdbb5f6690a2f86b259d1a0f3501bacfae49a",
+    "tx_memory_map.h": "a288f641e1669607932bdf020ea52566743caec95b37a1c104b71159e5f01e62",
+    "spectrum_rx.c": "d926d0dd1da6bebb86e7cc9488734ca4a5ceba0621c637bdcb9a7d8447ec865a",
+    "spectrum_rx.h": "895e9680c47a3b8c8454a6b9e30115d60ffce54a7e295d3816c5bd7e4de96fe9",
+    "rx_memory_map.h": "a8552d0193dd32081dc5b102d9eee9472338d28a61d459a36674e559d2fc6e67",
+    "sa_packet_validate.h": "d53cc8a9a6e5b99193444c82585b7f6725ac87c49fe045836805c3a5f1355225",
+    "sa_window_metrics.h": "99f7624b454fed36309a03a72630d9d7496d3ffe023b4ce70064361f6301629b"
+  },
+  "app_elf_segments": [
+    {
+      "start": 0,
+      "end": 334848,
+      "bytes": 334848
+    }
+  ],
+  "app_linked_features": [
+    "main",
+    "spectrum_rx_init",
+    "spectrum_rx_poll",
+    "vector_tx_init",
+    "vector_tx_poll"
+  ],
+  "clock_tables_sha256": "c996f2dce13a78cd66092f109cedcffc21bd8568d6a7f62a444208c67cdbee50",
+  "assigned_pin_count": 363,
+  "io_matches_accepted": true,
+  "embedded_bit_matches": true,
+  "rx_irq_device_tree_cells": [
+    0,
+    90,
+    4
+  ],
+  "irq_origin": "XSA-generated SDT, not guessed",
+  "scope": "Whole raw spectrum DMA diagnostic. VBW bypass, output-observation timestamps, receiver dBm uncalibrated."
+}

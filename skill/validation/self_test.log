@@ -1,0 +1,35 @@
+test_actual_historical_pair_rejected (__main__.Checks.test_actual_historical_pair_rejected) ... ok
+test_bad_decimator_rejected (__main__.Checks.test_bad_decimator_rejected) ... ok
+test_changed_cable_or_setup_rejected (__main__.Checks.test_changed_cable_or_setup_rejected) ... ok
+test_cw_correction_cannot_be_used_for_qam (__main__.Checks.test_cw_correction_cannot_be_used_for_qam) ... ok
+test_duplicate_sample_rejected (__main__.Checks.test_duplicate_sample_rejected) ... ok
+test_empty_feature_table_is_unknown (__main__.Checks.test_empty_feature_table_is_unknown) ... ok
+test_exact_mode_cannot_silently_add_tolerance (__main__.Checks.test_exact_mode_cannot_silently_add_tolerance) ... ok
+test_exact_uint64_does_not_round_to_float (__main__.Checks.test_exact_uint64_does_not_round_to_float) ... ok
+test_explicit_tolerance (__main__.Checks.test_explicit_tolerance) ... ok
+test_feature_pruning_not_equivalent (__main__.Checks.test_feature_pruning_not_equivalent) ... ok
+test_fractional_data_cannot_pass_exact_integer_mode (__main__.Checks.test_fractional_data_cannot_pass_exact_integer_mode) ... ok
+test_holdout_cannot_be_fit_data (__main__.Checks.test_holdout_cannot_be_fit_data) ... ok
+test_integer_exact_pass (__main__.Checks.test_integer_exact_pass) ... ok
+test_manifest_alias_duplicate_refused (__main__.Checks.test_manifest_alias_duplicate_refused) ... ok
+test_manifest_detects_tampering (__main__.Checks.test_manifest_detects_tampering) ... ok
+test_manifest_duplicate_refused (__main__.Checks.test_manifest_duplicate_refused) ... ok
+test_manifest_path_escape_rejected (__main__.Checks.test_manifest_path_escape_rejected) ... ok
+test_missing_resource_row_is_not_zero (__main__.Checks.test_missing_resource_row_is_not_zero) ... ok
+test_missing_sample_rejected (__main__.Checks.test_missing_sample_rejected) ... ok
+test_nan_rejected (__main__.Checks.test_nan_rejected) ... ok
+test_native_failed_timing_detected (__main__.Checks.test_native_failed_timing_detected) ... ok
+test_other_board_rate_budget_is_parameterized (__main__.Checks.test_other_board_rate_budget_is_parameterized) ... ok
+test_outside_tolerance_fails (__main__.Checks.test_outside_tolerance_fails) ... ok
+test_power_spot_agreement_not_certification (__main__.Checks.test_power_spot_agreement_not_certification) ... ok
+test_project_rate_budget_separates_iq_from_spectrum (__main__.Checks.test_project_rate_budget_separates_iq_from_spectrum) ... ok
+test_same_conditions_allow_resource_delta (__main__.Checks.test_same_conditions_allow_resource_delta) ... ok
+test_stage_mismatch_not_comparable (__main__.Checks.test_stage_mismatch_not_comparable) ... ok
+test_two_power_readings_are_insufficient (__main__.Checks.test_two_power_readings_are_insufficient) ... ok
+test_unknown_constraints_not_guessed (__main__.Checks.test_unknown_constraints_not_guessed) ... ok
+test_wrong_frequency_rejected (__main__.Checks.test_wrong_frequency_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 30 tests in 0.293s
+
+OK

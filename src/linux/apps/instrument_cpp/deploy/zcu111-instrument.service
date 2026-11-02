@@ -1,0 +1,17 @@
+[Unit]
+Description=ZCU111 native standalone instrument front panel
+Requires=weston.service
+After=weston.service
+
+[Service]
+Type=simple
+User=petalinux
+Group=video
+ExecStart=/usr/bin/zcu111-instrument-launch --fullscreen
+Restart=on-failure
+RestartSec=5
+TimeoutStopSec=15
+UMask=0027
+
+[Install]
+WantedBy=graphical.target

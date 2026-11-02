@@ -1,0 +1,8 @@
+{
+  "source": "V16 source-package RTL snapshot test packets.csv, first packet payload only",
+  "original_sha256": "4c0524b3d0829ddcc76fb67da91954f8ac89e94f85dd5ce1b0443817c4cd0463",
+  "domain": "rtl_simulation",
+  "not_rf": true,
+  "reference": "Known TB stimulus formula independently decoded in snapshot verifier",
+  "corrupted_file": "Synthetic one-bit fault injection, not an actual measured failure"
+}

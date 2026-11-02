@@ -1,0 +1,147 @@
+{
+  "schema": 1,
+  "kind": "MANUAL_CW_CONTEXT_EVIDENCE",
+  "status": "ONE_INDEPENDENT_CORRECTED_POINT_PASS",
+  "frequency_hz": 1790000000,
+  "reference_plane": "4025G_input_including_current_cable",
+  "setup_id": "zcu111_j7_4025g_current_cable_20261031",
+  "base_profile_sha256": "5dea09fa5050d3bda273107ba2daa3f42d2c91429a1fa9faaca1f1a6290c0f56",
+  "command_offset_db": 0.06,
+  "training_targets_dbm": [
+    -40,
+    -30,
+    -20
+  ],
+  "baseline_points": [
+    {
+      "target_dbm": -40.0,
+      "role": "screening_point",
+      "peak_frequency_reported": "1.789999950GHz",
+      "peak_frequency_hz": 1789999950,
+      "frequency_difference_from_target_hz": -50,
+      "readings_dbm": [
+        -40.0,
+        -40.01,
+        -40.0
+      ],
+      "mean_dbm": -40.00333333333333,
+      "mean_difference_from_target_db": -0.0033333333333303017,
+      "max_abs_reading_difference_from_target_db": 0.00999999999999801,
+      "reading_span_db": 0.00999999999999801,
+      "sample_std_db": 0.005773502691895109,
+      "DAC_stopped_after_readings": "USER_CONFIRMED",
+      "source": "user manual4025G marker readings",
+      "client_date": "2026-10-31",
+      "original_profile_sha256": "5dea09fa5050d3bda273107ba2daa3f42d2c91429a1fa9faaca1f1a6290c0f56",
+      "scope": "single CW1790MHz point only; not full-range or absolute accuracy certification"
+    },
+    {
+      "target_dbm": -30.0,
+      "role": "screening_point",
+      "peak_frequency_reported": "1.789999950GHz",
+      "peak_frequency_hz": 1789999950,
+      "frequency_difference_from_target_hz": -50,
+      "readings_dbm": [
+        -30.11,
+        -30.11,
+        -30.12
+      ],
+      "mean_dbm": -30.113333333333333,
+      "mean_difference_from_target_db": -0.11333333333333329,
+      "max_abs_reading_difference_from_target_db": 0.120000000000001,
+      "reading_span_db": 0.010000000000001563,
+      "sample_std_db": 0.00577350269189716,
+      "DAC_stopped_after_readings": "USER_CONFIRMED",
+      "source": "user manual4025G marker readings",
+      "client_date": "2026-10-31",
+      "original_profile_sha256": "5dea09fa5050d3bda273107ba2daa3f42d2c91429a1fa9faaca1f1a6290c0f56",
+      "scope": "CW1790MHz point only; reference agreement exceeds0.1dB here; no absolute accuracy certification"
+    },
+    {
+      "target_dbm": -20.0,
+      "role": "screening_point",
+      "peak_frequency_reported": "1.789999950GHz",
+      "peak_frequency_hz": 1789999950,
+      "frequency_difference_from_target_hz": -50,
+      "readings_dbm": [
+        -20.07,
+        -20.08,
+        -20.08
+      ],
+      "mean_dbm": -20.076666666666664,
+      "mean_difference_from_target_db": -0.07666666666666444,
+      "max_abs_reading_difference_from_target_db": 0.0799999999999983,
+      "reading_span_db": 0.00999999999999801,
+      "sample_std_db": 0.005773502691895109,
+      "DAC_stopped_after_readings": "USER_CONFIRMED",
+      "source": "user manual4025G marker readings",
+      "client_date": "2026-10-31",
+      "original_profile_sha256": "5dea09fa5050d3bda273107ba2daa3f42d2c91429a1fa9faaca1f1a6290c0f56",
+      "scope": "CW1790MHz point only; not full-range or absolute accuracy certification"
+    },
+    {
+      "target_dbm": -35.0,
+      "role": "predeclared_independent_check_point",
+      "excluded_from_correction_estimation": true,
+      "peak_frequency_reported": "1.789999950GHz",
+      "peak_frequency_hz": 1789999950,
+      "frequency_difference_from_target_hz": -50,
+      "readings_dbm": [
+        -35.05,
+        -35.06,
+        -35.05
+      ],
+      "mean_dbm": -35.053333333333335,
+      "mean_difference_from_target_db": -0.053333333333334565,
+      "max_abs_reading_difference_from_target_db": 0.060000000000002274,
+      "reading_span_db": 0.010000000000005116,
+      "sample_std_db": 0.005773502691899211,
+      "DAC_stopped_after_readings": "USER_CONFIRMED",
+      "source": "user manual4025G marker readings",
+      "client_date": "2026-10-31",
+      "original_profile_sha256": "5dea09fa5050d3bda273107ba2daa3f42d2c91429a1fa9faaca1f1a6290c0f56",
+      "scope": "CW1790MHz point only; not full-range or absolute accuracy certification"
+    }
+  ],
+  "independent_corrected_check": {
+    "target_dbm": -25.0,
+    "base_model_command_dbm": -24.94,
+    "command_offset_db": 0.06,
+    "role": "new_independent_corrected_physical_check",
+    "excluded_from_correction_estimation": true,
+    "peak_frequency_reported": "1.789999950GHz",
+    "peak_frequency_hz": 1789999950,
+    "frequency_difference_from_target_hz": -50,
+    "readings_dbm": [
+      -25.01,
+      -25.01,
+      -25.0
+    ],
+    "mean_dbm": -25.006666666666668,
+    "mean_difference_from_target_db": -0.006666666666667709,
+    "max_abs_reading_difference_from_target_db": 0.010000000000001563,
+    "reading_span_db": 0.010000000000001563,
+    "sample_std_db": 0.00577350269189716,
+    "DAC_stopped_after_readings": "USER_CONFIRMED",
+    "source": "user manual4025G marker readings",
+    "client_date": "2026-10-31",
+    "original_profile_sha256": "5dea09fa5050d3bda273107ba2daa3f42d2c91429a1fa9faaca1f1a6290c0f56",
+    "scope": "one actual corrected CW1790MHz power point; no full-range or absolute accuracy certification",
+    "command_iq_sha256": "e3f799c23b31b7fb9baa7f5ce7510acda653ea6240372a2aa3aa7a352ec88067",
+    "command_metadata_sha256": "87db9d3b09cbe0774cd20ce00df903e60dfec26a918a641b888b16f0604ee5d7"
+  },
+  "record_source_sha256": "bb5731fc69bced235f65d0e7b1c24b8dd76128a074aa46285ebb0bc2cad6ebaf",
+  "absolute_accuracy_claimed": false,
+  "all_corrected_levels_physically_retested": false,
+  "all_continuous_levels_certified": false,
+  "measured_setup": {
+    "center_hz": 1790000000,
+    "span_hz": 50000,
+    "RBW_Hz": 1000,
+    "VBW_Hz": 1000,
+    "reference_dbm": 0,
+    "attenuation_db": 20,
+    "preamp": false,
+    "amplitude_offset_db": 0
+  }
+}
