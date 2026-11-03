@@ -1,0 +1,20 @@
+Internal ctest changing into directory: [host_build]
+Test project [host_build]
+    Start 1: cw-frequency-estimate
+1/7 Test #1: cw-frequency-estimate ............   Passed   20.80 sec
+    Start 2: spectrum-tools
+2/7 Test #2: spectrum-tools ...................   Passed    0.20 sec
+    Start 3: tuning-sweep-contract
+3/7 Test #3: tuning-sweep-contract ............   Passed    0.23 sec
+    Start 4: rx-power-calibration
+4/7 Test #4: rx-power-calibration .............   Passed    0.19 sec
+    Start 5: core-contract
+5/7 Test #5: core-contract ....................   Passed    1.29 sec
+    Start 6: waveform-contract
+6/7 Test #6: waveform-contract ................   Passed   13.11 sec
+    Start 7: control-clock-storage
+7/7 Test #7: control-clock-storage ............   Passed    0.25 sec
+
+100% tests passed, 0 tests failed out of 7
+
+Total Test time (real) =  36.10 sec

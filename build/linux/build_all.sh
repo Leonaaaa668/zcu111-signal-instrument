@@ -31,12 +31,13 @@ cmake --build "$OUT/app" -j4
 export QT_QPA_PLATFORM=offscreen
 export QT_PLUGIN_PATH="$SDKTARGETSYSROOT/usr/lib/plugins"
 ctest --test-dir "$OUT/app" --output-on-failure
-RT="$OUT/zcu111_instrument_qt5_20261101_16"
+RT="$OUT/zcu111_instrument_qt5_20261103_17"
 test ! -e "$RT" || { echo 'Runtime exists; choose a fresh build output directory.' >&2; exit 2; }
 mkdir -p "$RT"
 cp -R "$ROOT/board/runtime_layout/." "$RT/"
 cp "$ROOT/LICENSE" "$RT/LICENSE_MIT"
 cp "$ROOT/README.md" "$RT/README.md"
+cp "$ROOT/board/releases/v17.json" "$RT/release.json"
 cp -R "$ROOT/src/linux/tx_20261030/third_party" "$RT/third_party"
 DESTDIR="$RT" cmake --install "$OUT/app"
 mkdir -p "$RT/modules" "$RT/overlays" "$RT/usr/bin/lib" "$OUT/kernel"
@@ -66,5 +67,5 @@ cp -L "$RF_USR"/lib/librfdc.so* "$LIBMETAL_USR"/lib/libmetal.so* "$SYSFS_USR"/li
 dtc -@ -I dts -O dtb "$ROOT/src/linux/rx_20261030/admin/rx_live.dtso" -o "$RT/overlays/rx_live.dtbo"
 find "$RT" -name '*.sh' -exec chmod 755 {} +
 find "$RT/usr/bin" -maxdepth 1 -type f -exec chmod 755 {} +
-echo "V16_LINUX_SOURCES_REBUILD_PASS: $RT; no hardware/RF actions"
+echo "V17_LINUX_SOURCES_REBUILD_PASS: $RT; no hardware/RF actions"
 echo 'Next: build/make_sd_runtime.py with this runtime and your actual BOOT.BIN.'

@@ -1,0 +1,43 @@
+{
+  "release": "V17",
+  "application_version": "0.11.0",
+  "date": "2026-11-03",
+  "delivery": "SOURCE_RELEASE",
+  "base_commit": "a63381887d01d801a63d21a0250cc45b9c4dc60f",
+  "hardware_baseline": "narrow09; unchanged V16 FPGA/RFDC/DDR/DMA and kernel interfaces",
+  "runtime_directory": "zcu111_instrument_qt5_20261103_17",
+  "startup_script": "start_v17.sh",
+  "cw_rf_range_hz": [
+    1300000000,
+    2300000000
+  ],
+  "cw_frequency_step_hz": 100,
+  "power_reference_frequency_hz": 1790000000,
+  "off_reference_power_mode": "ESTIMATED_FROM_REFERENCE_FREQUENCY",
+  "power_range_4025g_dbm": [
+    -40,
+    -20
+  ],
+  "power_range_fsva_dbm": [
+    -50,
+    -10
+  ],
+  "modulated_power_model": "DIGITAL_UNCALIBRATED; CW reference is not average modulation power calibration",
+  "last_board_accepted_application": "V17 /0.11.0 (team confirmed)",
+  "new_board_or_rf_actions": false,
+  "host_validation": {
+    "non_qt_ctest_passed": 7,
+    "generated_10ms_frequency_cases_mhz": [
+      1300,
+      1800,
+      2300
+    ],
+    "sample_frequency_hash_and_cyclic_boundary": "PASS",
+    "local_sdk_rebuild": "NOT_RUN_ON_THIS_COMPUTER"
+  },
+  "board_validation": {
+    "status": "PASS",
+    "source": "TEAMMATE_CONFIRMED_BY_USER",
+    "confirmation_date": "2026-11-03"
+  }
+}

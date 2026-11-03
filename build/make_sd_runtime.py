@@ -3,6 +3,7 @@ from pathlib import Path
 import argparse
 import hashlib
 import tarfile
+import json
 
 p = argparse.ArgumentParser()
 p.add_argument('--runtime', type=Path, required=True)
@@ -10,7 +11,9 @@ p.add_argument('--boot-bin', type=Path, required=True)
 p.add_argument('--output', type=Path, required=True)
 a = p.parse_args()
 root = Path(__file__).resolve().parents[1]
-assert a.runtime.name == 'zcu111_instrument_qt5_20261101_16'
+release = json.loads((root / 'board/releases/v17.json').read_text(encoding='utf-8'))
+assert a.runtime.name == release['runtime_directory'], 'Use newly built V17 runtime'
+assert json.loads((a.runtime / 'release.json').read_text(encoding='utf-8')) == release, 'V17 release identity missing or mismatched'
 assert a.boot_bin.is_file()
 a.output.mkdir(parents=True, exist_ok=True)
 rt = a.runtime
@@ -29,10 +32,12 @@ def mode(m):
     return m
 with tarfile.open(archive, 'w:gz') as z:
     z.add(rt, arcname=rt.name, filter=mode)
+# Reuse the accepted startup logic, retaining the V16 reference file unchanged.
 script = (root / 'board/reference/start_v16.sh').read_text()
+script = script.replace('20261101_16', '20261103_17').replace('release16', 'release17').replace('v16', 'v17').replace('V16', 'V17')
 script = script.replace('18bc65c83ccd07cd9017e3d64b619ac8c7536744af105fa1c66bc0a7df955474', sha(archive))
 script = script.replace('dbec5bb2c132297faeb3467b17467566e61d0d555e186171c93757efec4b054b', sha(a.boot_bin))
-(a.output / 'start_v16.sh').write_text(script, newline='\n')
+(a.output / release['startup_script']).write_text(script, newline='\n')
 print('NEW_RUNTIME_PACKAGED', archive)
 print('BOOT.BIN sha256', sha(a.boot_bin))
-print('Copy matching BOOT.BIN/image.ub/boot.scr plus this archive/start_v16.sh to FAT partition.')
+print('Copy matching BOOT.BIN/image.ub/boot.scr plus this archive/start_v17.sh to FAT partition.')

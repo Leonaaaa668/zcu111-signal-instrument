@@ -86,6 +86,7 @@ struct WaveRequest {
     fs::path output;
     std::optional<TxCwCalibration> powerModel;
     double targetDbm=-40;
+    bool allowPowerFrequencyEstimate=false;
 };
 void generateWaveform(const WaveRequest &request, std::atomic_bool &cancel,
                       std::function<void(unsigned,unsigned)> progress={});

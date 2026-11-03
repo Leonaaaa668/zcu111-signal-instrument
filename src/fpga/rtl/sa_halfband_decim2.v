@@ -1,6 +1,6 @@
 `timescale 1ns/1ps
 // Sequential-sample 4->2, 2->1 or valid-gated 1->1/D2 complex FIR.
-// This module is NOT yet connected to the accepted ADC/DAC block design.
+// Integrated by sa_d8_zoom as RX D8 stages d0/d1/d2 in the accepted design.
 // Coefficients: signed18 Q1.17. Arithmetic: convergent rounding + saturation.
 module sa_halfband_decim2 #(
     parameter integer IN_LANES = 4,

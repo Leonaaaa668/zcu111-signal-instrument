@@ -5,7 +5,7 @@
 没有把AI清理后的频谱照片当作原始测量图放入data。
 
 production文件从冻结包逐一比较，结果见report/package_validation.json。
-source_provenance.json记录最初收集的文件来源与当时哈希；参考Python工具为目录搬迁调整了少量路径，改动单独列在reference_tool_path_changes.diff；最终权威完整性清单是根SHA256SUMS.txt。
+source_provenance.json记录最初收集的文件来源与当时哈希；参考Python工具为目录搬迁调整了少量路径，改动单独列在reference_tool_path_changes.diff；此处记录历史收集范围；当前源码通过构建/测试入口检查，源码包在本地校验归档完整性。
 新建的构建/恢复/校验脚本和说明是源码复现集成，不是声称已经在V16板上运行过的新固件版本。
 共享root密码哈希从实际meta-user镜像定制中移除，构建者应自行设置，功能配置保持原结构。未包含Windows/VM/板卡登录凭据、SSH密钥或AMD许可证。
 

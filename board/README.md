@@ -1,5 +1,7 @@
 # Board entry and validation
 
+> 当前生产源码为V17/0.11.0，沿用narrow09硬件；上板验证通过按队伍确认记录。V16原始日志及固定启动脚本保留为历史基线，新构建使用生成的start_v17.sh。见[V17说明](../docs/v17_release.md)。
+
 本目录保留V16运行脚本源码和冻结回执，不包含可直接烧写的二进制镜像。
 reference/start_v16.sh只适配原冻结运行包和原BOOT.BIN哈希；源码重编译后使用build/make_sd_runtime.py生成自己的启动入口。
 runtime_layout是Linux软件构建时复制到运行目录的脚本和1080p/Pixman显示配置，不是空壳GUI或模拟板卡后端。

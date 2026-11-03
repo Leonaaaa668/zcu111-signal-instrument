@@ -8,7 +8,8 @@ struct TxCwCalibration {
  std::string contextSha,contextVerificationSha;
 };
 double txCwPowerDbm(const TxCwCalibration &model,double rms);
-double txCwRms(const TxCwCalibration &model,double frequency,double requestedDbm);
+// Existing callers stay reference-only. Band estimates must opt in explicitly.
+double txCwRms(const TxCwCalibration &model,double frequency,double requestedDbm,bool allowFrequencyEstimate=false);
 double dbmFromDbw(double dbw);
 double dbwFromDbm(double dbm);
 }

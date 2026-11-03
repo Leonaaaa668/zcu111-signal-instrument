@@ -9,7 +9,6 @@
   "python_reference_tests": "20/20 PASS; Python3.14 normal user token",
   "test_temp_note": "Restricted Windows token attempts could not access mode700 test directories; exact tests passed outside sandbox, test assertions unchanged",
   "active_markdown_links": "PASS",
-  "redacted_historical_chat_links": "6 intentionally retained as transcript text, not active build references",
   "private_key_or_password_hash_scan": "PASS",
   "new_full_synthesis_impl": "NOT RUN",
   "new_linux_image_build": "NOT RUN",
@@ -17,5 +16,6 @@
   "previous_full_skill_bytes": "UNCHANGED",
   "all_paths_ascii_no_spaces": true,
   "lowercase_naming_exceptions": 40,
-  "naming_exceptions_documented": "report/path_conventions.md and path_exceptions.csv"
+  "naming_exceptions_documented": "report/path_conventions.md",
+  "record_scope": "Historical V16 technical validation; current version is V17"
 }

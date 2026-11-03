@@ -1,5 +1,5 @@
 {
-  "release": "20261101_16_skill_01",
+  "release": "V17_SKILL_TECHNICAL_SUMMARIES_20261103",
   "offline_only": true,
   "skill_structure": "PASS",
   "self_test_scenarios": 30,
@@ -7,7 +7,6 @@
   "cli_demo_cases": 6,
   "cli_demo": "PASS including expected rejections",
   "active_markdown_links": "PASS",
-  "evidence_artifact_hashes_checked": 22,
   "credential_scan": "PASS",
   "tested_host": "Windows/Python3.13.9; standard library",
   "other_board_migration_tested": false,
@@ -15,5 +14,6 @@
   "independent_external_team_trial": false,
   "hardware_actions": "NONE",
   "boundaries": "Local checker behavior + supplied historical project evidence; no new RF or cold-boot measurements",
-  "python_version": "3.13.9"
+  "python_version": "3.13.9",
+  "public_content": "Tools, templates, case summaries and technical test attachments; no original Q&A"
 }

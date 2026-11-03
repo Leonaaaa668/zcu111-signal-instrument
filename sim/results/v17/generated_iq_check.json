@@ -1,0 +1,38 @@
+{
+  "status": "GENERATED_IQ_SAMPLES_FREQUENCY_HASH_AND_CYCLIC_BOUNDARY_PASS",
+  "source": "Native C++ V17 host test output; not ADC/DAC capture",
+  "sample_rate_hz": 1200000000,
+  "records": [
+    {
+      "waveform": "cw_1300MHz.bin",
+      "bytes": 48000000,
+      "sha256": "729b8bcd6a51b406263fdaa8fd643c9a72d7e2713f9197c1058e1342924e9e8f",
+      "rf_setting_hz": 1300000000,
+      "expected_iq_frequency_hz": 500000000.0,
+      "estimated_iq_frequency_hz_from_generated_samples": 499999999.63931555,
+      "cyclic_boundary_phase_error_radians": -3.437121703194097e-05,
+      "power_frequency_scope": "ESTIMATED_FROM_REFERENCE_FREQUENCY"
+    },
+    {
+      "waveform": "cw_1800MHz.bin",
+      "bytes": 48000000,
+      "sha256": "d6091da268bda2a950f1fef09b4961c7dd5cfc7a46d1814977956836b67c7de2",
+      "rf_setting_hz": 1800000000,
+      "expected_iq_frequency_hz": 0.0,
+      "estimated_iq_frequency_hz_from_generated_samples": 0.0,
+      "cyclic_boundary_phase_error_radians": 0.0,
+      "power_frequency_scope": "ESTIMATED_FROM_REFERENCE_FREQUENCY"
+    },
+    {
+      "waveform": "cw_2300MHz.bin",
+      "bytes": 48000000,
+      "sha256": "db05214a8da0d264f6dd7647cb632ee8c785628f57ed3edab97dace6483fcd2f",
+      "rf_setting_hz": 2300000000,
+      "expected_iq_frequency_hz": -500000000.0,
+      "estimated_iq_frequency_hz_from_generated_samples": -499999999.63931555,
+      "cyclic_boundary_phase_error_radians": 3.437121703194097e-05,
+      "power_frequency_scope": "ESTIMATED_FROM_REFERENCE_FREQUENCY"
+    }
+  ],
+  "rf_measurement": false
+}

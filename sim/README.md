@@ -1,5 +1,11 @@
 # Verification map
 
+## V17当前源码验证
+
+2026-11-03本机非Qt C++构建完成，7项CTest通过，见[原始测试输出](results/v17/host_ctest.log)。Windows/GCC9.5路径使用-Werror，并仅将已有Linux专用分支在Windows产生的unused-parameter/unused-function告警保留为告警；Linux SDK构建入口仍保持原有严格-Werror。
+新测试生成1300/1800/2300 MHz对应的三份48 MB/10 ms I/Q文件；[独立样点检查](results/v17/generated_iq_check.json)核对数字频率、SHA256和循环边界。可用`python3 sim/python/check_v17_generated_iq.py /absolute/app/cw-frequency-estimate-evidence/run_...`复算。
+V17上板验证通过按队伍确认记录；本机7项测试覆盖非Qt路径，[后续Qt验证入口](v17_validation.md)。下方日志为原V16历史基线。
+
 当前整理新增验证的原始日志：
 
 - report/validation/rtl_tests_02.log：6项自写Verilog仿真。

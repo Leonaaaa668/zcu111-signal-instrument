@@ -1,0 +1,43 @@
+{
+  "status": "V17_SOURCE_DELIVERY_HOST_VALIDATION_PASS",
+  "date": "2026-11-03",
+  "base_commit": "a63381887d01d801a63d21a0250cc45b9c4dc60f",
+  "release": "V17",
+  "application_version": "0.11.0",
+  "scope": "V17 source release; user confirms teammate board validation passed. No local board actions.",
+  "source_files": 224,
+  "modified_v16_application_files": 6,
+  "added_cpp_test_files": 1,
+  "unchanged_v16_source_files": 216,
+  "fpga_driver_rfdc_interface_changes": 0,
+  "native_build": {
+    "platform": "Windows MinGW GCC9.5.0",
+    "gui": false,
+    "warnings_as_errors": true,
+    "windows_only_warning_exceptions": [
+      "unused-parameter",
+      "unused-function"
+    ],
+    "exceptions_reason": "Existing Linux-only control parameters/helpers are unused in the Windows branch; no exception added to Linux SDK build."
+  },
+  "ctest": {
+    "passed": 7,
+    "failed": 0,
+    "log": "sim/results/v17/host_ctest.log"
+  },
+  "waveform_samples": "sim/results/v17/generated_iq_check.json",
+  "pending": [
+    "Full-band frequency-response correction and modulation average-power calibration"
+  ],
+  "runtime_archive_or_board_ready_binary_delivered": false,
+  "photos_scope": "Historical2026-10-25 64QAM, pulse and LFM. Not V17 RF acceptance.",
+  "team_board_validation": {
+    "status": "PASS",
+    "source": "TEAMMATE_CONFIRMED_BY_USER",
+    "confirmation_date": "2026-11-03"
+  },
+  "local_sdk_rebuild": "NOT_RUN_ON_THIS_COMPUTER",
+  "rtl_comment_only_files": 1,
+  "fpga_functional_changes": 0,
+  "public_skill_content": "Tools, templates, technical case summaries and test attachments; no Q&A transcript excerpts"
+}

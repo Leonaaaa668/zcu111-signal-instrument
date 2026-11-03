@@ -1,4 +1,6 @@
-# V16 从源码复现完整步骤
+# V17应用与narrow09硬件的源码复现
+
+> 当前生产源码为V17/0.11.0，沿用narrow09硬件；上板验证通过按队伍确认记录。V16原始日志及固定启动脚本保留为历史基线，新构建使用生成的start_v17.sh。见[V17说明](../docs/v17_release.md)。
 
 所有命令从仓库根目录执行；本文补充根README的完整工具命令。2026-11-02材料版沿用V16冻结源码。
 
@@ -103,7 +105,7 @@ mkimage -A arm64 -O linux -T script -C none -n zcu111_sd_fit_boot -d /absolute/s
 
 本次没有从头重新下载并重建整个PetaLinux镜像；已保存实际配置并验证配置导入，SDK/内核构建目录上的应用、模块、辅助程序重编译验证另有日志。勿将此边界写成新镜像冷启动已验收。
 
-## 5. 从V16源码编译Qt、驱动和RFDC辅助程序
+## 5. 从V17源码编译Qt、驱动和RFDC辅助程序
 
 使用上一步的同版本SDK和已经完成petalinux-build的项目：
 
@@ -122,17 +124,17 @@ AMD librfdc/libmetal/sysfsutils通过该PetaLinux工程的对应recipe获取和�
 ## 6. 为新构建生成SD运行包
 
 ```sh
-python3 build/make_sd_runtime.py --runtime /absolute/new_output/zcu111_instrument_qt5_20261101_16 --boot-bin /absolute/project/images/linux/BOOT.BIN --output /absolute/new_sd_files
+python3 build/make_sd_runtime.py --runtime /absolute/new_output/zcu111_instrument_qt5_20261103_17 --boot-bin /absolute/project/images/linux/BOOT.BIN --output /absolute/new_sd_files
 ```
 
-生成器将新运行包和新BOOT.BIN各自的哈希写入新的start_v16.sh，不沿用冻结包的旧哈希。
-把新运行tar.gz/start_v16.sh和配套BOOT.BIN/image.ub/boot.scr复制到SD第一分区。
+生成器将新运行包和新BOOT.BIN各自的哈希写入新的start_v17.sh，不沿用冻结包的旧哈希。
+把新运行tar.gz/start_v17.sh和配套BOOT.BIN/image.ub/boot.scr复制到SD第一分区。
 board/reference/start_v16.sh是原冻结包的可审查参考，硬编码的哈希只适配原冻结包，不能直接用于重编译后的运行包。
 
 启动后root串口执行：
 
 ```sh
-sh /run/media/mmcblk0p1/start_v16.sh
+sh /run/media/mmcblk0p1/start_v17.sh
 ```
 
 脚本按“持有控制时钟→PL初始化复位与DDR就绪→TX/RFDC→RX→调谐服务→Weston用户Qt”顺序初始化。已有设备/相同GUI会被识别，避免重复复位。不自动采集、上传或RF播放。
@@ -159,7 +161,7 @@ AMD商业工具、IP库和Linux/Qt完整源码不在此重复打包，从已列�
 
 本提交包是在原V16精简源码包上增加完整的skill技能包，原生产RTL、C++、驱动、构建配置与数据保持原字节。
 请另读skill/README.md：六项可复用工作流、八个真实案例、六组提示词、四种模板、五类校验与30项行为测试。
-技能包能独立离线演练，不要求本队板卡。旧源码ZIP保留，顶层SHA256SUMS已按本整合包重新生成。
+技能包能独立离线演练，不要求本队板卡。旧归档保留；本次不附全项目文件清单，源码包在本地核对归档与源文件。
 没有重新部署板卡或改变V16功能；也没有因此补齐未完成的RF/冷启动验收。
 
 载频与模型范围说明：1790 MHz 限定的是本节的 CW 功率标定条件。V16 在 Digital peak 模式下可设置其他载频，RF 设置范围为1300–2300 MHz；可编程I/Q矢量发射、波形种类与变频扩展见[能力说明](../report/vector_signal_source.md)。

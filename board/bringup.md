@@ -1,17 +1,19 @@
-# V16 上板、运行与验收
+# V17构建后上板、运行与验收
+
+> 当前生产源码为V17/0.11.0，沿用narrow09硬件；上板验证通过按队伍确认记录。V16原始日志及固定启动脚本保留为历史基线，新构建使用生成的start_v17.sh。见[V17说明](../docs/v17_release.md)。
 
 ## 1. 准备匹配文件
 
 使用同一轮FPGA硬件、SDT/设备树、Linux内核、模块和Qt运行包。自行重建按build/reproduce.md生成；board/reference/start_v16.sh只适配原冻结文件哈希，不直接套用给新二进制。
 
-SD第一FAT分区应有BOOT.BIN、image.ub、boot.scr、运行tar.gz及生成的start_v16.sh。SD中程序路径和文件名由生成器写入，不依赖编译机路径。
+SD第一FAT分区应有BOOT.BIN、image.ub、boot.scr、运行tar.gz及生成的start_v17.sh。SD中程序路径和文件名由生成器写入，不依赖编译机路径。
 
 ## 2. 接线与启动
 
 首先连接电源、串口/JTAG、DP显示器、USB鼠标；首次接收检查J1/J7可留空，信号源RF OFF。上电从SD启动，登录root，执行：
 
 ```sh
-sh /run/media/mmcblk0p1/start_v16.sh
+sh /run/media/mmcblk0p1/start_v17.sh
 ```
 
 初始化顺序：控制时钟保持 → PL复位和DDR就绪 → TX/RFDC → RX → NCO服务 → Weston用户Qt。默认不自动播放。Qt在串口前台运行时，输入的poweroff不会由shell执行；先RX STOP / RF STOP，再退出应用，出现root提示符后执行sync、poweroff。

@@ -1,0 +1,106 @@
+{
+  "status": "HISTORICAL_TX_V2_BINARY_SOURCE_WAVEFORM_TRACE_PASS",
+  "trace_date": "2026-11-03",
+  "firmware_release": "Integrated TX v2 / 2026-10-25 / 64MiB buffer, 10ms I/Q",
+  "platform": "ZCU111 ADC+DAC+PL DDR4+DMA, standalone A53 C application, XSCT/JTAG control",
+  "runtime_archive": {
+    "name": "adc_dac_ddr_20261025_175041.zip",
+    "sha256": "2db6fa6f7707b3084636e9043f4f446a7e66cb2e1a791e26b2cb1ed016c7db11",
+    "manifest_files_verified": 146,
+    "manifest_created": "2026-10-25T17:50:44.1735830+08:00"
+  },
+  "digital_board_snapshot_created": "2026-10-25T17:44:18.9267748+08:00",
+  "binary_identity": {
+    "adc3_capture.bit": {
+      "bytes": 34437498,
+      "sha256": "f078554663c7d22f9cdf3ed6703cb3cac0c8d5fd905dcffacc949711014824c6"
+    },
+    "adc3_startup.elf": {
+      "bytes": 1392408,
+      "sha256": "95ca3e6aa3b65edb1f9babb3ada5a29146e464353da7211416e3cb6a3facfb97"
+    }
+  },
+  "vitis_original_source_sha256": {
+    "adc3_startup.c": "6a34df00fc039b84663c9fb9b3b0faa23e723999b033862c12d6b1b90664266b",
+    "vector_tx.c": "922bfdef0e4a0dbf15969b82c173043da59b674409a89799e9e95a17eaceb962",
+    "vector_tx.h": "eebccac3ed49ffcbf96c0b2a940bdbb5f6690a2f86b259d1a0f3501bacfae49a",
+    "tx_memory_map.h": "a288f641e1669607932bdf020ea52566743caec95b37a1c104b71159e5f01e62"
+  },
+  "waveform_generator_sha256": "8e0b51bccec251d1c79d793937e07a1771a64ae1b4952619a25f0a97932d81a1",
+  "historical_tx_command_sha256": "823ebc9b90297aa8ae8fea2a7d858703be6a04f3ffeba1fb3f7897fef6a41587",
+  "waveforms": {
+    "qam16_5msps_10ms": {
+      "bytes": 48000000,
+      "sha256": "0925e71cae4a827600800d79acd36955c16970b21a194485b983bfd5fe319fe5"
+    },
+    "qam64_5msps_10ms": {
+      "bytes": 48000000,
+      "sha256": "9059e860a1021dc51c48b687dda6812a4ca3516f8b8ff33e614e74cb124eca7f"
+    },
+    "cpfsk2_1msps_10ms": {
+      "bytes": 48000000,
+      "sha256": "1fdd4483354ad88aba9414fbd3a69b7b6ffd1a6236b82177e58f4c48c00ce576"
+    }
+  },
+  "timeline": [
+    {
+      "time": "2026-10-25 17:26",
+      "event": "TX v2 ELF built; startup UART confirms protocol2 and 64MiB capacity"
+    },
+    {
+      "time": "2026-10-25T17:44:18.9267748+08:00",
+      "event": "BIT/ELF/16QAM SHA256 snapshot before repeated digital playback"
+    },
+    {
+      "time": "2026-10-25 17:49",
+      "event": "48MB roundtrip and 16QAM ILA acceptance record"
+    },
+    {
+      "time": "2026-10-25 17:50",
+      "event": "Runtime archive with matching BIT/ELF, scripts and waveform metadata"
+    },
+    {
+      "time": "2026-10-25 18:32:35",
+      "event": "qam64_5msps_10ms.bin uploaded; full DMA roundtrip passed; not playing"
+    },
+    {
+      "time": "2026-10-25 18:33:47",
+      "event": "Explicit play command accepted"
+    },
+    {
+      "time": "2026-10-25 18:35:19",
+      "event": "4025K photograph: 64QAM,8x8 clusters,EVM4.35%,5MSym/s,alpha0.35"
+    }
+  ],
+  "distinctions": [
+    "The clear published constellation is64QAM, not16QAM.",
+    "This firmware predates the native Linux/Qt V16 and V17 applications.",
+    "BIT/ELF identities are bound to the same-day digital test snapshot and runtime archive; the later photograph is associated by waveform/play logs and timeline, not by a new firmware hash read at shutter time.",
+    "The original startup C source is8027bytes; the later baremetal_reference startup adds RX conditionals and is not byte-identical.",
+    "FSK is represented by the archived CPFSK2 generator and waveform metadata; this does not assert a CPFSK RF/EVM measurement."
+  ],
+  "hardware_source_backup": {
+    "name": "adc_dac_before_sa_20261026.zip",
+    "sha256": "b6df19714cc9c1f70a9c30700c15634dff5fefb2fd8faa182f6544a1e1897017",
+    "custom_rtl": [
+      {
+        "file": "adc_iq_split4.v",
+        "archived_sha256": "620e810e80f3aab14abda3d1e65ad69b69e91b1bf9219dd74caf804b6545f9cb",
+        "identical_to_current_rtl": true,
+        "current_path": "src/fpga/rtl/adc_iq_split4.v"
+      },
+      {
+        "file": "dac_stream_guard.v",
+        "archived_sha256": "bac2d925020c62ef09e4a37bffc370e2b2dc2543ae6f008938880b94d9b3a936",
+        "identical_to_current_rtl": true,
+        "current_path": "src/fpga/rtl/dac_stream_guard.v"
+      },
+      {
+        "file": "tx_reset_sync.v",
+        "archived_sha256": "109a2f282dc005160dcac985cbf82f56e3e8b08fe16dc289b7f28c1979bf23ef",
+        "identical_to_current_rtl": true,
+        "current_path": "src/fpga/rtl/tx_reset_sync.v"
+      }
+    ]
+  }
+}

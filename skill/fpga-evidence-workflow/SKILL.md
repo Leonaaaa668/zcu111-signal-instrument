@@ -45,6 +45,6 @@ description: "Validate FPGA/SoC signal-processing prototypes using clock/reset a
 
 ## 提示词与迁移
 
-给另一模型派发任务时填充[六组提示词](assets/templates/prompt_pack.md)。模板是从真实经验提炼的后续复用工作流，不冒充当时逐字提示词。引用效果时同时给出问答节选和技术证据，避免仅凭助手说“通过”。
+给另一模型派发任务时填充[六组提示词](assets/templates/prompt_pack.md)。模板是从真实经验提炼的后续复用工作流，不冒充当时逐字提示词。引用效果时给出技术案例总结、测试输入和实际结果；本公开技能包不包含原问答正文。
 脚本和记录格式可跨板卡/题目复用；硬件顺序须依据新工程的XSA/BD/设备树确定。本项目是原生Linux+C++ Qt，没有PYNQ/其他板卡迁移实测，不宣称通用PYNQ额外加分。
 不把分段扫描写成瞬时带宽、数字文件EVM写成RF EVM、Marker峰值写成QAM平均总功率，或功能删减写成严格等功能优化。

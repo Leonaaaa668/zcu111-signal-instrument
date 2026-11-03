@@ -4,10 +4,12 @@ import argparse
 import hashlib
 import json
 import os
+import re
 import zipfile
 
 p = argparse.ArgumentParser()
 p.add_argument('--output', type=Path, required=True)
+p.add_argument('--prefix', default='zcu111_v17_source', help='Portable top-level ZIP directory')
 a = p.parse_args()
 root = Path(__file__).resolve().parents[1]
 assert not a.output.exists(), 'Never overwrite an existing release ZIP'
@@ -26,7 +28,7 @@ for f in sorted(input_files()):
     if not f.is_file():
         continue
     rel = f.relative_to(root)
-    if set(rel.parts) & excluded_parts or f.suffix in excluded_suffixes or rel.as_posix() == 'SHA256SUMS.txt':
+    if set(rel.parts) & excluded_parts or f.suffix in excluded_suffixes:
         continue
     if any(c.isspace() or ord(c) > 127 for c in rel.as_posix()):
         raise SystemExit('Non-portable filename: ' + rel.as_posix())
@@ -36,26 +38,24 @@ for f in sorted(input_files()):
     if f.stat().st_size > 5 * 1024 * 1024:
         raise SystemExit('Unexpected large file: ' + rel.as_posix())
     files.append((rel.as_posix(), data))
-checks = ''.join(hashlib.sha256(data).hexdigest() + '  ' + rel + '\n' for rel, data in files)
-(root / 'SHA256SUMS.txt').write_text(checks, newline='\n')
-files.append(('SHA256SUMS.txt', checks.encode()))
-prefix = root.name + '/'
+assert re.fullmatch(r'[a-z0-9_-]+', a.prefix), 'Use a short portable archive prefix'
+prefix = a.prefix + '/'
 a.output.parent.mkdir(parents=True, exist_ok=True)
 with zipfile.ZipFile(a.output, 'w', zipfile.ZIP_DEFLATED, compresslevel=9) as z:
     for rel, data in files:
-        info = zipfile.ZipInfo(prefix + rel, (2026, 11, 2, 0, 0, 0))
+        info = zipfile.ZipInfo(prefix + rel, (2026, 11, 3, 0, 0, 0))
         info.compress_type = zipfile.ZIP_DEFLATED
         info.external_attr = (0o100755 if rel.endswith('.sh') else 0o100644) << 16
         z.writestr(info, data)
 with zipfile.ZipFile(a.output) as z:
     assert z.testzip() is None
-    for line in checks.splitlines():
-        digest, name = line.split('  ', 1)
-        assert hashlib.sha256(z.read(prefix + name)).hexdigest() == digest, name
+    for name, data in files:
+        assert z.read(prefix + name) == data, name
 digest = hashlib.sha256(a.output.read_bytes()).hexdigest()
 a.output.with_suffix(a.output.suffix + '.sha256').write_text(digest + '  ' + a.output.name + '\n', newline='\n')
 receipt = {'status': 'SOURCE_ZIP_CRC_SHA256_PASS', 'zip': a.output.name, 'sha256': digest,
            'files': len(files), 'bytes': a.output.stat().st_size,
-           'uncompressed_bytes': sum(len(b) for _, b in files), 'compiled_artifacts': 0}
+           'uncompressed_bytes': sum(len(b) for _, b in files), 'compiled_artifacts': 0,
+           'verification': 'Archive CRC and every packaged file compared locally; no per-file inventory generated'}
 a.output.with_suffix(a.output.suffix + '.validation.json').write_text(json.dumps(receipt, indent=2) + '\n')
 print(json.dumps(receipt, indent=2))

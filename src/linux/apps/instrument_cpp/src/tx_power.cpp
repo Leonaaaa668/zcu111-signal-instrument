@@ -13,8 +13,9 @@ namespace {void valid(const TxCwCalibration &m){
  if(m.frequency!=1.79e9||!std::isfinite(m.slope)||m.slope<.98||m.slope>1.02||!std::isfinite(m.dbmAt2048)||m.dbmAt2048<-100||m.dbmAt2048>0||!std::isfinite(m.minRms)||!std::isfinite(m.maxRms)||m.minRms<=0||m.minRms>=m.maxRms||m.maxRms>32701||m.profileSha.size()!=64||m.verificationSha.size()!=64||m.setupId.empty()||m.referencePlane.empty())throw std::runtime_error("Invalid TX CW calibration model");
 }}
 double txCwPowerDbm(const TxCwCalibration &m,double rms){valid(m);if(!std::isfinite(rms)||rms<m.minRms||rms>m.maxRms)throw std::runtime_error("TX RMS outside measured model range");return m.dbmAt2048+20*m.slope*std::log10(rms/2048)-m.commandOffsetDb;}
-double txCwRms(const TxCwCalibration &m,double frequency,double requested){valid(m);
- if(frequency!=m.frequency||!std::isfinite(requested)||requested<m.minimumDbm||requested>m.maximumDbm)throw std::runtime_error("CW target outside selected1790MHz reference/range");
+double txCwRms(const TxCwCalibration &m,double frequency,double requested,bool allowFrequencyEstimate){valid(m);
+ if(!std::isfinite(frequency)||frequency<1.3e9||frequency>2.3e9||(!allowFrequencyEstimate&&frequency!=m.frequency))throw std::runtime_error("CW frequency requires1300..2300MHz and explicit off-reference estimate policy");
+ if(!std::isfinite(requested)||requested<m.minimumDbm||requested>m.maximumDbm)throw std::runtime_error("CW target outside selected reference power range");
  const double baseTarget=requested+m.commandOffsetDb;
  if(baseTarget<-50||baseTarget>-10)throw std::runtime_error("Context command outside original measured range");
  const double rms=2048*std::pow(10.,(baseTarget-m.dbmAt2048)/(20*m.slope));txCwPowerDbm(m,rms);return rms;

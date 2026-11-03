@@ -29,7 +29,7 @@ void generateWaveform(const WaveRequest &r,std::atomic_bool &cancel,std::functio
     check(std::isfinite(r.offset)&&std::abs(r.offset)<=500e6,"IQ offset outside intended RF band");
     const bool qam=r.type=="QAM",psk=r.type=="PSK",pulse=r.type=="PULSE",lfm=r.type=="LFM",lfmPulse=r.type=="LFM_PULSE",barker=r.type=="BARKER13",cw=r.type=="CW";
     double modelRms=0;
-    if(r.powerModel){check(cw&&r.offset==10e6,"dBm power mode requires1790MHz CW");modelRms=txCwRms(*r.powerModel,1.8e9-r.offset,r.targetDbm);}
+    if(r.powerModel){check(cw,"dBm model power mode requires CW");modelRms=txCwRms(*r.powerModel,1.8e9-r.offset,r.targetDbm,r.allowPowerFrequencyEstimate);}
     check(qam||psk||pulse||lfm||lfmPulse||barker||cw,"Unknown waveform type");
     constexpr std::uint64_t count=12000000;
     check(std::isfinite(r.period)&&std::isfinite(r.pulseWidth)&&r.period>=1e-6&&r.period<=.01&&r.pulseWidth>0&&r.pulseWidth<=r.period,"Invalid pulse timing");
@@ -114,10 +114,14 @@ void generateWaveform(const WaveRequest &r,std::atomic_bool &cancel,std::functio
         <<",\"modulation_order\":"<<((qam||psk)?r.order:0)<<",\"rrc_rolloff\":"<<((qam||psk)?r.rolloff:0)<<",\"pulse_width_s\":"<<(barker?13e-6:r.pulseWidth)<<",\"pulse_period_s\":"<<r.period
         <<",\"chirp_bandwidth_hz\":"<<r.bandwidth<<",\"seed\":"<<r.seed<<",\"sha256\":\""<<digest<<"\""
         <<",\"layout\":\"little endian int16 I0 Q0 I1 Q1\",\"rf_convention\":\"RF approximately 1.8GHz minus IQ frequency; preserve measured DAC orientation\",\"hardware_actions\":\"NONE\",\"rf_board_validation\":\"PENDING_FOR_THIS_GENERATOR\"";
-    if(r.powerModel){const auto &m=*r.powerModel;const double predicted=txCwPowerDbm(m,std::sqrt(double(energy/count)));
+    if(r.powerModel){const auto &m=*r.powerModel;const double predicted=txCwPowerDbm(m,std::sqrt(double(energy/count)));const double requestedRf=1.8e9-r.offset;const bool estimated=requestedRf!=m.frequency;
         check(std::abs(predicted-r.targetDbm)<=.1,"Quantized waveform misses requested model power");
-        json<<",\"power_control\":\"CW_MODEL_DBM\",\"requested_dbm\":"<<r.targetDbm<<",\"predicted_cw_dbm\":"<<predicted<<",\"tx_power_profile_sha256\":\""<<m.profileSha<<"\",\"tx_power_verification_sha256\":\""<<m.verificationSha<<"\",\"power_reference_plane\":\""<<m.referencePlane<<"\",\"power_setup_id\":\""<<m.setupId<<"\"";
+        json<<",\"power_control\":\""<<(estimated?"CW_MODEL_ESTIMATED_DBM":"CW_MODEL_DBM")<<"\",\"requested_dbm\":"<<r.targetDbm<<",\"predicted_cw_dbm\":"<<predicted<<",\"tx_power_profile_sha256\":\""<<m.profileSha<<"\",\"tx_power_verification_sha256\":\""<<m.verificationSha<<"\",\"power_reference_plane\":\""<<m.referencePlane<<"\",\"power_setup_id\":\""<<m.setupId<<"\"";
         json<<",\"base_model_command_dbm\":"<<r.targetDbm+m.commandOffsetDb<<",\"context_command_offset_db\":"<<m.commandOffsetDb;
+        json<<",\"rf_frequency_hz\":"<<requestedRf<<",\"power_reference_frequency_hz\":"<<m.frequency
+            <<",\"power_frequency_estimated\":"<<(estimated?"true":"false")
+            <<",\"power_frequency_scope\":\""<<(estimated?"ESTIMATED_FROM_REFERENCE_FREQUENCY":"REFERENCE_FREQUENCY_MODEL")<<"\""
+            <<",\"frequency_response_correction_applied\":false,\"absolute_power_accuracy_certified\":false";
         if(!m.contextSha.empty())json<<",\"tx_context_profile_sha256\":\""<<m.contextSha<<"\",\"tx_context_verification_sha256\":\""<<m.contextVerificationSha<<"\",\"context_validation_scope\":\"One independent corrected CW point; full-range absolute accuracy not certified\"";
     }else json<<",\"power_control\":\"DIGITAL_UNCALIBRATED\"";
     json<<"}\n";

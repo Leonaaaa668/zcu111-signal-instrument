@@ -1,0 +1,16 @@
+{
+  "measurement_date": "2026-10-25",
+  "modulation": "64QAM",
+  "photo": "instrument_183519.jpg",
+  "waveform": "qam64_5msps_10ms.bin",
+  "waveform_sha256": "9059E860A1021DC51C48B687DDA6812A4CA3516F8B8FF33E614E74CB124ECA7F",
+  "generation_stage": "PC Python generated I/Q; prior to native Linux C++ Qt releases",
+  "playback_stage": "2026-10-25 ADC+DAC+PL DDR4+DMA with XSCT/JTAG and bare-metal control",
+  "is_v16_or_v17_rf_measurement": false,
+  "exact_bitstream_and_elf_hash_binding_available_in_this_record": true,
+  "use": "Historical hardware vector-playback evidence; not current V17 EVM/BER acceptance",
+  "qam16_note": "Published clear 8x8 constellation is 64QAM, not 16QAM. Successful 16QAM original photo is not currently available in the collected files.",
+  "firmware_release": "Integrated TX v2 / 2026-10-25 /64MiB",
+  "binary_and_source_trace": "../history_tx_v2_20261025/trace.json",
+  "binding_scope": "Same-day digital board snapshot/runtime archive; photograph linked by waveform/play logs and chronology."
+}
