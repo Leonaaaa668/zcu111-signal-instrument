@@ -13,3 +13,8 @@
 照片使用原始测量图，不把AI清理图当测量证据。原始文件中的板端2025时间为未校准RTC，验收日期以客户端及对应记录为准。data不是完整原始IQ档案，频谱bin为处理结果；不要把bin扩展名自动解释成时域IQ。
 
 历史64QAM原始照片和手工转录的测量条件见[history_qam64_20261025](modulation/history_qam64_20261025)，用于说明历史矢量播放能力，不替代当前C++版本的RF验收。
+
+## 多调制与频率规划补充
+
+新增[脉冲总览/放大](modulation/history_pulse_20261025)、[LFM频谱与既有I/Q分析](modulation/history_lfm_20261025)，与历史64QAM星座共同组成[实测图册](../docs/waveform_gallery.md)。照片不改读数，不把历史测量标成V16新验收。
+[频率规划结果](bandplan/offline_check.json)由`sim/check_bandplan.py`离线核对，区分1 GHz工作带、960 MHz规格推导TX通带、150 MS/s复采样率及100 MHz扫描窗口。

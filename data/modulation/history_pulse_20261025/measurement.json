@@ -1,0 +1,29 @@
+{
+  "evidence_type": "Historical instrument photographs and archived programmed waveform parameters",
+  "instrument": "CEYEAR 4025K",
+  "center_frequency_hz": 1800000000,
+  "photos": [
+    "instrument_184530.jpg",
+    "instrument_184910.jpg"
+  ],
+  "programmed_pulse_width_us": 10,
+  "programmed_pulse_period_us": 100,
+  "programmed_repetition_rate_hz": 10000,
+  "programmed_file_duration_ms": 10,
+  "waveform": "pulse_10us_10ms.bin",
+  "waveform_sha256": "04DF31E84C5498247FE50951EA36C6D7D0062535979ACF3E1E53263A9A7378AC",
+  "display_windows_us": [
+    1000,
+    200
+  ],
+  "rbw_hz": 1000000,
+  "vbw_hz": 1000000,
+  "rf_attenuation_db": 20,
+  "user_reported_pulse_width_confirmation": true,
+  "precise_exported_rf_pulse_width_us": null,
+  "limitations": [
+    "10 us and 100 us are programmed parameters consistent with the observed envelope.",
+    "The displayed single-marker time is not a pulse-width or delta-time measurement.",
+    "No quantitative width uncertainty, edge speed, timing jitter or full 10 ms capture is established."
+  ]
+}

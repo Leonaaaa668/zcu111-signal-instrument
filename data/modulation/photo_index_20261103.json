@@ -1,0 +1,48 @@
+{
+  "date": "2026-11-03",
+  "assets": [
+    {
+      "file": "data/modulation/history_pulse_20261025/instrument_184530.jpg",
+      "supplied_filename": "1baa6af461d8a2f8552ae5fa27e21dea.jpg",
+      "sha256": "5c5c557f74ae78e64f132ed5b1eca71c9f749a3707652b83ae36a0f88cc4bd78",
+      "instrument": "CEYEAR 4025K",
+      "displayed_timestamp": "2026-10-25 18:45:30",
+      "description": "Periodic RF pulse envelope; 1 ms overview",
+      "image_processing": "None; original supplied file copied byte-for-byte"
+    },
+    {
+      "file": "data/modulation/history_pulse_20261025/instrument_184910.jpg",
+      "supplied_filename": "fe92e68e89e156284cbf71c67be35860.jpg",
+      "sha256": "322d92a686d3367cdf004272ef1290e8ccc04bd7fe9db6f33ae67fb2e8547b81",
+      "instrument": "CEYEAR 4025K",
+      "displayed_timestamp": "2026-10-25 18:49:10",
+      "description": "RF pulse envelope; 200 us close-up",
+      "image_processing": "None; original supplied file copied byte-for-byte"
+    },
+    {
+      "file": "data/modulation/history_lfm_20261025/instrument_190828.jpg",
+      "supplied_filename": "9b6367fe822eeccd2e9a7e9e7b82c8e7.jpg",
+      "sha256": "007c1fb7fa479221684a5870c37bea1f791d34c9d45a59b75ce91b3ca40f58e1",
+      "instrument": "CEYEAR 4025K",
+      "displayed_timestamp": "2026-10-25 19:08:28",
+      "description": "LFM frequency coverage in maximum hold; 40 MHz span",
+      "image_processing": "None; original supplied file copied byte-for-byte"
+    },
+    {
+      "file": "data/modulation/history_lfm_20261025/instrument_191641.jpg",
+      "supplied_filename": "a84e05117bcc79cfd3b52ee86dec3442.jpg",
+      "sha256": "4244a2713f54ed3720a49d3d6b6f3064babdef35d51ddb8d6a9ec03fe5b8ee26",
+      "instrument": "CEYEAR 4025K",
+      "displayed_timestamp": "2026-10-25 19:16:41",
+      "description": "I/Q acquisition settings; not a recovered constellation",
+      "image_processing": "None; original supplied file copied byte-for-byte"
+    }
+  ],
+  "historical_qam64": "history_qam64_20261025/measurement.json",
+  "additional_plot": {
+    "file": "data/modulation/history_lfm_20261025/lfm_measured.png",
+    "sha256": "92ba4202914bff1ae31a1d97227ba509f211b41379977c74b4243417208f6fff",
+    "kind": "Existing numerical analysis of measured I/Q; not an instrument screenshot"
+  },
+  "scope": "Historical 2026-10-25 hardware evidence; not a new V16 C++ RF acceptance test."
+}

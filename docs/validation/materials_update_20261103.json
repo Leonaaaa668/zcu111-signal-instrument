@@ -1,0 +1,28 @@
+{
+  "status": "PLATFORM_PRESENTATION_SOURCE_AND_EVIDENCE_CHECK_PASS",
+  "date": "2026-11-03",
+  "base_commit": "ccb95356d3be61647cefc59d493ca258c9f098cd",
+  "scope": "README, capability/stack/bandplan docs, supplied measurement photos, existing LFM analysis, offline source cross-check and file indexes. No formal report text changes.",
+  "frozen_source_files_verified_unchanged": 223,
+  "frozen_verilog_files_verified_unchanged": 18,
+  "new_supplied_photos_byte_identical": 4,
+  "existing_lfm_analysis_plot_byte_identical": true,
+  "lfm_original_numeric_fields_preserved": true,
+  "public_lfm_metadata_edit": "Local input path replaced by basename and provenance added. Raw I/Q not included.",
+  "checks": {
+    "source_identity": "PASS",
+    "included_evidence_replay": "PASS",
+    "source_rates_fir_and_bandplan": "PASS",
+    "changed_markdown_local_links": "PASS",
+    "changed_json_parsing": "PASS",
+    "photo_sha256": "PASS"
+  },
+  "reference_sources": [
+    "https://docs.amd.com/r/en-US/pg269-rf-data-converter/RF-DAC-Interpolation-Filters-Gen-1/Gen-2",
+    "https://docs.amd.com/r/en-US/pg269-rf-data-converter/Interpolation-Filter-Use"
+  ],
+  "production_code_changes": 0,
+  "new_synthesis_implementation_or_rf_tests": false,
+  "historical_chat_or_skill_changes": false,
+  "bandwidth_statement": "1.3-2.3GHz design working band; 960MHz digital TX passband derived from 80% interpolation specification; 150MS/s RX complex sample rate, +/-50MHz per sweep segment, 13 sequential segments. RF full-band flatness remains unmeasured."
+}

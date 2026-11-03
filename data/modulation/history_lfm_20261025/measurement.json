@@ -1,0 +1,102 @@
+{
+  "verdict": "MEASURED_LFM_SCREENING_PASS",
+  "duration_s": 0.02,
+  "iq_pairs": 1125000,
+  "sample_rate_hz": 56250000.0,
+  "direction_in_decoded_i_plus_jq": "down",
+  "reset_times_s": [
+    0.0025809879760026397,
+    0.012580983138166154
+  ],
+  "reset_intervals_s": [
+    0.009999995162163515
+  ],
+  "estimated_period_ms": 9.999995162163515,
+  "estimated_bandwidth_mhz": 20.00000329384006,
+  "estimated_slope_mhz_per_ms": -2.0000012969519303,
+  "complete_ramps_used": 1,
+  "segment_fits": [
+    {
+      "start_s": 0.0,
+      "end_s": 0.0025809879760026397,
+      "complete_ramp": false,
+      "bins": 67,
+      "slope_hz_per_s": -2000039090.8088057,
+      "slope_mhz_per_ms": -2.0000390908088055,
+      "block_average_residual_rms_hz": 1367.8598752930202,
+      "block_average_residual_max_hz": 3042.8214601166546,
+      "r_squared": 0.9999990565489127,
+      "fit_start_hz": -4837900.620822297,
+      "fit_end_hz": -9999977.465735078
+    },
+    {
+      "start_s": 0.0025809879760026397,
+      "end_s": 0.012580983138166154,
+      "complete_ramp": true,
+      "bins": 271,
+      "slope_hz_per_s": -2000001296.9519303,
+      "slope_mhz_per_ms": -2.0000012969519303,
+      "block_average_residual_rms_hz": 1280.791223653841,
+      "block_average_residual_max_hz": 3834.4328307369724,
+      "r_squared": 0.9999999494489901,
+      "fit_start_hz": 10000051.491887812,
+      "fit_end_hz": -9999951.801952247
+    },
+    {
+      "start_s": 0.012580983138166154,
+      "end_s": 0.02,
+      "complete_ramp": false,
+      "bins": 199,
+      "slope_hz_per_s": -1999998986.8826084,
+      "slope_mhz_per_ms": -1.9999989868826085,
+      "block_average_residual_rms_hz": 1464.3603335180928,
+      "block_average_residual_max_hz": 4803.732339160517,
+      "r_squared": 0.9999998774516362,
+      "fit_start_hz": 10000064.242897125,
+      "fit_end_hz": -4837961.964435556
+    }
+  ],
+  "frequency_averaging_samples": 2048,
+  "frequency_averaging_us": 36.40888888888889,
+  "excluded_reset_guard_us": 72.81777777777778,
+  "independent_fft_length": 4096,
+  "independent_fft_ridge_rms_hz": 4167.163801393636,
+  "amplitude_units": "uncalibrated exported integer counts",
+  "amplitude_p01_p50_p99_counts": [
+    1649258.7322928156,
+    2999170.739616887,
+    4273346.097637184
+  ],
+  "acceptance_checks": {
+    "duration_matches_20ms": true,
+    "period_within_1percent": true,
+    "bandwidth_within_1percent": true,
+    "slope_sign_consistent": true,
+    "complete_ramp_r2_over_0999": true,
+    "independent_fft_ridge_rms_under_100khz": true
+  },
+  "limitations": [
+    "Single 20ms capture, not long-run stability or all waveform acceptance",
+    "Sample rate and center supplied from instrument settings, not a file header",
+    "Int32 little-endian IQ decoding inferred from binary/coherence; voltage scale is not calibrated",
+    "Swapping I/Q or conjugating reverses frequency sign; convention requires independent calibration",
+    "Linearity residual is of block-averaged frequency, NOT raw phase-noise or chirp EVM",
+    "Reset/filter transients excluded explicitly; analog power flatness and spurs not signed off",
+    "Numerical criteria are project screening bounds, not manufacturer or communications-standard certification"
+  ],
+  "container": {
+    "container": "little-endian signed32, interleaved I,Q, no header",
+    "inference": "Binary structure and signal coherence; no manufacturer voltage calibration claimed",
+    "input_bytes": 9000000,
+    "iq_pairs": 1125000,
+    "fraction_low8_bits_zero": 1.0,
+    "component_min": -4994560,
+    "component_max": 5016320
+  },
+  "input": "IQCapture.iq",
+  "input_sha256": "653f21eac65a7e7dc72d86450f056a6e187a84d2ee1794802e246edc52baae9c",
+  "center_frequency_setting_hz": 1800000000.0,
+  "public_copy_note": "Original local input path replaced by basename; measured numeric fields unchanged.",
+  "original_analysis_sha256": "b8b609d15fdecf10b26889d038d9d3463b8163466dcbfb95b391bd13457e255b",
+  "raw_capture_included_in_this_repository": false
+}

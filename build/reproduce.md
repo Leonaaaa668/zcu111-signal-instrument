@@ -142,7 +142,7 @@ sh /run/media/mmcblk0p1/start_v16.sh
 ## 7. 验收与版本边界
 
 V16人工确认：鼠标操作、Power mode显示CW model、Run Single更新频谱正常；板端自动测试包括Marker和连续接收。
-150MS/s窄带连续模式，65536点、平均1，V16记录82次显示/8.416秒；1GHz显示采用13段NCO顺序扫描，不是1GHz瞬时带宽。
+接收频谱采用150 MS/s复采样窄带连续模式，65536点、平均1，V16记录82次显示/8.416秒；接收1 GHz显示采用13段NCO顺序扫描，不是1 GHz同时采集。发射采用1.2 GS/s复I/Q矢量架构；1.3–2.3 GHz工作带、插值滤波通带与各调制参数范围见[频率规划](../docs/bandplan_and_bandwidth.md)及[平台实现](../docs/platform_overview.md)。
 CW产生、10ms/48MB DDR上传回读SHA校验、显式播放/停止已验收。多调制可以生成，当前C++路径的RF星座/EVM与调制平均功率验收仍未完成。
 CW dBm模型实际标定范围仍为1790MHz及记录中的参考条件；全频段频谱/Marker为dBFS/bin。1800MHz小杂散根因未解决，不作隐藏。
 V16本轮未重新断电做冷启动；V15历史冷启动结果另存，不能改记成V16测试。

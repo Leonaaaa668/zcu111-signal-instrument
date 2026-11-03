@@ -1,0 +1,82 @@
+{
+  "status": "OFFLINE_SOURCE_RATE_BANDPLAN_PASS",
+  "adc_sample_rate_hz": 2400000000.0,
+  "dac_sample_rate_hz": 2400000000.0,
+  "if_working_band_hz": [
+    1300000000.0,
+    2300000000.0
+  ],
+  "design_working_band_width_hz": 1000000000.0,
+  "bandpass_sampling_allowed_fs_hz_for_zone2": [
+    2300000000.0,
+    2600000000.0
+  ],
+  "zone2_hz": [
+    1200000000.0,
+    2400000000.0
+  ],
+  "adc_alias_hz_for_rf_1300_1800_2300_mhz": [
+    1100000000.0,
+    600000000.0,
+    100000000.0
+  ],
+  "tx_complex_sample_rate_hz": 1200000000.0,
+  "tx_complex_samples_per_cycle": 4,
+  "tx_stream_clock_hz": 300000000.0,
+  "tx_i16_q16_payload_bytes_per_second": 4800000000,
+  "tx_record_duration_s": 0.01,
+  "tx_record_bytes": 48000000,
+  "dac_interpolation_pg269_passband_fraction": 0.8,
+  "derived_digital_spec_passband_width_hz": 960000000.0,
+  "derived_digital_spec_passband_at_fixed_nco_hz": [
+    1320000000.0,
+    2280000000.0
+  ],
+  "passband_reference": "https://docs.amd.com/r/en-US/pg269-rf-data-converter/RF-DAC-Interpolation-Filters-Gen-1/Gen-2",
+  "rx_complex_sample_rate_hz": 150000000.0,
+  "rx_fir_dc_normalized_ideal_response_db_by_offset_hz": {
+    "0": 0.0,
+    "50000000": 0.0008235427978460189,
+    "60000000": 0.0005647488225817735,
+    "70000000": -1.2444781486839596,
+    "75000000": -6.02291438185044
+  },
+  "rx_fir_max_abs_response_db_on_0_to_50mhz_100khz_grid": 0.001268397404453394,
+  "sweep_used_offset_hz": [
+    -50000000.0,
+    50000000.0
+  ],
+  "full_span_sweep_centers_hz": [
+    1340000000.0,
+    1420000000.0,
+    1500000000.0,
+    1580000000.0,
+    1660000000.0,
+    1740000000.0,
+    1820000000.0,
+    1900000000.0,
+    1980000000.0,
+    2060000000.0,
+    2140000000.0,
+    2220000000.0,
+    2260000000.0
+  ],
+  "full_span_sweep_is_simultaneous": false,
+  "builtin_lfm_max_bandwidth_hz": 40000000.0,
+  "builtin_psk_qam_max_symbol_rate_hz": 10000000.0,
+  "source_sha256": {
+    "src/fpga/bd/adc3_capture.tcl": "85a54bfae410cdd275bbd17e249fe46290439bd27859e9b8ec616296d68b5dbb",
+    "src/fpga/rtl/sa_d8_zoom.v": "f0eeddee433fbb7d9828ce6fb7bc8c2173ba5d4eaddc65ff5a5a7cd7e2952546",
+    "src/linux/apps/instrument_cpp/src/waveform.cpp": "4702006c2b240dbf672c28d0ff69f782defb54b7bb2d55850d155a5b483745d9",
+    "src/linux/apps/instrument_cpp/src/sweep.cpp": "35f9d55d61e6e089c09da70a032a17f1f16707029f46db04754f6f40a355433b",
+    "src/fpga/coeff/sa/d2_1200_to600.mem": "6fcdbfd881c7762be63eb3911b260502c72f297f5694ecf30014998b47279801",
+    "src/fpga/coeff/sa/d2_600_to300.mem": "ff4dd4bb36deee2733e76f733c40ada08394e6377e3a853fded22f587019ac46",
+    "src/fpga/coeff/sa/d2_300_to150.mem": "b26bc441f70c54b3cc1870a1239e7cd3b0ea6c71b72327cea12375ac2ee0e5f0"
+  },
+  "limitations": [
+    "No RF measurement or new synthesis was performed by this check.",
+    "Interpolation passband is a specification-based calculation, not measured analog flatness.",
+    "FIR response excludes quantization, RFDC filters, DAC/ADC, baluns, cables and instruments.",
+    "GUI bounds and sequential coverage do not certify arbitrary modulation RF quality."
+  ]
+}

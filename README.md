@@ -1,6 +1,6 @@
 # 信号处理及产生综合平台 · ZCU111 V16
 
-一套独立运行在 AMD RFSoC ZCU111 上的可编程矢量信号源与频谱分析系统，集信号产生、采集、频谱分析与交互显示于一体。平台把高速 ADC/DAC、FPGA 并行信号处理、ARM Linux 控制与原生 C++ Qt 仪器界面集成在同一块板卡上，面向信号处理教学、通信波形验证和射频实验。连接 DP 显示器与 USB 鼠标即可操作，无需上位机参与日常采集、波形生成和播放控制。
+一套独立运行在 AMD RFSoC ZCU111 上的可编程矢量信号源与频谱分析系统，集信号产生、采集、频谱分析与交互显示于一体。平台把高速 ADC/DAC、FPGA 并行信号处理、**ARM PetaLinux/Linux、Weston桌面会话与原生C++17/Qt5 Widgets仪器界面**集成在同一块板卡上，面向信号处理教学、通信波形验证和射频实验。连接 DP 显示器与 USB 鼠标即可操作，无需上位机参与日常采集、波形生成和播放控制。
 
 本仓库对应 **2026-11-01 冻结的 V16 / 应用 0.10.2 / narrow09 硬件基线**，材料整理于 2026-11-02，矢量信号源与频率范围说明更新于 2026-11-03；本次文档更新未改变冻结的 V16 生产代码。仓库提供源码、配置、构建脚本和可核查的测试证据，Vivado 工程与运行文件按步骤重新生成。
 
@@ -12,11 +12,22 @@
 - **可编程 I/Q 矢量波形和可验证的播放链路。** ARM 本机生成 CW、脉冲、LFM、脉冲 LFM、Barker13、PSK、QAM；10 ms 波形以 48 MB I/Q 文件上传到 PL DDR4，回读及 SHA256 验证后播放，配套停止、静音和欠载保护。播放链路以兼容格式的 I/Q 文件为输入，可用自定义 I/Q 描述 FSK、AM/FM 等其他波形；FSK 当前没有内置界面预设，扩展波形仍需数字及射频验证。
 - **从一次实现走向可复用工程。** 功率模型保留参考面、原始读数与独立检查点；构建、启动配套接口契约和哈希回执；附带可独立使用的 FPGA 证据工作流技能包。
 
+## 多调制矢量输出：已有外部仪器观察
+
+统一I/Q播放链路支持**QAM、PSK、LFM、脉冲LFM、脉冲与相位编码**；FSK及其他调制可用兼容I/Q波形扩展。当前C++内置预设、参数范围与逐型验证状态见[平台能力与实现](docs/platform_overview.md)。
+
+| 64QAM星座 | 脉冲RF包络 | LFM最大保持频谱 |
+|---|---|---|
+| ![64QAM，8×8簇，RMS EVM 4.35%](data/modulation/history_qam64_20261025/instrument_183519.jpg) | ![10us设定脉宽、100us周期的包络放大](data/modulation/history_pulse_20261025/instrument_184910.jpg) | ![20MHz LFM的最大保持频谱](data/modulation/history_lfm_20261025/instrument_190828.jpg) |
+| 1.8 GHz、5 MSym/s、α0.35；256符号窗口 | 200 µs时窗；10 µs/100 µs为波形设定 | 40 MHz显示跨度；配有实测I/Q频率随时间分析 |
+
+这些是2026-10-25的历史外部硬件测量，展示平台矢量播放能力；当前C++版本的逐型RF验收另记。完整原图、测量条件、LFM分析图及照片使用建议见[多调制实测图册](docs/waveform_gallery.md)。
+
 ## 能力与实测摘要
 
 | 项目 | V16 能力 / 已有证据 |
 |---|---|
-| 独立操作 | C++17 / Qt5 Widgets，SA3000布局，Spectrum / Generator，DP1080p、鼠标操作人工确认 |
+| 独立操作 | ARM PetaLinux/Linux + Weston/Wayland桌面 + C++17/Qt5 Widgets；Spectrum / Generator，DP1080p、鼠标操作人工确认 |
 | 接收处理 | ADC2.4 GS/s → RFDC抽取2 → PL抽取8 → 150 MS/s复数；Hann / FFT / 功率谱 / DMA |
 | 连续频谱 | 持久打开RX设备、后台取帧、最新帧显示；N65536、平均1，V16记录82次显示/8.416 s，约9.74次/s |
 | 频段扫描 | 1.3–2.3 GHz，13段NCO顺序扫描；N8192、平均1的两次历史端点测试每轮约2.65 s |
@@ -25,9 +36,13 @@
 | 波形播放 | 本机产生10 ms波形，48 MB上传/回读/SHA256，显式RF PLAY / RF STOP；CW已有仪器读数，当前C++16QAM有实测频谱照片 |
 | 资源与时序 | LUT72273 / Registers113196 / BRAM Tile602.5 / DSP183；WNS+0.140 ns、WHS+0.010 ns、WPWS+0.014 ns |
 
-1 GHz 指顺序扫描范围，150 MS/s 是处理复采样率。连续模式用于连续刷新频谱；当前未提供全带宽无间断原始 I/Q 录像。**1790 MHz 是 CW 功率模型的标定频点，不是 CW 唯一可发射频点。** V16 Generator 在 Digital peak 数字幅度模式下可设 RF 1300–2300 MHz；CW model 的 dBm/dBW 适用条件另行限制，不能由此推断硬件只支持一个频点。其他调制使用数字幅度模式，接收全频段谱线使用 dBFS/bin。频率端点及全带幅度平坦度尚需按发射条件复核。详细指标见 [硬件与性能](report/hardware_performance.md) 和 [实测比对](board/measurements.md)。
+**面向1.3–2.3 GHz、1 GHz宽中频工作带设计；接收1 GHz视图由顺序扫描实现，150 MS/s是处理复采样率，扫描每段采用中心±50 MHz。发射为1.2 GS/s复I/Q矢量架构；当前2倍插值滤波规格推导的通带约960 MHz，尚未完成全1 GHz模拟平坦度验收。** 工作带选择、带通采样计算、滤波通带与扫描区别见[频率规划与带宽](docs/bandplan_and_bandwidth.md)。连续模式用于连续刷新频谱；当前未提供全带宽无间断原始 I/Q 录像。**1790 MHz 是 CW 功率模型的标定频点，不是 CW 唯一可发射频点。** V16 Generator 在 Digital peak 数字幅度模式下可设 RF 1300–2300 MHz；CW model 的 dBm/dBW 适用条件另行限制，不能由此推断硬件只支持一个频点。其他调制使用数字幅度模式，接收全频段谱线使用 dBFS/bin。频率端点及全带幅度平坦度尚需按发射条件复核。详细指标见 [硬件与性能](report/hardware_performance.md) 和 [实测比对](board/measurements.md)。
 
 更多波形、历史星座证据、V16 与候选版本的区别，以及后级变频扩展方案，见 [矢量信号源能力说明](report/vector_signal_source.md)。
+
+## 嵌入式Linux仪器技术栈
+
+**ARM Cortex-A53运行PetaLinux/Linux，内核驱动管理DMA与设备；Weston提供Wayland桌面会话、鼠标输入和DP显示；原生C++17/Qt5 Widgets提供仪器HMI。** 波形生成、标定与扫描拼接在ARM完成，高速FIR/FFT和播放数据流在FPGA完成。这是采用成熟嵌入式Linux/Qt技术路线的独立仪器，不需要上位机承担日常控制。源码、启动配置及职责划分见[平台架构与实现对应](docs/platform_overview.md)。
 
 ## 系统结构
 
@@ -50,6 +65,7 @@ flowchart LR
 
 | 目录 | 内容 | 阅读入口 |
 |---|---|---|
+| `docs/` | 平台卖点、嵌入式技术栈、频率规划与外部测量图册 | [说明索引](docs/README.md) |
 | `src/` | RTL、BD Tcl、约束/系数/时钟；Qt、驱动、RFDC辅助程序；PetaLinux/SDT | [源码完整性](report/source_completeness.md) |
 | `sim/` | Verilog测试平台、黄金参考、C++测试说明和原始结果 | [验证索引](sim/verification_catalog.md) |
 | `build/` | 工程恢复、综合实现、Linux/SDK、SD包构建脚本；原始综合实现报告 | [完整复现](build/reproduce.md)、[构建入口](build/README.md) |
@@ -72,6 +88,7 @@ flowchart LR
 python3 build/verify_manifest.py
 python3 build/check_submission.py
 python3 sim/replay_evidence.py
+python3 sim/check_bandplan.py
 ```
 
 ### 2. 恢复并构建 FPGA
