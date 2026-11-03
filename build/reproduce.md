@@ -72,7 +72,13 @@ bash build/linux/prepare_petalinux.sh /absolute/new_zcu111_project
 cd /absolute/new_zcu111_project
 ```
 
-这个入口采用冻结SDT和从实际工程取回的配置，保留DMA启动时disabled的设备树。若使用自己新构建的硬件，先用2025.2的SDTGen从新XSA生成SDT，再用petalinux-config --get-hw-description导入该新SDT，不混用改变过接口的硬件描述。
+这个入口采用冻结SDT和从实际工程取回的配置，保留DMA启动时disabled的设备树。若使用自己新构建的硬件，先用2025.2的SDTGen从新XSA生成SDT，再用petalinux-config --get-hw-description导入该新SDT，不混用改变过接口的硬件描述。ZCU111重新生成时带上板级设备树选择，例如：
+
+```sh
+sdtgen -xsa /absolute/new_exports/system.xsa -dir /absolute/new_sdt -board_dts zcu111-reva
+```
+
+核对生成的system-top.dts包含zcu111-reva.dtsi及所需板级配置，再导入。板级选项说明见[AMD SDTGen 2025.2官方文档](https://github.com/Xilinx/system-device-tree-xlnx/tree/xlnx_rel_v2025.2)。
 修改meta-user内的静态IPv4配置以适配自己的网络。共享密码及哈希已移除：请自行设置系统用户/密码；可在编译机用openssl passwd -6交互生成自己的哈希，将INSTRUMENT_ROOT_PASSWORD_HASH写入自己项目的build/conf/local.conf，不提交该凭据。
 确认src/linux/petalinux_project/reference_kernel.config中的OF_CONFIGFS、UIO、Xilinx DMA、CMA、USB、DRM/DP等配置在新内核中保留。完整.config用于比较，不是跨内核版本通用配置。
 
@@ -155,3 +161,5 @@ AMD商业工具、IP库和Linux/Qt完整源码不在此重复打包，从已列�
 请另读skill/README.md：六项可复用工作流、八个真实案例、六组提示词、四种模板、五类校验与30项行为测试。
 技能包能独立离线演练，不要求本队板卡。旧源码ZIP保留，顶层SHA256SUMS已按本整合包重新生成。
 没有重新部署板卡或改变V16功能；也没有因此补齐未完成的RF/冷启动验收。
+
+载频与模型范围说明：1790 MHz 限定的是本节的 CW 功率标定条件。V16 在 Digital peak 模式下可设置其他载频，RF 设置范围为1300–2300 MHz；可编程I/Q矢量发射、波形种类与变频扩展见[能力说明](../report/vector_signal_source.md)。

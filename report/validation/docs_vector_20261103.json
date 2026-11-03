@@ -1,0 +1,23 @@
+{
+  "date": "2026-11-03",
+  "baseline_commit": "aca48e9c560f2121674b384622e29fde5eec57cc",
+  "baseline_tree": "0b68aeb05dce4de794fac848db7f10972cdf298b",
+  "baseline_local_tree_exact": true,
+  "production_source_changed": false,
+  "new_board_or_rf_actions": "NONE",
+  "checks": [
+    {
+      "command": "python3 build/check_submission.py",
+      "exit_code": 0,
+      "stdout": "{\n  \"status\": \"V16_SUBMISSION_STRUCTURE_AND_SOURCE_IDENTITY_PASS\",\n  \"source_files_exact\": 223,\n  \"self_written_verilog_files\": 18,\n  \"collected_evidence_hashes\": 53,\n  \"required_entries\": 16,\n  \"path_format\": \"ASCII_NO_SPACES\",\n  \"fixed_name_exceptions\": 42,\n  \"exceptions_documented\": \"report/path_exceptions.csv\",\n  \"new_synthesis_or_board_measurement\": false\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": "python3 sim/replay_evidence.py",
+      "exit_code": 0,
+      "stdout": "{\n  \"status\": \"V16_INCLUDED_EVIDENCE_REPLAY_PASS\",\n  \"date\": \"2026-11-02\",\n  \"packet_receipts\": [\n    {\n      \"file\": \"src/linux/apps/instrument_cpp/resources/fixtures/lower/spectrum.bin\",\n      \"bins\": 1024,\n      \"sha256\": \"b7506637d2215df34d1182ca4f555620d0d94225127401c6d039aba7d3fe695b\",\n      \"receipt\": \"PASS\"\n    },\n    {\n      \"file\": \"src/linux/apps/instrument_cpp/resources/fixtures/n65536/spectrum.bin\",\n      \"bins\": 65536,\n      \"sha256\": \"835be7537014c33203dcd25b3153cdf5fa5ff676717edd029a5e2ff5ce6f410f\",\n      \"receipt\": \"PASS\"\n    },\n    {\n      \"file\": \"src/linux/apps/instrument_cpp/resources/fixtures/n65536_half/spectrum.bin\",\n      \"bins\": 65536,\n      \"sha256\": \"2c604a074e3e9c252d76280f9dc5f0feb8535a9ea8cdc5b8ce273d99c9f9e2de\",\n      \"receipt\": \"PASS\"\n    },\n    {\n      \"file\": \"src/linux/apps/instrument_cpp/resources/fixtures/n8192/spectrum.bin\",\n      \"bins\": 8192,\n      \"sha256\": \"74437048ae2d354a376e3da8aa20ed8ad670ca73588c209efefab3bffde5c2be\",\n      \"receipt\": \"PASS\"\n    },\n    {\n      \"file\": \"src/linux/apps/instrument_cpp/resources/fixtures/upper/spectrum.bin\",\n      \"bins\": 1024,\n      \"sha256\": \"c7719cbf8a22b0c6642bdd289565c90e6f21925b1f29dabaa43aaaf011f932aa\",\n      \"receipt\": \"PASS\"\n    }\n  ],\n  \"loopback_bin_count\": 65536,\n  \"fft_recorded_cases\": [\n    1024,\n    8192,\n    65536\n  ],\n  \"rx_affine_residual_db\": {\n    \"p01\": -0.03154887684143404,\n    \"p03\": 0.01608402229177841,\n    \"p05\": 0.015464854550305773,\n    \"p07\": -0.06434975494146755\n  },\n  \"rx_live_minus_reference_db\": -0.028628030540062355,\n  \"tx_corrected_holdout_mean_error_db\": -0.006666666666667709,\n  \"v16_display_updates_per_second\": 9.743346007604563,\n  \"scope\": \"Offline replay and arithmetic; no new RTL simulation, compilation, RF or hardware actions\"\n}\n",
+      "stderr": ""
+    }
+  ],
+  "historical_qam64_sha256": "077369f69f7dd8b897ab0062f6db200ddacc613e5fa9fb4d098c0a142f71e99e"
+}

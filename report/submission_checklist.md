@@ -22,7 +22,7 @@ BD Tcl、Verilog、约束、系数、配置和构建入口构成源码工程。X
 
 - 正式设计报告作者、学校、分工及最终排版；本包架构、性能和验证文档可作技术依据。
 - 最终3分钟内MP4/H.264视频与大小检查。
-- 实际公开GitHub/Gitee地址及公开环境README/依赖检查。
+- 公开源码地址：https://github.com/Leonaaaa668/zcu111-signal-instrument；最终提交前核对公开环境的README/依赖。
 - 全程大模型交互的脱敏公开存档。Skill精选真实案例不替代完整存档。
 
 解压后将七个目录及根README.md直接放到仓库根。ZIP另作下载附件即可。

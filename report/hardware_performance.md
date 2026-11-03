@@ -63,3 +63,5 @@ STA摘要中sample_clock和dac_sample_clock是299.985 MHz、RFADC1_CLK/RFDAC1_CL
 | TX CW补偿独立点 | 目标-25dBm，3次-25.01/-25.01/-25.00dBm | data/calibration/tx_current |
 
 刷新约9.74次/s是这段条件下的显示观测；不是保证所有参数下的帧率，也不是无损原始IQ速率。1GHz为顺序扫描范围。CW功率一致性限定1790MHz/相同参考设备与线缆；表中独立点结果不推广成全频段绝对精度。
+
+发射为可编程I/Q矢量链路，CW频率能力与1790 MHz功率模型范围分别说明，见[矢量信号源能力](vector_signal_source.md)。全带发射幅度平坦度和新增变频链不作为已有指标。
