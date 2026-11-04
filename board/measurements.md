@@ -29,4 +29,4 @@ report/validation/v16_20261101/board_test.log含Power、Marker与连续RX；V16�
 
 可机器读取的汇总为data/comparison/measurement_comparison.csv、tx_power_readings.csv、metrics.json。离线重算用python3 sim/replay_evidence.py。
 
-载频与模型范围说明：1790 MHz 限定的是本节的 CW 功率标定条件。V16 在 Digital peak 模式下可设置其他载频，RF 设置范围为1300–2300 MHz；可编程I/Q矢量发射、波形种类与变频扩展见[能力说明](../report/vector_signal_source.md)。
+载频与模型范围说明：1790 MHz限定的是本节CW功率参考条件。当前V17在Digital peak和CW model模式均接受1300–2300 MHz，非1790 MHz的CW model显示ESTIMATED；可编程I/Q矢量发射、波形种类与变频扩展见[能力说明](../report/vector_signal_source.md)。

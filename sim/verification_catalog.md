@@ -1,6 +1,6 @@
 # 仿真与验证脚本、结果
 
-命令从仓库根目录执行。2026-11-02重新做证据回放与结构检查；历史仿真/编译/板测保留原日期。
+命令从仓库根目录执行。当前V17测试见sim/README.md及results/v17。下表主体为V16及冻结硬件的历史证据，保留原日期；不把旧11项测试日志写成当前12项全部重跑结果。
 
 | 验证内容 | 脚本/源文件 | 已有结果 |
 |---|---|---|
@@ -11,7 +11,8 @@
 | 双bank快照与包 | tb_sa_snapshot.v、sim/python/verify_sa_snapshot_sim.py | 6包含65536点精确比较，14种损坏/截断拒绝；current/snapshot_packet_verification.json |
 | AXI结果控制 | tb_sa_result_control.v | current对应日志 |
 | 真实AMD FFT模型 | tb_sa_fft.v、sim/python/verify_sa_fft.py | fft/narrow09_1024_numeric.json、fft/narrow09_8192_65536_numeric.json |
-| C++业务/交互契约 | src/linux/apps/instrument_cpp/tests；build_all.sh调用CTest | 11/11；report/validation/cpp_ctest.log |
+| V16历史C++业务/交互契约 | src/linux/apps/instrument_cpp/tests；历史SDK构建 | 11/11；report/validation/cpp_ctest.log |
+| V17当前软件契约 | build_all.sh的Linux＋Qt配置12项；本机非Qt配置7项 | 本机7/7；sim/results/v17/host_ctest.log，Qt入口见sim/v17_validation.md |
 | Python开发参考 | python3 -m unittest discover -s sim/python -p 'test_*.py' | 20/20；report/validation/python_tests.log |
 | 收录证据重放 | python3 sim/replay_evidence.py | 原始包解码/SHA、FFT误差、模型残差、功率读数及刷新率重算 |
 | Skill验证 | skill/fpga-evidence-workflow/scripts/self_test.py | 30行为测试及6CLI案例，见skill/validation |

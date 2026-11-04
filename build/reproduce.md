@@ -12,15 +12,15 @@
 - 已验收板端内核：6.12.40-xilinx-g31626ef92ff1。驱动必须与目标内核精确匹配。
 - Python3.10+和NumPy仅用于开发电脑的检查/参考，不要求ZCU111安装Python或PYNQ。
 
-## 1. 解压及完整性检查
+## 1. 解压及结构、基线检查
 
-建议解压到短的纯英文路径，如Windows的C:/fpga/zcu111_v16_source或Linux的~/zcu111_v16_source。
+建议解压到短的纯英文路径，如Windows的C:/fpga/zcu111_v17_source或Linux的~/zcu111_v17_source。
 
 ```sh
-python3 build/verify_manifest.py
+python3 build/check_submission.py
 ```
 
-Windows可将python3改成自己的python解释器。校验不访问板卡。
+Windows可将python3改成自己的python解释器。检查不访问板卡；核对目录、V17应用版本及V16基线差异，不等于重新验收硬件。本包未附可选全文件校验清单；verify_manifest.py只有在使用者显式提供--manifest时运行。
 本包相对路径不依赖原作者用户名或磁盘布局；原始报告中的历史绝对路径仅作为证据保留。
 README.md、CMakeLists.txt、LICENSE及Yocto的原生通配bbappend文件名按工具约定保留；无中文、空格文件路径。
 
@@ -63,7 +63,7 @@ python3 -m unittest discover -s sim/python -p 'test_*.py'
 ```
 
 完整AMD FFT模型的历史数值验证见sim/results/fft；它不是仅靠六个控制测试替代的FFT/RF精度证明。
-C++/SDK测试由下一节build_all.sh运行11项CTest。
+当前V17的Linux＋Qt配置包含12项CTest，由下一节build_all.sh调用；保存的V16历史日志为11项。
 
 ## 4. 恢复PetaLinux配置和生成SDK
 
@@ -118,7 +118,7 @@ bash build/linux/build_all.sh /absolute/new_output
 ```
 
 KERNEL_BUILD必须是Linux内核本身的准备完成目录，含.config和Module.symvers，不是某个驱动模块目录。
-入口会编译原生C++ Qt程序和命令行工具、运行11项CTest、编译两个内核模块、四个RFDC/控制辅助程序和设备树overlay，组装运行目录；不连接板卡。
+入口会编译原生C++ Qt程序和命令行工具、运行12项CTest（Linux＋Qt配置）、编译两个内核模块、四个RFDC/控制辅助程序和设备树overlay，组装运行目录；不连接板卡。
 AMD librfdc/libmetal/sysfsutils通过该PetaLinux工程的对应recipe获取和构建。若多个构建版本导致目录不唯一，显式设置RF_USR、LIBMETAL_USR、SYSFS_USR为各库已staged的usr目录。
 
 ## 6. 为新构建生成SD运行包
@@ -157,11 +157,11 @@ AMD商业工具、IP库和Linux/Qt完整源码不在此重复打包，从已列�
 本包不包含许可证文件、登录密码、SSH私钥或原始私密聊天记录。
 
 
-## 技能包升级（2026-11-01）
+## 历史技能包升级（2026-11-01）与当前交付
 
-本提交包是在原V16精简源码包上增加完整的skill技能包，原生产RTL、C++、驱动、构建配置与数据保持原字节。
+2026-11-01曾在V16精简源码包上增加Skill，当时未改生产源码。当前交付为V17：6个应用文件更新、1个新测试、1处RTL注释修正，其余216个源码文件与V16基线相同。
 请另读skill/README.md：六项可复用工作流、八个真实案例、六组提示词、四种模板、五类校验与30项行为测试。
 技能包能独立离线演练，不要求本队板卡。旧归档保留；本次不附全项目文件清单，源码包在本地核对归档与源文件。
-没有重新部署板卡或改变V16功能；也没有因此补齐未完成的RF/冷启动验收。
+该历史Skill整理不构成新的RF/冷启动验收；V17上板通过另按队伍确认记录。
 
-载频与模型范围说明：1790 MHz 限定的是本节的 CW 功率标定条件。V16 在 Digital peak 模式下可设置其他载频，RF 设置范围为1300–2300 MHz；可编程I/Q矢量发射、波形种类与变频扩展见[能力说明](../report/vector_signal_source.md)。
+载频与模型范围说明：1790 MHz限定的是CW功率参考条件。当前V17在Digital peak和CW model模式均接受1300–2300 MHz，非1790 MHz的CW model显示ESTIMATED；可编程I/Q矢量发射、波形种类与变频扩展见[能力说明](../report/vector_signal_source.md)。

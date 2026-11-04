@@ -1,6 +1,6 @@
 # FPGA 综合、实现与关键性能报告
 
-硬件narrow09，ZCU111 xczu28dr-ffvg1517-2-e，Vivado2025.2；设计adc3_capture_wrapper。V16更新用户界面与软件功能，沿用该硬件。下列综合/实现结果来自2026-10-28至29日的冻结构建，此次整理核对其比特流SHA与冻结硬件记录一致。
+硬件narrow09，ZCU111 xczu28dr-ffvg1517-2-e，Vivado2025.2；设计adc3_capture_wrapper。V16及当前V17更新用户界面与软件功能，沿用该硬件。下列综合/实现结果来自2026-10-28至29日的冻结构建，此次整理核对其比特流SHA与冻结硬件记录一致。
 
 ## 整机资源（Routed）
 
@@ -55,7 +55,7 @@ STA摘要中sample_clock和dac_sample_clock是299.985 MHz、RFADC1_CLK/RFDAC1_CL
 | N65536频率间隔 | 150e6/65536 = 2288.818359375 Hz | 公式与measurement.json |
 | Hann RBW | N65536 ENBW约3433.2277 Hz | 窗系数统计；实际RBW有量化档位 |
 | VBW | 线性功率多帧平均的等效量，最多256帧 | spectrum_tools.cpp；M=1取RBW，M>1取min(RBW,0.38*RBW/(M-0.8)) |
-| Sweep time | 设置最小停留时间；完整扫描耗时由段数/FFT/平均/调谐等共同决定 | GUI与扫描实现 |
+| Sweep time | Live且Span>150 MHz时设置最小采集停留预算；窄带/流显示使用Auto，实际整轮耗时另显示 | GUI与扫描实现 |
 | V16连续显示 | 82 displayed / 81 painted / 8.416s，N65536、平均1 | report/validation/v16_20261101/board_test.log |
 | 1GHz顺序扫描 | 13段；N8192、平均1端点两轮约2.654/2.657s | board/results/tuning_20261031 |
 | 10ms发射文件 | 1.2G复数点/s × 0.01s × 4字节 = 48000000字节 | 波形元数据与上传回读日志 |

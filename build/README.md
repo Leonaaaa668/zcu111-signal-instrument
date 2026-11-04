@@ -2,19 +2,18 @@
 
 > 当前生产源码为V17/0.11.0，沿用narrow09硬件；上板验证通过按队伍确认记录。V16原始日志及固定启动脚本保留为历史基线，新构建使用生成的start_v17.sh。见[V17说明](../docs/v17_release.md)。
 
-所有命令在仓库根目录执行，使用新输出目录；完整环境、变量和步骤见reproduce.md。
+所有命令在仓库根目录执行，使用新输出目录；完整环境、变量和步骤见reproduce.md。本包不附可选全文件清单；首先运行check_submission.py检查结构与历史基线差异。verify_manifest.py仅供使用者显式提供--manifest时使用。
 
 | 顺序 | 入口 | 结果 |
 |---|---|---|
-| 1 | python3 build/verify_manifest.py | 全包SHA256核对 |
-| 2 | python3 build/check_submission.py | 七目录、源码身份和关键报告检查 |
-| 3 | vivado -mode batch -source build/fpga/create_project.tcl -tclargs NEW_DIR | XPR/BD/wrapper和契约检查 |
-| 4 | vivado -mode batch -source build/fpga/build_bitstream.tcl -tclargs XPR NEW_EXPORTS | synth/impl、BIT/XSA/LTX及报告 |
-| 5 | bash build/linux/prepare_petalinux.sh NEW_PROJECT | PetaLinux配置恢复 |
-| 6 | petalinux-build；petalinux-build --sdk | Linux和SDK；BOOT打包见reproduce.md |
-| 7 | bash build/linux/build_all.sh NEW_OUTPUT | Qt/CLI、11项CTest、模块、RFDC程序和overlay |
-| 8 | python3 build/make_sd_runtime.py --runtime RUNTIME --boot-bin BOOT.BIN --output NEW_SD_DIR | 新运行包和绑定新哈希的启动脚本 |
-| 9 | python3 build/package_source.py --output OUTSIDE_ROOT.zip | 源码ZIP、SHA清单与回执 |
+| 1 | python3 build/check_submission.py | 七目录、源码身份和关键报告检查 |
+| 2 | vivado -mode batch -source build/fpga/create_project.tcl -tclargs NEW_DIR | XPR/BD/wrapper和契约检查 |
+| 3 | vivado -mode batch -source build/fpga/build_bitstream.tcl -tclargs XPR NEW_EXPORTS | synth/impl、BIT/XSA/LTX及报告 |
+| 4 | bash build/linux/prepare_petalinux.sh NEW_PROJECT | PetaLinux配置恢复 |
+| 5 | petalinux-build；petalinux-build --sdk | Linux和SDK；BOOT打包见reproduce.md |
+| 6 | bash build/linux/build_all.sh NEW_OUTPUT | Qt/CLI、12项CTest（Linux＋Qt配置）、模块、RFDC程序和overlay |
+| 7 | python3 build/make_sd_runtime.py --runtime RUNTIME --boot-bin BOOT.BIN --output NEW_SD_DIR | 新运行包和绑定新哈希的启动脚本 |
+| 8 | python3 build/package_source.py --output OUTSIDE_ROOT.zip | 源码ZIP、ZIP文件SHA256及回执；不生成全文件清单 |
 
 硬件构建要求Vivado2025.2+器件许可。Linux软件要求同版本SDK、SDK_ENV、PLNX_PROJECT、准备完成的KERNEL_BUILD。外部库由保存的recipe获取，详见第三方来源。
 

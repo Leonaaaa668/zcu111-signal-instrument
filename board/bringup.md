@@ -40,4 +40,4 @@ CW功率复核按measurements.md参考条件；全频段扫描使用Span1000MHz�
 
 V16已有在线实板及人工确认；V15冷启动历史可参考，不改记为V16新冷启动。本次材料整理未接板或重新发射。
 
-载频与模型范围说明：1790 MHz 限定的是本节的 CW 功率标定条件。V16 在 Digital peak 模式下可设置其他载频，RF 设置范围为1300–2300 MHz；可编程I/Q矢量发射、波形种类与变频扩展见[能力说明](../report/vector_signal_source.md)。
+载频与模型范围说明：1790 MHz限定的是本节CW功率参考条件。当前V17在Digital peak和CW model模式均接受1300–2300 MHz，非1790 MHz的CW model显示ESTIMATED；可编程I/Q矢量发射、波形种类与变频扩展见[能力说明](../report/vector_signal_source.md)。
