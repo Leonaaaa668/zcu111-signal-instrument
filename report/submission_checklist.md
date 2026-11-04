@@ -20,9 +20,9 @@ BD Tcl、Verilog、约束、系数、配置和构建入口构成源码工程。X
 
 ## 另需队伍完成的比赛材料
 
-- 正式设计报告作者、学校、分工及最终排版；本包架构、性能和验证文档可作技术依据。
+- 正式设计报告：report/51957_design_report.pdf；已统一V17复现入口，历史测量保留测试阶段。
 - 最终3分钟内MP4/H.264视频与大小检查。
 - 公开源码地址：https://github.com/Leonaaaa668/zcu111-signal-instrument；最终提交前核对公开环境的README/依赖。
-- 指南要求的协作交互材料由队伍按提交渠道单独准备；公开Skill保留技术总结，不捆绑原问答正文。
+- 大模型协作记录：report/llm_collaboration.md，普通UTF-8 Markdown，可按提交平台单独上传。仅本文件及设计报告保留已确认公开的精选问答，Skill目录保留工具和技术总结。
 
 解压后保留根README、许可文件及src/sim/build/board/data/docs/skill/report目录。比赛代码上传按平台要求使用RAR；仓库源码由这些文件恢复工程。
