@@ -35,7 +35,12 @@ for f in sorted(input_files()):
     data = f.read_bytes()
     if data.startswith((b'\x7fELF', b'MZ')):
         raise SystemExit('Compiled executable in source package: ' + rel.as_posix())
-    if f.stat().st_size > 5 * 1024 * 1024:
+    # The formal DOCX retains the user's original full-resolution measurement photos.
+    formal_report = rel.as_posix() == 'report/51957_design_report_v17.docx'
+    if formal_report and data.startswith(b'version https://git-lfs.github.com/spec/v1'):
+        raise SystemExit('Download the report first: git lfs pull --include="report/51957_design_report_v17.docx"')
+    size_limit = 100_000_000 if formal_report else 5 * 1024 * 1024
+    if f.stat().st_size > size_limit:
         raise SystemExit('Unexpected large file: ' + rel.as_posix())
     files.append((rel.as_posix(), data))
 assert re.fullmatch(r'[a-z0-9_-]+', a.prefix), 'Use a short portable archive prefix'

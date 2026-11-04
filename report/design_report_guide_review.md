@@ -4,7 +4,7 @@
 
 ## 当前正式材料
 
-[设计报告PDF](51957_design_report.pdf)已统一为V17复现步骤，并保留历史实测对象；[大模型协作记录Markdown](llm_collaboration.md)从报告中单独整理经确认公开的精选问答，其余文档不复制这些原文。
+[设计报告DOCX](51957_design_report_v17.docx)已统一为V17复现步骤，并保留历史实测对象；[大模型协作记录Markdown](llm_collaboration.md)从报告中单独整理经确认公开的精选问答，其余文档不复制这些原文。
 
 ## 指南3.3.5.3对照
 

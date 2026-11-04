@@ -4,7 +4,7 @@
 
 | 内容 | 当前入口 | 范围 |
 |---|---|---|
-| 正式设计报告 | [报告PDF](../report/51957_design_report.pdf) | V17口径、原理/接口、优化/实测、协作与复现；原图和旧读数保留 |
+| 正式设计报告 | [报告DOCX](../report/51957_design_report_v17.docx) | V17口径、原理/接口、优化/实测、协作与复现；原图和旧读数保留 |
 | 大模型协作记录 | [独立Markdown](../report/llm_collaboration.md) | 用户确认公开的报告精选片段，含真实提示、回答、纠错和技术附件 |
 | 平台简介与多调制能力 | [首页](../README.md)、[架构](platform_overview.md) | C++ Qt本机控制、Linux驱动、可编程I/Q矢量产生与接收分析 |
 | 生产源码 | [src](../src)、[版本清单](../board/releases/v17.json) | V17应用、narrow09 RTL/约束/系数、设备驱动与PetaLinux配置 |

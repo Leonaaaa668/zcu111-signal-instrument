@@ -16,7 +16,7 @@ V17上板验证通过按队伍确认记录；本机7项测试覆盖非Qt路径�
 
 运行方式见根README。sim/rtl中不存在自写SystemVerilog平台，均为.v；仿真中使用AMD库自带的XPM属于工具依赖。
 sim/results/fft保存原AMD FFT模型数值验证记录及受测源码哈希，不是这次重新运行的FFT结果。
-V16 Qt的生产实现是C++，sim/python的波形/标定工具是开发阶段参考，不在板上要求Python环境。
+当前V17及V16的Qt生产实现均为原生C++；内置波形由ZCU111的ARM端生成。sim/python是开发电脑上的波形、标定和数值参考工具，板端运行不需要Python环境。
 src/baremetal_reference/tx_command.tcl用于历史常量契约对照，含旧机路径；不是Linux控制入口，不执行它来驱动当前板卡。
 
 全部单元、模型、仿真测试均不能代替模拟RF指标、接线、电平和新硬件时序验收。

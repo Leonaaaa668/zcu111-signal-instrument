@@ -25,8 +25,8 @@ TX：J7→同一线缆→4025G，1790MHzCW；中心1790MHz、Span50kHz、RBW/VBW
 
 report/validation/v16_20261101/board_test.log含Power、Marker与连续RX；V16实测82次显示、81次绘制、8.416s。用户确认鼠标、CW model标签及Run Single正常，冻结回执在board/reference。GUI平均/VBW/FFT会影响刷新，不把加速录像当作实时指标。
 
-当前C++16QAM有原始频谱照片和参数，位于data/modulation；RF EVM/星座和一般调制平均功率待补。旧Python路径星座测试不作为当前C++路径完整RF验收。
+当前C++16QAM有原始频谱照片和参数，位于data/modulation；RF EVM/星座和一般调制平均功率待补。2026-10-25由开发电脑离线生成I/Q、再上传板卡播放的星座测试属于历史发射链路验证，不作为当前C++生成路径的完整RF验收。当前V17的内置波形在板端ARM上生成，不需要上位机或板端Python。
 
-可机器读取的汇总为data/comparison/measurement_comparison.csv、tx_power_readings.csv、metrics.json。离线重算用python3 sim/replay_evidence.py。
+可机器读取的汇总为data/comparison/measurement_comparison.csv、tx_power_readings.csv、metrics.json。在开发电脑上离线重算用python3 sim/replay_evidence.py；这不是板端仪器运行依赖。
 
 载频与模型范围说明：1790 MHz限定的是本节CW功率参考条件。当前V17在Digital peak和CW model模式均接受1300–2300 MHz，非1790 MHz的CW model显示ESTIMATED；可编程I/Q矢量发射、波形种类与变频扩展见[能力说明](../report/vector_signal_source.md)。

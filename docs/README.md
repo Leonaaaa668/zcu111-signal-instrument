@@ -9,6 +9,6 @@
 - [多调制波形与实测图册](waveform_gallery.md)：64QAM、脉冲、LFM的照片、数值结果与适用范围。
 - [离线频率规划核对结果](../data/bandplan/offline_check.json)：源码参数、FIR系数、13段扫描与接口速率的交叉核对。
 
-正式提交材料见[设计报告PDF](../report/51957_design_report.pdf)和[大模型协作记录Markdown](../report/llm_collaboration.md)。精选问答仅在这两份材料中保留，其他文档使用技术总结。
+正式提交材料见[设计报告DOCX](../report/51957_design_report_v17.docx)和[大模型协作记录Markdown](../report/llm_collaboration.md)。精选问答仅在这两份材料中保留，其他文档使用技术总结。
 
 推荐展示主线：独立Linux仪器 → 可编程矢量波形 → 外部64QAM/脉冲/LFM测量 → 接收分析与1 GHz分段覆盖 → 后级变频扩展。

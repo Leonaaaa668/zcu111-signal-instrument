@@ -111,7 +111,7 @@
 
 30项离线行为测试、六项演练及预期拒绝分支见[Skill说明](../skill/README.md)和[演练汇总](../skill/validation/summary.json)。这些检查器的效果不等同于新板卡迁移或新的RF测量。
 
-在仓库的`skill`目录执行：
+以下命令在开发电脑的仓库`skill`目录执行，用于离线验证协作工具，不属于ZCU111仪器运行依赖：
 
 ```sh
 python fpga-evidence-workflow/scripts/self_test.py --work-root ./test_workspace
